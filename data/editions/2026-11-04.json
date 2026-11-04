@@ -1,0 +1,1276 @@
+{
+ "date": "2026-11-04",
+ "generated_at": "2026-11-04T23:12:09+00:00",
+ "model": "claude-opus-5-5",
+ "headline": {
+  "zh": "民主党横扫国会，伊朗战争成共和党败因",
+  "en": "Democrats sweep Congress as the Iran war sinks Republicans"
+ },
+ "lede": {
+  "zh": "美国中期选举中，民主党同时拿下众议院和参议院，连特朗普和副总统万斯都承认伊朗战争伤了共和党。华尔街以道指大涨约1500点回应，而选民在几乎所有涉及数据中心的投票中都说了“不”，给AI基建热潮泼了一盆冷水。与此同时，俄军袭击乌克兰援助点致40人死亡，OpenAI则继续为Codex收购工具公司。",
+  "en": "Democrats took both the House and the Senate in the US midterms, and even President Trump and Vice President Vance conceded the Iran war hurt Republicans. Wall Street cheered with a roughly 1,500-point Dow rally, while voters rejected data centers in nearly every ballot measure, a cold shower for the AI building boom. Elsewhere, a Russian strike on a Ukrainian aid site killed 40, and OpenAI kept shopping for Codex tools."
+ },
+ "sections": {
+  "ai": [
+   {
+    "importance": 3,
+    "tag": {
+     "zh": "AI政治",
+     "en": "AI Politics"
+    },
+    "title": {
+     "zh": "选民用选票拒绝数据中心，AI金主钱白花",
+     "en": "Voters Turn on Data Centers, and Pro-AI Money Buys Little"
+    },
+    "hook": {
+     "zh": "一亿美元的亲AI政治资金，挡不住一个晚上三十多个地方对数据中心说“不”。",
+     "en": "A $100 million pro-AI war chest couldn't stop dozens of towns from voting data centers out in a single night."
+    },
+    "story": {
+     "zh": "周二美国中期选举，全国有45项地方公投直接涉及数据中心。据Redbud Consulting统计，截至周三早上，其中33项的结果是限制建设。佛州埃奇沃特把禁令写进了城市宪章，堪萨斯州埃尔多拉多十年内禁止峰值用电超10兆瓦的数据中心。CNBC的说法更极端：除一项外全部被否，各家统计口径还在变。\n\n怒气一路烧到高层选举。NBC出口民调显示，76%的选民反对在自家社区建数据中心，近四分之一说这是决定投票的关键。拥有全美第二多规划数据中心的得州，支持全州暂停令的民主党人伊诺霍萨击败现任州长阿博特，塔拉里科拿下参议院席位。\n\n钱没起作用。硅谷富豪撑腰、手握1亿美元的亲AI超级政治行动委员会“Leading the Future”几乎没留下痕迹。科技公司则辩称，这是“反特朗普”而非“反科技”。\n\n市场已经先动了：数据中心概念股周三下跌，银行开始把地方反对当作信用风险，开发商忙着招社区联络员，还把数据中心改名叫“算力园区”。",
+     "en": "On Tuesday, data centers were on the ballot in 45 local measures across the US. By Wednesday morning, 33 had gone in favor of restricting development, according to a Redbud Consulting tally. Edgewater, Florida, wrote a ban into its city charter; El Dorado, Kansas, barred facilities drawing more than 10 megawatts for a decade. CNBC counts it as every measure but one, so tallies are still settling.\n\nThe anger reached the top of the ticket. In an NBC News exit poll, 76% of voters opposed data centers in their communities, and nearly a quarter called the issue crucial to their vote. In Texas, home to the second-most planned data centers in the country, Democrat Gina Hinojosa unseated Gov. Greg Abbott while backing a statewide moratorium, and James Talarico beat Ken Paxton for the Senate. Abbott had promised tougher rules late in the race and lost anyway.\n\nMoney didn't turn the tide. Leading the Future, a super PAC network backed by Silicon Valley billionaires with a $100 million war chest, made little visible difference, Wired reported. Big Tech's line is that the backlash was anti-Trump, not anti-tech.\n\nInvestors aren't waiting for that argument to settle. Data center stocks slid Wednesday, banks are starting to treat local opposition as a credit risk, and developers are hiring community liaisons and rebranding sites as \"compute campuses.\""
+    },
+    "why": {
+     "zh": "得州和佐治亚是全美数据中心最集中的地方，两州新州长都支持暂停令，数百个规划项目可能被拖慢，AI算力扩张的成本和时间表都要重算。",
+     "en": "Texas and Georgia, two of the biggest data center hubs, now have governors-elect who back moratoriums, putting hundreds of planned projects and the AI buildout's timeline at risk."
+    },
+    "pro": {
+     "zh": "值得注意的是，限制并非一党之见：得州参选双方都想取消数据中心税收减免、让其自担电网成本；共和党人唐纳兹也提出了让开发商自付水电的法案。民主党策略师麦科伊预计，优惠税收将终结，环境执法会趋严。当地方阻力被银行计入信用风险，融资成本上升，会直接压缩项目回报。",
+     "en": "The squeeze is bipartisan: both Texas Senate candidates wanted to strip data center tax exemptions and make operators pay for their own energy infrastructure, and Republican Byron Donalds sponsored a bill making developers cover their energy and water. Strategist Alexander McCoy expects tax breaks to end and environmental enforcement to tighten. Once lenders price local opposition as credit risk, higher financing costs eat directly into project returns."
+    },
+    "stat": {
+     "value": "33/45",
+     "label": {
+      "zh": "限制数据中心的地方公投占比",
+      "en": "local ballot measures that restrict data centers"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "暂停令",
+       "en": "Moratorium"
+      },
+      "explain": {
+       "zh": "在一段时间内叫停新项目审批，就像小区先贴出“暂停装修”的通知，等规矩定好再说。",
+       "en": "A temporary freeze on new approvals, like a building putting all renovations on hold until it writes new rules."
+      }
+     },
+     {
+      "term": {
+       "zh": "超级政治行动委员会",
+       "en": "Super PAC"
+      },
+      "explain": {
+       "zh": "可以无上限募款、花钱做政治广告的组织，但不能直接给候选人钱。",
+       "en": "A political group that can raise and spend unlimited money on ads, as long as it doesn't hand cash directly to candidates."
+      }
+     },
+     {
+      "term": {
+       "zh": "超大规模云厂商",
+       "en": "Hyperscaler"
+      },
+      "explain": {
+       "zh": "自建海量数据中心、对外出租算力的科技巨头，好比全国连锁的“电力仓库”老板。",
+       "en": "A tech giant that builds enormous fleets of data centers and rents out computing power, like a nationwide warehouse chain for computation."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "semafor.com",
+      "url": "https://www.semafor.com/article/11/04/2026/us-voters-roundly-reject-data-centers-in-ballot-measures",
+      "title": "US voters roundly reject data centers in ballot measures"
+     },
+     {
+      "name": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTTNmVW16LVVvWHFXQ3NkLTd1VFhYTS10SmF3TnpqTVdpYVFWRzJnMWVJeEtqX3ZxdExMSENRZWhyNUsxOUVtdFYxYWw5c1RWZUZkT2d2dFBVMUVTSG1fQ0lnMXBXNlhaX2VCVDBwTWNIWUR4QXVCb29GWFJYVExlU0VIUdIBiAFBVV95cUxNUEtmbkhxV05pUWVQSzlueTZtMXlRdmctc3RWY3VEQ2xHU0VrZHF0cmZkczlOLUlCaXREeHlzTWV4UVYxUDdfMlh3bk9PWk5xcmFjMFhGVVRTUFFzU3c1X1FYcGZkbmVjaU1jbVp1X1BPb05PZVVuQ2ZlQU5GVzJmNGhxVW5zRjlv?oc=5",
+      "title": "Voters rebuff data centers in every ballot measure except one during the 2026 midterms"
+     },
+     {
+      "name": "Wired AI",
+      "url": "https://www.wired.com/story/the-results-are-in-voters-hate-data-centers/",
+      "title": "The Results Are In: Voters Hate Data Centers"
+     },
+     {
+      "name": "The Verge AI",
+      "url": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
+      "title": "Data centers lost the midterms"
+     },
+     {
+      "name": "Ars Technica AI",
+      "url": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/",
+      "title": "Big Tech claims voters’ AI backlash is “anti-Trump” not “anti-tech”"
+     },
+     {
+      "name": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+      "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput."
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "AI编程",
+     "en": "AI Coding"
+    },
+    "title": {
+     "zh": "OpenAI与Meta同日收购编程工具公司",
+     "en": "OpenAI and Meta Both Buy Coding-Tool Startups on the Same Day"
+    },
+    "hook": {
+     "zh": "AI会写代码已经不稀奇了，现在大家抢的是代码写完之后的那一摊事。",
+     "en": "AI writing code is old news; the race now is over everything that happens after the code is written."
+    },
+    "story": {
+     "zh": "OpenAI周二宣布，将收购开发者工具初创公司Pierre Computer，用来扩充旗下编程智能体Codex在构建、理解和审查代码方面的能力。《华尔街日报》报道，这笔交易会把Pierre的代码存储技术带进Codex。交易金额未披露。\n\n几小时后，TechCrunch报道Meta收购了AI编程公司Conductor。它的产品能让一名工程师同时派出一队AI智能体，分头处理项目的不同部分，有点像包工头同时指挥几支施工队。\n\n把两笔交易放在一起看，信号很清楚：让模型写出一段能跑的代码，已经不是最难的部分。真正的竞争在代码周围——代码存在哪里，上线前谁来把关，多个智能体如何分工又不互相踩脚。\n\n接下来，这类收购可能还会更多。谁掌握了开发者存放和审查代码的地方，谁就更容易把用户留住。",
+     "en": "OpenAI said Tuesday it will acquire Pierre Computer Company, a developer-tools startup, to expand what its Codex coding agent can do for building, understanding and reviewing code. The Wall Street Journal reported the deal brings Pierre's code-storage technology into Codex. Terms weren't disclosed.\n\nHours later, TechCrunch reported that Meta had acquired Conductor, a startup that lets a software engineer deploy a team of AI agents to work on different parts of a project at once — like a foreman directing several crews on one building site.\n\nRead together, the deals show where the coding-agent contest has moved. Getting a model to write a function that runs is no longer the hard part. The fight is over everything around the code: where it lives, who checks it before it ships, and how many agents can share the work without tripping over each other.\n\nExpect more of this. Whoever owns the place where developers store and review code gets a foothold that is hard to dislodge, because moving a team's codebase and habits is painful."
+    },
+    "why": {
+     "zh": "对程序员来说，未来的日常可能是“管理一群AI同事”；对公司来说，选哪家的编程工具会越来越像选一整套工作平台。",
+     "en": "For developers, daily work may shift toward managing a crew of AI teammates; for companies, choosing a coding assistant increasingly means choosing a whole platform."
+    },
+    "pro": {
+     "zh": "模型能力趋同之后，差异化来自工作流：代码仓库、审查流程和多智能体编排都是高粘性环节，切换成本高。OpenAI补的是存储与审查，Meta补的是并行调度，方向不同但逻辑一致——把智能体嵌进团队协作的底层，而不只是做一个聊天框里的助手。",
+     "en": "As model quality converges, differentiation moves to workflow. Code storage, review and multi-agent orchestration are high-switching-cost layers. OpenAI is buying storage and review; Meta is buying parallel orchestration. Different pieces, same logic: embed agents in the plumbing of team collaboration rather than a chat window."
+    },
+    "stat": {
+     "value": "",
+     "label": {
+      "zh": "",
+      "en": ""
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "编程智能体",
+       "en": "Coding agent"
+      },
+      "explain": {
+       "zh": "不只是补全一行代码，而是能自己接任务、改多个文件、跑测试的AI，像一个能独立干活的实习工程师。",
+       "en": "An AI that takes on a whole task — editing files, running tests — rather than just suggesting the next line, like an intern who can work on their own."
+      }
+     },
+     {
+      "term": {
+       "zh": "代码审查",
+       "en": "Code review"
+      },
+      "explain": {
+       "zh": "代码合并上线前由别人检查一遍，相当于文章发表前的校对。",
+       "en": "Having someone check code before it's merged, like proofreading an article before it's published."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "OpenAI",
+      "url": "https://openai.com/index/openai-to-acquire-pierre",
+      "title": "OpenAI to acquire Pierre Computer Company, Inc."
+     },
+     {
+      "name": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMHB3WDNrSi01NF8zXzUyZWdSb0U0ZUZyVlZWUF9jeVBfeHVTNkpESjFRSk1FWTk1aFZNcVl2LTRXdlpnR2N5eTRURXJMZkVRM0o5dlVSZWRuY0dVc2ZRTGRLb3M1WVZjRk54Z0doRGt2MVlDTURZaHR6LWpPR3RiT0FmU19vWWd6dE5iY3FLOWozZkNhSHJENktiRGtmc3dJM2xXSDFyOFNlM0N2b2FLWQ?oc=5",
+      "title": "OpenAI to Bring Pierre Computer’s Code Storage to Codex Through Acquisition"
+     },
+     {
+      "name": "The Information",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNU2dYN3dLa3otbWRuMEZCNHJrRERYNzlBTko5SGJuMjdSQ2Q5ZFdRQmlEc2l4Qmgxd2xvOHY1UFFDMDRaN1VKdW9sekdFVTlHOG5nUE15OG9yY1U2MFVxOXY5bmxHOHhRenBEYVIxYU54RS1KQ29jTkpScklva0RfYjhTZkl4emh6U1hCTnpHVld2TjBZY0hWNDlkVnI?oc=5",
+      "title": "OpenAI Agrees to Buy Software Startup Pierre to Bolster Codex"
+     },
+     {
+      "name": "SiliconANGLE",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWk5Rd0JvSVN2YzJIMlF4VzJpcmtoMWdMZGhEbjNKbmFETEROeEpiUy1xNXd6VEVxaVRjMFVkdGRGQTRwRjgwSGxWTVFUX05NekttNE1UN2FMYlJaanBRLU13Nm1vNXctMHdjSE5pbTAxYzBfVW9iMEF6dzdDb1g0Z1VtWlJGbTJCdDZULVUxTmFCeUk1ZnJPeVNpZVI?oc=5",
+      "title": "OpenAI to acquire developer tooling startup Pierre Computer"
+     },
+     {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+      "title": "Meta acquires AI coding startup Conductor"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "算力基建",
+     "en": "AI Infrastructure"
+    },
+    "title": {
+     "zh": "谷歌为Anthropic数据中心租约兜底",
+     "en": "Google Backstops TeraWulf's $19 Billion Anthropic Leases"
+    },
+    "hook": {
+     "zh": "谷歌愿意替Anthropic的190亿美元房租作保，股市却并不买账。",
+     "en": "Google agreed to vouch for $19 billion in Anthropic rent — and investors sold anyway."
+    },
+    "story": {
+     "zh": "据Blockspace Media等多家媒体报道，谷歌同意为Anthropic与TeraWulf签下的约190亿美元租约提供担保，对应的是一座位于肯塔基州的AI数据中心园区。说白了，万一租户付不起，谷歌兜底——就像父母给刚工作的孩子在租房合同上签字作保。\n\n这种承诺分量很重。数据中心大多靠借钱建，放贷方最关心的是租金能不能稳定收十几年。有科技巨头作保，一家年轻AI公司的长期租约在银行眼里就靠谱得多。\n\n可周三投资者并不领情：TeraWulf股价跌4%，同行Cipher Digital暴跌18%，IREN跌9%。同一天早上，得州州长选举结果引发外界对数据中心建设放缓的担忧，AI数据中心概念股普遍下跌。\n\n电力是另一道坎。TechCrunch报道，并网和新涡轮机的等待期越来越长，一些开发商只好用退役的喷气发动机发电，效率更低也更不环保。",
+     "en": "Google has agreed to guarantee roughly $19 billion in leases that Anthropic signed with TeraWulf for an AI data center campus in Kentucky, according to Blockspace Media and other outlets. In plain terms: if the tenant can't pay, Google covers it — the way a parent co-signs a first apartment lease.\n\nThat promise carries weight because data centers are mostly built with borrowed money, and lenders care above all about whether rent will keep arriving for years. A tech giant's guarantee makes a long lease to a younger AI lab look far safer.\n\nInvestors shrugged anyway. TeraWulf fell 4% on Wednesday, while peers Cipher Digital plunged 18% and IREN tumbled 9%. The same morning, the Texas governor's race raised fears of a slowdown in data center construction, and AI data center stocks broadly declined.\n\nPower is the other bottleneck. TechCrunch reports the wait for grid connections and new turbines has grown so long that some builders are turning to once-discarded jet engines — less efficient and dirtier — to keep projects moving."
+    },
+    "why": {
+     "zh": "担保能帮项目拿到更便宜的贷款，但选举和电力瓶颈说明，AI数据中心的风险已经不只是“租户靠不靠谱”。",
+     "en": "A guarantee helps projects borrow more cheaply, but the election and power shortages show the risks now go well beyond whether the tenant can pay."
+    },
+    "pro": {
+     "zh": "对TeraWulf这类托管商而言，信用增级能直接压低融资利率，把租约变成更接近债券的现金流。股价仍跌，说明市场在重新定价的是政策和并网风险：租户再稳，项目建不成、接不上电，现金流也无从谈起。",
+     "en": "For hosts like TeraWulf, a credit backstop lowers borrowing costs and makes a lease behave more like a bond. That shares still fell suggests the market is repricing policy and grid-connection risk: a rock-solid tenant doesn't help if the site can't get built or powered."
+    },
+    "stat": {
+     "value": "$19B",
+     "label": {
+      "zh": "谷歌担保的Anthropic租约规模",
+      "en": "Anthropic leases Google is backstopping"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "担保兜底",
+       "en": "Backstop"
+      },
+      "explain": {
+       "zh": "第三方承诺在借款人或租户违约时替他付钱，像租房时的担保人。",
+       "en": "A third party's promise to pay if the borrower or tenant defaults, like a co-signer on a lease."
+      }
+     },
+     {
+      "term": {
+       "zh": "并网",
+       "en": "Grid connection"
+      },
+      "explain": {
+       "zh": "把新建设施接入公共电网，需要排队审批和建设线路，好比新房要等自来水管接到门口。",
+       "en": "Hooking a new facility into the public power grid, which requires queuing for approval and new lines — like waiting for the water main to reach a new house."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "Blockspace Media",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQMERNemhNVnZjWHU2aXpVZVh4YkpjMlJnQ3M2SGxWanRhRzdXOV81aUJhRWpYLV9lQzVGYUQwSUx0M042azZSSEFYUGZwNVUyT0VENGRTNXp4ejQ2ZnM3eGIyNkIyNHhHLUZvUlZWTnNKTnFLUFNmUmRkaHRWbWxVY0VR?oc=5",
+      "title": "Google backstops TeraWulf’s $19 billion Anthropic leases in Kentucky"
+     },
+     {
+      "name": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOODEzYkQzb2J2VEtWWEZpLVo5Q296bVExTlBZSWNFRVJMdGRVR3ltck8zdHdnLURqSDA5Q2EtMklsS0t5T0YtM2JjRXRBcnBuaHJWX3c3bGR1SC1hYUI2THJZMzlPaUNRUlBSWGFmQms5ek80TVhYMmI4Q09VTkZyWU5CRXlEbkpkMmVCSGRQaUlQVFhzOE50RG5FYUo?oc=5",
+      "title": "TeraWulf Falls 4% Despite Google Backstop for $19 Billion Anthropic Leases; Cipher Digital Plunges 18%, IREN Tumbles 9%"
+     },
+     {
+      "name": "Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUnltOFRmVUpzSXlNMFM3bXJ4bkFOUkJXRllRWTFFRldhamcyeTVaM3EzTGFackVjZFdnSEJnNFdGc1NZQ0RZOVhTZzhjNDJZamVYdkNUS3hmaTh0cDJWdEdmMG5aZ2VZZ1luMjhKQk1heURfLUJQcGxTSkdGTnFSTU9Oa1BhSktTQldzWDc1aGt1UkU?oc=5",
+      "title": "TeraWulf Lines Up Google Backstop for Anthropic’s Kentucky AI Campus"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
+      "title": "AI data center stocks and Musk's SpaceX decline as Texas governor result raises risks of a slowdown"
+     },
+     {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+      "title": "Data centers are turning to old jet engines as the wait for power grows"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "芯片",
+     "en": "Chips"
+    },
+    "title": {
+     "zh": "AMD数据中心收入近翻倍，高通转向AI",
+     "en": "AMD's Data Center Sales Nearly Double as Qualcomm Pivots"
+    },
+    "hook": {
+     "zh": "一份芯片财报季，清楚画出了AI的钱往哪里流、又从哪里流走。",
+     "en": "One round of chip earnings maps exactly where AI money is flowing — and where it's draining away."
+    },
+    "story": {
+     "zh": "AMD周二公布三季度财报，营收同比增长45%，数据中心业务收入接近翻倍，占总营收的64%，一年前还只有47%。公司预计四季度营收约170亿美元，高于分析师预期的162亿。CEO苏姿丰说，2027年服务器收入有望同比翻倍。\n\n不过，账面上也有一笔10亿美元的季度费用，由AMD与OpenAI、Meta的芯片协议触发。AMD的服务器CPU正因AI智能体需求复苏，它们负责跑虚拟机、长时间自主运行。据Tom's Hardware报道，AMD预计四季度销售额将首次超过英特尔。另一面，游戏业务收入下滑40%。\n\n同一天，Arm给出了高于预期的营收指引，理由是AI支出热潮；高通的手机芯片销售则不及预期，股价下跌。手机销量比2025年下滑约20%，高通正借与亚马逊、Meta的合作押注数据中心。\n\nAMD盘后一度涨8%，随着选举结果出炉又回吐了涨幅。",
+     "en": "AMD reported third-quarter revenue up 45% from a year earlier on Tuesday, with data center sales nearly doubling. That unit now makes up 64% of revenue, up from 47% a year ago. AMD guided to about $17 billion in fourth-quarter revenue, above the $16.2 billion analysts expected, and CEO Lisa Su said server revenue should double in 2027.\n\nThe quarter also carried a $1 billion charge triggered by AMD's chip deals with OpenAI and Meta. Meanwhile its server CPUs are enjoying a revival thanks to AI agents, which need processors that run virtual machines for hours on their own. Tom's Hardware reports AMD expects to outsell Intel in the fourth quarter for the first time ever. Gaming revenue, by contrast, fell 40%.\n\nElsewhere, Arm forecast revenue above estimates on the AI spending boom, while Qualcomm's smartphone chip sales missed and its shares fell. With phone sales down about 20% from 2025, Qualcomm is betting on data centers through partnerships with Amazon and Meta.\n\nAMD jumped 8% after hours, then gave back gains as election results rolled in."
+    },
+    "why": {
+     "zh": "AI数据中心正在吸走芯片行业的增长，而手机、游戏、PC这些传统市场在变冷，押错方向的公司会很被动。",
+     "en": "AI data centers are absorbing the chip industry's growth while phones, gaming and PCs cool, leaving companies tied to consumer devices scrambling."
+    },
+    "pro": {
+     "zh": "智能体AI改变了算力结构：GPU负责推理，但调度、虚拟机和长时间任务吃的是CPU，这让x86服务器芯片重新吃香。那笔10亿美元费用提醒人们，拿下OpenAI、Meta这类锚定客户要付出代价；AMD还同意向Meta的股权融资投资10亿美元，供需双方的资本纠缠越来越深。四季度毛利率指引55%，略低于预期的55.3%。",
+     "en": "Agentic AI changes the compute mix: GPUs handle inference, but orchestration, virtual machines and long-running tasks lean on CPUs, reviving x86 server demand. The $1 billion charge is a reminder that landing anchor customers like OpenAI and Meta has a price, and AMD also agreed to invest $1 billion in Meta's equity offering — supplier and customer finances are increasingly intertwined. Q4 gross margin guidance of 55% came in just under the 55.3% estimate."
+    },
+    "stat": {
+     "value": "64%",
+     "label": {
+      "zh": "数据中心占AMD营收比重（一年前47%）",
+      "en": "AMD revenue from data centers (47% a year ago)"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "AI智能体",
+       "en": "AI agent"
+      },
+      "explain": {
+       "zh": "能自己拆解任务、连续操作几个小时的AI，像一个不用每步请示的助理。",
+       "en": "An AI that breaks down a task and works on it for hours without step-by-step instructions, like an assistant who doesn't need constant check-ins."
+      }
+     },
+     {
+      "term": {
+       "zh": "毛利率",
+       "en": "Gross margin"
+      },
+      "explain": {
+       "zh": "每卖100元产品，扣掉直接成本后剩下多少，55%就是剩55元。",
+       "en": "How much of each sale is left after direct production costs — 55% means 55 cents on every dollar."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
+      "title": "AMD's data center revenue nearly doubles in Q3 and CEO Su expects growth to accelerate"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPY3RKZ3JJTFBHVzJUVXg5b3plRk1ia1FPSFhZNE9FUEtPd3pBQ2ZSa2psVmphTk43UEs2cUxxc1ZfMDRYOUFzMHhROXN5WmoxZURqU29xRDVhS05CRnFJZjZwTHNySkJGbzd1Z0ZadDdlcUdxaV9CSE1xUERDQXZ4S1hWT0dZME1mV1VpTW45dXVMRzNiRmcyZHN0Ql9mbHlpdzBZd216czZCY29ydzdZbGtWSFByRDdvcGc?oc=5",
+      "title": "RPT AMD's OpenAI, Meta chip deals trigger $1 billion quarterly charge"
+     },
+     {
+      "name": "Westlaw Today",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzBMaktLeEN3Z2N5NDd1S1lLc05DNW9yS1RjYWx4MWJsMFNCMDJXei1UcFBCbTdqQmJUNzBjNjNiR285U0NmQlh2OExkVDVlMDFPeXhRd2ZLaldLZVlXUHpkM0RnWFlNaENRM3Iyem5VR2dRMm9oYjE5Wm1iZWJnWkhOLTBkc0NKWDZId2ZfSS1GVUE2LVhuSmU0SnM0MEh1a3RRcnpLNVdUcGdVRjdTbC1zNGIxM1ZGQ2lVNnF3LXc4ZUJpZmtvXzkyS3dZMkRRYVJxaHNqekMzbmk4?oc=5",
+      "title": "AMD's OpenAI, Meta chip deals trigger $1 billion quarterly charge | Business Information & News | FE"
+     },
+     {
+      "name": "tomshardware.com",
+      "url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
+      "title": "AMD expects to outsell Intel in Q4 for the first time in history"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMGV2UGo5V1FRUGxkUzdPWVo1NGhFM2lvM2N5NVUycUUya2VIX3N2aHM5am8tNUhCQ21oMng4LVQ2UllCWnRpdlNqUDd4MTM2ZVhpUTBlR3NQTTdBZFNMVlRDVV9LQ2d4Vjc1M0ZBcldwZmVEaGpDTENnVHR2bmp3Sm9ENnF6YWU1TDRjcmxiSWQwTjY5clQwb2V2a1JMdUhxLXRfLUZwUlNwR0Rob1E?oc=5",
+      "title": "Arm forecasts third-quarter revenue above estimates on AI spending boom"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPY1J5TU1haGNMUk9CVzZLSmN4d09oZXdTLUFSTEJOMVAxZURhWE5JRVgzVU41TXdHSV92TEJkODQ2Q1NFLUdLSjh6UThlVUVFTUJUS3gxb25ta1VHYjJEMWQ5LUxwTTRzNXpfaUdPOVJxeGhQaDhqMzg5eDRkTENkeUhNa3lwT1k1cEVQQWR6SEl1R1dkVUtFalp2eHVMTDR5VUhiM1JHUjNPRkt5MW1Td2U2UE9SejRBUTJJR0cyaWE?oc=5",
+      "title": "Qualcomm's smartphone chip sales miss estimates, shares fall"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "AI教育",
+     "en": "AI in Schools"
+    },
+    "title": {
+     "zh": "谷歌：学校关AI就没搜索，引众怒",
+     "en": "Google Faces Outcry for Tying School Search to AI"
+    },
+    "hook": {
+     "zh": "学校想让学生自己找答案，谷歌的回答是：那就连搜索一起关掉。",
+     "en": "Schools that want kids to find answers themselves were told: then you lose Google Search too."
+    },
+    "story": {
+     "zh": "谷歌周二宣布，使用其K-12教育软件的学校，如果不开启AI工具，学生就用不了谷歌搜索。教育副总裁菲利普斯对《纽约时报》说，“搜索和AI已深度融合”，学校不开AI，学生只会看到“不可用”的提示。\n\n消息在选举日引爆政界。参议员桑德斯称之为“敲诈”，纽约市长曼达尼说“任何公司都无权决定我们怎么教孩子”，前联邦贸易委员会主席莉娜·汗指其为不受约束的垄断者在控制基本服务。\n\n谷歌随后澄清：Gemini、Gemini Notebook和搜索默认关闭，学校可逐项开启；AI概览和AI模式将改为一步步引导学生解题。但它没有正面回应“要搜索就得带AI”的质疑。\n\n竞争对手已经闻风而动。DuckDuckGo创始人在X上教学校如何换默认搜索引擎，它还提供完全关闭AI的noai版本。难点在于，全美学校约有5000万台Chromebook，换掉谷歌并不容易。",
+     "en": "Google announced Tuesday that schools using its K-12 software won't get Google Search unless they opt in to AI tools. \"Search and AI are deeply integrated,\" education VP Chris Phillips told The New York Times; students at schools that decline will see a message saying search isn't available.\n\nThe backlash landed on Election Day. Sen. Bernie Sanders called it \"extortion.\" New York Mayor Zohran Mamdani said no corporation should \"dictate how we teach our children.\" Former FTC chair Lina Khan called it the danger of letting an unregulated monopolist control an essential service.\n\nGoogle pushed back on X: Gemini, Gemini Notebook and Search are off by default, and schools can switch each on individually. AI Overviews and AI Mode will offer step-by-step \"guided learning\" instead of quick answers. It didn't directly address whether Search can be had without AI.\n\nRivals pounced. DuckDuckGo's CEO posted instructions for schools to switch default search engines, and the company offers a no-AI version of its site. The catch: roughly 50 million Chromebooks sit in schools, and leaving Google's ecosystem is no simple swap."
+    },
+    "why": {
+     "zh": "对数百万学生来说，搜索是基础工具；把它和AI捆绑，等于替学校做了“要不要用AI学习”的决定，也给反垄断监管递上了新把柄。",
+     "en": "Search is a basic tool for millions of students; bundling it with AI effectively makes the AI-in-learning decision for schools and hands antitrust critics fresh ammunition."
+    },
+    "pro": {
+     "zh": "这是典型的捆绑问题：用有市场支配力的产品（搜索）带动新产品（AI）的采用。谷歌已在搜索和广告反垄断案中败诉，此举时机敏感。上个月参议员布卢门撒尔和霍利已就AI进课堂发起调查，Common Sense Media给AI概览打出“不可接受风险”评级。DuckDuckGo称今年应用安装量增长30%，说明“可关AI”本身正在变成卖点。",
+     "en": "This is a classic tying question: using a dominant product (Search) to drive adoption of a new one (AI). Google has already lost antitrust cases over search and advertising, making the timing fraught. Sens. Blumenthal and Hawley opened an inquiry into AI in classrooms last month, and Common Sense Media rated AI Overviews an \"unacceptable risk.\" DuckDuckGo says app installs rose 30% this year — the off switch itself is becoming a selling point."
+    },
+    "stat": {
+     "value": "5000万",
+     "label": {
+      "zh": "美国学校里的Chromebook数量（约）",
+      "en": "Chromebooks in schools (approx. 50 million)"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "AI概览",
+       "en": "AI Overviews"
+      },
+      "explain": {
+       "zh": "谷歌在搜索结果顶部用AI直接生成的摘要答案，好比老师还没讲题，答案已经贴在黑板上。",
+       "en": "AI-written summary answers Google places at the top of search results — like the answer being on the board before the lesson starts."
+      }
+     },
+     {
+      "term": {
+       "zh": "捆绑销售",
+       "en": "Tying"
+      },
+      "explain": {
+       "zh": "想买A就必须连B一起要，在反垄断法里，强势企业这样做常被视为滥用地位。",
+       "en": "Requiring customers to take product B to get product A; when a dominant firm does it, regulators often see abuse."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+      "title": "Google faces backlash for plan that would turn off Search for schools that restrict AI"
+     },
+     {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObGtOMHhjQzVNYWRRMEw5cTYtWG9OOGREZGRvV3Bqd1EzUGhaUVQzYzdQX0ExMkp1MWdxZEN5LTJyRHYtUzROVldKeTFuSTdWb0VpelMyV2tkaWowU0xfbXBOanlKdGNIV1E3NWVla1YtSkhmRU4tdVZBTXhwY2YxWkFBdGVBaVB4N2VUVUlTZGtfdWJBbWtZVmE1VnM?oc=5",
+      "title": "Google will cut off search access for students at schools that reject AI"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/03/google-responds-to-outrage-over-removing-search-in-schools-that-ban-ai.html",
+      "title": "Google responds to political backlash over removing search from schools that ban AI"
+     },
+     {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
+      "title": "DuckDuckGo pitches itself to schools amid backlash over Google’s AI policy"
+     },
+     {
+      "name": "Wired AI",
+      "url": "https://www.wired.com/story/google-is-forcing-ai-overviews-in-classrooms-schools-are-searching-for-a-way-out/",
+      "title": "Google Is Forcing AI Overviews in Classrooms. Schools Are Searching for a Way Out"
+     }
+    ]
+   },
+   {
+    "importance": 1,
+    "tag": {
+     "zh": "开源模型",
+     "en": "Open Models"
+    },
+    "title": {
+     "zh": "腾讯、Kimi接连开放权重，开源竞赛升温",
+     "en": "Tencent and Kimi Release Open Weights as Open-Model Race Heats Up"
+    },
+    "hook": {
+     "zh": "一天之内，两家中国公司和一家美国初创公司都把模型“图纸”摆上了桌。",
+     "en": "In a single day, two Chinese players and a US startup put their model blueprints on the table."
+    },
+    "story": {
+     "zh": "腾讯周三发布混元Hy4，并跟随阿里巴巴公开模型权重。Hy4能看图，还能像人一样在应用里点来点去完成操作；腾讯称它跻身中国最强模型之列，多家媒体强调其成本极低。同日，Kimi K3.1 Pro的权重也在Hugging Face上线。\n\n美国这边，初创公司Ricursive发布Ripple-65B预览版，自称是美国开放权重模型在智能体编程上的最强者。这个“美国”前缀本身就说明，中国开源模型正在抢占地盘。\n\n阿里董事长公开力挺开源，以对冲美国主流的闭源路线。Hugging Face CEO德朗格则说，他对AI毁灭人类的概率估计“接近零”，“大部分风险其实来自少数几家关起门来做的公司”。\n\n悬而未决的问题是：模型越来越免费，钱从哪里赚？Hugging Face的看法是，企业图的是更低成本、更多控制和更大灵活性，价值会流向在开源模型上做服务和应用的人。",
+     "en": "Tencent released Hunyuan Hy4 on Wednesday and, following Alibaba, published the model's weights. Hy4 can see images and click through apps on its own; Tencent says it ranks among China's best models, and several outlets highlighted its very low cost. The same day, Kimi K3.1 Pro's weights went up on Hugging Face.\n\nIn the US, startup Ricursive released a Ripple-65B preview it bills as the American open-weight state of the art for agentic coding. That \"American\" qualifier says a lot: Chinese open models are gaining ground.\n\nAlibaba's chairman is openly championing open source as a counter to the closed approach favored by US labs. Hugging Face CEO Clément Delangue says his estimate of AI doom is \"close to zero,\" arguing that \"most of the risk is actually created by a couple of players building behind closed doors.\"\n\nThe open question is who profits when capable models are free. Hugging Face frames the draw for businesses and governments as lower cost, more control and more flexibility, with value shifting to whoever builds services on top."
+    },
+    "why": {
+     "zh": "开放权重模型越强，企业就越能少付钱、自己掌控数据和部署，闭源大厂的定价权会被持续削弱。",
+     "en": "The stronger open-weight models get, the more companies can cut costs and control their own deployments, steadily eroding closed labs' pricing power."
+    },
+    "pro": {
+     "zh": "开放权重不等于完全开源：公开的是训练好的参数，训练数据和代码通常不公开。对中国厂商而言，开放权重是用免费换生态和开发者心智，再从云服务和推理算力上回收收入。美国初创公司特意强调“美国最强”，折射出供应链与合规层面的需求：部分客户需要非中国来源的可替代模型。",
+     "en": "Open weights aren't fully open source: the trained parameters are public, but training data and code usually aren't. For Chinese firms, releasing weights trades free access for ecosystem and developer mindshare, monetized later through cloud and inference. A US startup stressing \"American\" SOTA reflects procurement and compliance demand for non-Chinese alternatives."
+    },
+    "stat": {
+     "value": "",
+     "label": {
+      "zh": "",
+      "en": ""
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "开放权重",
+       "en": "Open weights"
+      },
+      "explain": {
+       "zh": "公开训练好的模型参数，任何人都能下载运行，就像公开了菜的成品配方，但没公开食材从哪来。",
+       "en": "Publishing a trained model's parameters so anyone can download and run it — like sharing the finished recipe but not where the ingredients came from."
+      }
+     },
+     {
+      "term": {
+       "zh": "智能体编程",
+       "en": "Agentic coding"
+      },
+      "explain": {
+       "zh": "AI不只写一行代码，而是自己规划、修改、测试整个编程任务。",
+       "en": "AI that plans, edits and tests an entire coding task on its own rather than suggesting single lines."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "hy.tencent.ai",
+      "url": "https://hy.tencent.ai/research/hy4",
+      "title": "Tencent Hy4"
+     },
+     {
+      "name": "www.trendingtopics.eu",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAtWFBPU0VobExicmFLbWF4TDRJSEhSTmxiWXlOUHpQNEtMODVWbjNWVlBNbUh2RDNCdF92Z3FpTEtSVThxZ2ZOYVlRZG4tcFozUHBSTko1Nk9CY0xNcllKeWI3bC16bTNMVkhGWmU3eUJ5dUdKTzR2bl93?oc=5",
+      "title": "Tencent Follows Alibaba Into Open-Weight A.I. With Hy4"
+     },
+     {
+      "name": "Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRDhGOEtSczV1bVRuMGFNX0cyZ20zMVI3ZWc2MnNSUWFWNkJ1Z2NheVZ6MmJ0Z0NJUVFjNXB6bXBvV1lqUzBWZTNFNENOeXhqTXBVQUhYQ05TbHNmcml0TlBjZUw2WUxVSUJPSEc5aFFTY0ZRT2tfUHlnR0dVTzUwQ1c1bHN3aTA1ZmV3YkVqMnh3QVZKaFlPdE8wbGR5TEh3RkVfeXZyWUlQUGhy?oc=5",
+      "title": "Tencent Declares Latest AI Model Ranks Among China’s Best"
+     },
+     {
+      "name": "Startup Fortune",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMThIRmN3M0FpVnl1dWdEWjJ0ZGNNMkZYMzc4Sk5SaVhLMEJSQzdxS0U2SzBRb2xvNXpxaDd1dkR2d3RzR0xFYTA2QlhmbWcxRmhoVVA1cHpxOElWN0JPYWxOOHFiTGk2VXo2MGFNRkVWbmhQUHJfVnVKYVNiZVBNLXg4MFF2MUdkajV1Ty0yalpoYkNhbTRsaG5ibllGY0x1d28xVXdpZGM1Zw?oc=5",
+      "title": "Tencent launches Hunyuan Hy4 with vision and the ability to click through apps"
+     },
+     {
+      "name": "ProPakistani",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE81SkdJWG5EeGx1dFh4bmJLbVNPWF9MRWNrd0tka0hLbV9XemVjNVBJaloyOEpBRDRWVTg3azNCdmZpRHFULUgtUDRn0gGnAUFVX3lxTE5STzZ4SVQ4WUJtX3N5OVhxejlrTUZPZ05La09sQ2VoLWNyd2J1Tk9ENUxGX0IzNEpud2ZBT21ZUzdkN1hzZUlweklNRmx1dE54SXBZSEN3c0F6ZUtzMnRTSkZwR3FCMU5LM0NmRHQ3dzEwajg3X3BqVGo5dUFITGZIWnlhMkJTY0kxcmVOYXY1MzAweEJ4WTBoODM0RFRKaFRZOW9Ld3lB?oc=5",
+      "title": "Tencent Unveils Its Most Powerful AI Model at Extremely Low Cost"
+     },
+     {
+      "name": "huggingface.co",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "title": "Kimi K3.1 Pro model weights are out"
+     }
+    ]
+   }
+  ],
+  "world": [
+   {
+    "importance": 3,
+    "tag": {
+     "zh": "美国大选",
+     "en": "US Midterms"
+    },
+    "title": {
+     "zh": "民主党横扫国会参众两院",
+     "en": "Democrats sweep both chambers of Congress in rebuke to Trump"
+    },
+    "hook": {
+     "zh": "堪萨斯94年来第一次选出民主党参议员，而这只是昨夜众多意外中的一个。",
+     "en": "Kansas elected its first Democratic senator in 94 years, and that was only one surprise on a very long night."
+    },
+    "story": {
+     "zh": "周二夜里，美国中期选举的计票结果一路飘蓝。NBC预计民主党将拿下约255个众议院席位，远超过半数所需的218席，参议院也同时易手。民主党原本只需净增3席，结果从东海岸一路赢到得州格兰德河谷，其中多数选区2024年还投给了特朗普。\n\n参议院的翻盘最出人意料。牧师亚当·汉密尔顿击败堪萨斯共和党参议员马歇尔；缅因州的特洛伊·杰克逊击败苏珊·柯林斯；塔拉里科拿下得州参议院席位，吉娜·伊诺霍萨击败州长阿博特，成为得州首位拉丁裔州长。密歇根的阿卜杜勒·赛义德将成为美国首位穆斯林参议员。\n\n这次投票被普遍视为对移民严打、持续八个月的伊朗战争，以及推高油价和物价的关税的一次公投。特朗普第二任期里，共和党国会对他拆机构、加关税、扣拨款基本睁一只眼闭一只眼。\n\n1月3日新国会开张，杰弗里斯预计成为首位黑人众议院议长。调查随之而来，媒体已在讨论国防部长赫格塞思可能面临的弹劾投票。",
+     "en": "The map kept turning blue late into Tuesday night. NBC News projects Democrats will win about 255 House seats, far beyond the 218 needed for a majority, and they flipped the Senate too. They needed a net gain of just three House seats. Instead they won from the East Coast to Texas' Rio Grande Valley, mostly in districts Trump carried in 2024.\n\nThe Senate results were the real shock. Pastor Adam Hamilton ousted Kansas Republican Roger Marshall, becoming the state's first Democratic senator in 94 years. Troy Jackson unseated Susan Collins in Maine. James Talarico flipped a Texas Senate seat, while Gina Hinojosa beat Governor Greg Abbott to become Texas' first Latina governor. In Michigan, Abdul El-Sayed will be the first Muslim US senator.\n\nVoters treated the election as a referendum on Trump's immigration crackdown, the eight-month Iran war and tariffs that pushed up the price of gas and groceries. Until now, a Republican Congress mostly looked away as Trump dismantled agencies, imposed tariffs and clawed back approved funding.\n\nWhen the new Congress sits on Jan. 3, Hakeem Jeffries is expected to become the first Black speaker of the House. Investigations will follow. Pete Hegseth is already staring down a likely impeachment vote."
+    },
+    "why": {
+     "zh": "这是特朗普第二任期里第一次失去对国会的完全控制。预算、调查和战争授权，从此都要过民主党这一关。",
+     "en": "For the first time in his second term, Trump loses full control of Congress. Budgets, investigations and war powers now run through Democrats."
+    },
+    "pro": {
+     "zh": "掌控众议院意味着拿到各委员会主席位和传票权，可以传唤官员、调取文件；参议院则能卡住人事任命。CNBC统计显示，民主党翻转了数十个共和党席位，共和党却一席未翻。马斯克在本轮选举中砸下近5亿美元（CNBC称4.74亿），创个人纪录，却未换来胜利。议长约翰逊已表示不会竞选少数党领袖。",
+     "en": "Holding the House hands Democrats committee gavels and subpoena power, the tools to summon officials and demand documents. Senate control lets them stall nominations. CNBC counts dozens of GOP seats flipped and not a single Democratic seat lost. Elon Musk's record spending, put at nearly $500m by the BBC and $474m by CNBC, bought no wins, and Speaker Mike Johnson says he won't seek the minority leader post."
+    },
+    "stat": {
+     "value": "255",
+     "label": {
+      "zh": "NBC预计民主党众议院席位",
+      "en": "Projected Democratic House seats (NBC)"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "中期选举",
+       "en": "Midterm elections"
+      },
+      "explain": {
+       "zh": "在总统四年任期中段举行的国会选举，像给总统打一次期中成绩。",
+       "en": "Congressional elections held halfway through a president's four-year term, a kind of report card on the White House."
+      }
+     },
+     {
+      "term": {
+       "zh": "传票权",
+       "en": "Subpoena power"
+      },
+      "explain": {
+       "zh": "国会委员会强制要求官员作证或交出文件的权力，相当于带搜查令的提问。",
+       "en": "A committee's legal power to compel officials to testify or hand over documents, like a question that comes with a warrant."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "nbcnews.com",
+      "url": "https://www.nbcnews.com/politics/2026-election/democrats-house-control-midterm-election-wins-trump-check-rcna603397",
+      "title": "Democrats win control of the House of Representatives"
+     },
+     {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRFA3Qk9sWVFFclA5aUMzTVlKenJNX25YTU5oenBmQXVqWjlneGxXUWRyZ3FSNE43TmRRcjJnbVEzLXJFazZJTVVMeDVUSE9FRktPQXh6b1FpeWtrbzYyMmFtYThKN3Y2NE9nTUV4a2RQaXpGblMxM2JycTVkTFQ5cG9hV3NObHpnMnFUQ0lxNlVuaHpOR1lUWkxPZ2NZcUctRnNnNjE1NjZEeUZBTWZaYVg4V2lBaDM0?oc=5",
+      "title": "Democrats win the US House and Senate as voters deliver a strong rebuke to Trump and Republicans"
+     },
+     {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1MWFptbU10cjNzYlJoSkhOMVo2ZWRVRkxQcE01ejl1Um5JbGdtbVdER2JHLUZBaFNyc0c3QlJKTGticW5CYVVXQ242dVIyd052czZqMmJBbC0yeEM4Qk5uc3RLZTZCem1mS0E?oc=5",
+      "title": "Democrats win House and Senate, Trump stares down the specter of Democratic probes"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdG0ybGo0Uk5jbjBxSEtwVGVBcVBCZWJEc0xRb09Nby1KRFl3N0ozLVB2VVMtNXF2RXpmdVFWS2luZGtBcm9ibHN1NW52MXZ2ell3NWp0MDVNeUlUWmlIMGdGQ1lfWTdaYkhfUzVnZFRlQ01UUWRnU0ZOTVVIeExvZzFQTHJOY2d5YU9oS0M0bUlmNHBpaXRwcnk4cE9WR3hPcVd4QWZqVThxS1VLNExXcw?oc=5",
+      "title": "Democrat Troy Jackson ousts Republican Senator Susan Collins in Maine"
+     },
+     {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUTJOX2VOYV92VUozdUx0Y3RvV2VVZm1yT1A2ZzZKRWcwOHlFTURxR2Q5RWlaRXNwWkpZb0xDcjIwb2xZRW95N1pidDJKUEZudDhZT2lZMmI1bDRxS2FMZWRZd2FDN1RuQTJwakxVMXlsZnF4dUR1bkpTa29STUVCaWxMdDdtOF9Ya2NsdWxKeUdrSlhZUFpKM1FsemF6NFFPd3JfWlVEaWdCUnNm?oc=5",
+      "title": "Troy Jackson wins the Maine US Senate race over GOP Sen. Susan Collins in a key Democratic victory"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMHVVb3F0TE9uYjVlOFhaV21Xc1hqQVNVY1MwS09qM1BrTEFSUzRma2oteUIxT2x4TTRKMG1jVW5nT0VpNjFNUW1BZ2VReTRJYmtDUHFmcmFPS2VqeEVLbmFaQWFoMnQ1V3l4WkxWQm11b2JvVkg4WWZ3d3F2SFZrcDNvRTh5VHhhRU8xOFZ6SWQ5YS1tY0lGRDlEc0hDTzBrcnNkRG1xSS12UnhaZU01M1B2VVM3QQ?oc=5",
+      "title": "Adam Hamilton becomes first Democrat elected to US Senate from Kansas in 94 years"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "美国政治",
+     "en": "US Politics"
+    },
+    "title": {
+     "zh": "特朗普与万斯：伊朗战争拖垮共和党",
+     "en": "Trump and Vance blame the Iran war for the midterm rout"
+    },
+    "hook": {
+     "zh": "总统承认战争让党付出了代价，副总统则干脆与这场战争划清界限。",
+     "en": "The president admits the war cost his party, and his vice president goes further and walks away from it."
+    },
+    "story": {
+     "zh": "大败次日，特朗普罕见认了一部分账。他对福克斯新闻说“我觉得部分原因是伊朗”，又补充说人们认同他的伊朗政策，只是“可能不愿意承受油价上涨的短期代价”。对《华尔街日报》他则坚持：“我做了正确的事，还会再做一次。”\n\n副总统万斯走得更远。他发文把共和党败选归咎于这场战争，并引用一位他信任的民调专家的数据：从特朗普阵营转投民主党的选民，最在意的正是伊朗战争和美以关系。多家媒体称这是他与特朗普的公开切割。\n\n战争始于今年2月美以联合空袭伊朗，油价随之飙升。选前特朗普还警告，谈不成协议的话选后可能重启全面战争。万斯表态当天，美国原油期货跌逾8%，收于每桶88.12美元。\n\n特朗普的另一套解释是，支持者没能把“对他的爱转移”给其他候选人。他对CBS说，战争“我说结束才结束”。",
+     "en": "A day after the rout, Trump owned part of it. \"I think a part of it was Iran,\" he told Fox News, adding that people agree with his Iran policy but \"probably weren't willing\" to accept the short-term cost of pricier gasoline. To the Wall Street Journal he was unrepentant: \"I did the right thing. I would have done it again.\"\n\nVice President JD Vance went further. In a post, he blamed the war for the Republican losses, citing a pollster he trusts who found the Iran war and ties with Israel were top of mind for Trump voters who swung to Democrats. Several outlets called it a break with his boss.\n\nThe war began in February with joint US-Israeli strikes on Iran and sent fuel prices soaring. Before the vote, Trump warned that all-out war could resume after the midterms if no deal was reached. On the day Vance spoke, US crude fell more than 8% to close at $88.12 a barrel.\n\nTrump offered a second explanation too: Republicans couldn't \"transfer the love\" voters feel for him. And he told CBS the war will end \"when I say it ends.\""
+    },
+    "why": {
+     "zh": "连发动战争的人都承认它丢选票，重启轰炸的政治成本骤升。油价当天的下跌就是市场给出的反应。",
+     "en": "When the war's own leaders call it a vote-loser, resuming strikes gets politically costlier, and oil markets moved on that the same day."
+    },
+    "pro": {
+     "zh": "被视为2028年总统热门人选的万斯，在败选次日公开把责任推给老板的招牌政策，是在为后特朗普时代提前站位。但特朗普的认错仅限于选举层面，政策上并未松口。真正的约束可能来自新国会：民主党可尝试通过具有约束力的《战争权力决议》。6月那份要求结束冲突的共同决议没有法律效力。",
+     "en": "Vance, seen as a 2028 hopeful, is staking out ground for a post-Trump party by pinning the loss on his boss's signature policy a day after the vote. Trump's admission is electoral, not a change of policy. The real constraint may come from the new Congress, where Democrats could push a binding War Powers Resolution. The concurrent resolution passed in June had no force of law."
+    },
+    "stat": {
+     "value": "$88.12",
+     "label": {
+      "zh": "美国WTI原油收盘价（当日跌8.29%）",
+      "en": "WTI crude close, down 8.29% on the day"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "战争权力决议",
+       "en": "War Powers Resolution"
+      },
+      "explain": {
+       "zh": "国会要求总统在未获授权时停止军事行动的决议，相当于国会踩下的刹车。",
+       "en": "A measure in which Congress orders a president to end hostilities it hasn't authorised, its way of pulling the handbrake."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "Axios",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5hcDltSzJzMkFNMzVKcjd6M1RnUjA5UFNha2tyMTlwVTQ4cVlnWV9LVVFVanR0dVlRUnBxRkxORmU4NG5KaGE0bGtBUFBiQ0hwZ0dQQ3lwV01nMXR0Y2JUM3JKdGFTX3lOZ3hhYUdUbGVsaWs?oc=5",
+      "title": "Vance says the Iran war cost Republicans the midterms"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNa013TjNzRzN3VjI3QVg1bEtHRjdHNjFyeVpZTURvOWw1M1cwX2dpZXhKUXVTVEZRUjJTS20tNjBHSUlSS3NnOU4zZENjTmRoTHZmN1lEZE9lS0dRU1ROWWxnaFlhRXNtZUkzTGlHVnZ6YmpfTERySXRfV3FzOEd0bmgzOW5oVlJqa1FONmI3NjVleWVZR2d6LTY1dlZqUURPMnU3ZkpDQQ?oc=5",
+      "title": "Vance repudiates Iran war after US electoral defeat"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNekxLRjk1cjhWRGpWMThYYTlLVXFRZDRBLWZqTVFtZHVIejNuRnZ0TE9CVzUwcFN0VmdaMjRIYlQ0Vmt0RjV1aUp3YUx5RzBCbDVKcUprZGE0S3JxOWhNbEVTTGhWOVFkc0NQN0RqZE56UXBqai1Bc3NaOWJmaHhSQzhVSzJYaXZSQ21ZUHZqaTlXczlETEhoelhpRno4Vmp0eGdJLWNBSEZFUQ?oc=5",
+      "title": "Trump acknowledges role of Iran war in Democratic sweep in midterm elections"
+     },
+     {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbklySnNqRnhmUWl1cVFWVnV3MGVsbkNDNG9SblRxOElFaTQ0UzZ4X280Y2pOdnVoME9MWWpYbER5cDBfUDhqSkJ6X01qYnhTamNXNVFmUnZUSmRLX3VuV2UzTlh4U2JYTHM3dWpETHFmRmcyZTVFVzVhUmFRVmxZdUpQbkFFejdoSFU4QzM4Q082SEJsOHNQZXV3NUVYODQ?oc=5",
+      "title": "Vance tries to distance himself from Iran war after GOP’s deep losses in midterm elections"
+     },
+     {
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/4/presidential-hopeful-vance-appears-to-question-iran-war-after-polls-debacle?traffic_source=rss",
+      "title": "Presidential hopeful Vance appears to question Iran war after polls debacle"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNUZjXy1DNGJHT1JRMlBGNVZ4alh1Ymc4NnI1azRtblU5YmlGWFRmTU5KeEFvNnUtdDYta2pWZEpDRENSZVd0QXk2NlNmMmRsenAzUHlBcktGZDdzUUltbUp1YVNTYkR1cE5HZXVGbDg1dXdTS0xCUEcyQ2g1dWFZR280NDhWbC1KZmsxYVZGUWhxV1N5ZGxraG4zUUloMzBPcDhCalhRaHJnZy1LNzBobGd0R25SQQ?oc=5",
+      "title": "Trump says Republicans harmed by Iran war, inability to 'transfer the love' for him"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "中东",
+     "en": "Middle East"
+    },
+    "title": {
+     "zh": "德黑兰、以色列与盟友解读美国选票",
+     "en": "Tehran, Israel and US allies read the vote as a war verdict"
+    },
+    "hook": {
+     "zh": "伊朗议长在X上说“我们认同这个信息”，海湾国家却在为可能重燃的战火做准备。",
+     "en": "Iran's speaker says \"we endorse this message,\" while Gulf states brace for the war to return."
+    },
+    "story": {
+     "zh": "德黑兰反应最快。伊朗议长、对美首席谈判代表加利巴夫在X上写道：“不管出于良知还是生活成本，美国人说了‘不要战争’，我们认同这个信息。”他也警告，若美国政府背弃民意，“我们的‘不’会变成噩梦”。最高领袖穆杰塔巴·哈梅内伊的账号则称“美国衰落的进程加快了”，指望美国改变的人“大错特错”。\n\n街头更直白。德黑兰革命广场挂出写着“我们会杀死特朗普”的英文巨幅标语，美国使馆被占周年集会上有人焚烧国旗。伊斯兰革命卫队称霍尔木兹海峡有四艘油轮触雷起火，但BBC核查未找到证据。\n\n海湾国家正密集斡旋，担心战火重燃会比上次更猛。以色列人则看到美国两党支持的褪色：特朗普选举当天还暗示年底削减对以军援，称“他们不需要”。\n\n欧洲极右翼开始与特朗普拉开距离，把败选归咎于伊朗战争。加拿大期待关税松动，克里姆林宫则希望特朗普继续他的乌克兰“和平努力”。",
+     "en": "Tehran reacted first. Parliament speaker Mohammad Bagher Ghalibaf, Iran's chief negotiator with Washington, posted: \"Conscience or the cost of living, Americans said NO TO WAR, and we endorse this message.\" He warned that if the US government ignores its voters, \"our NO comes with a Nightmare.\" Supreme Leader Mojtaba Khamenei's account said \"the process of the US's collapse has accelerated\" and called anyone expecting change \"gravely mistaken.\"\n\nThe streets were blunter. A huge billboard in Tehran's Enqelab Square read \"We will kill Trump,\" and anniversary rallies for the US embassy takeover featured flag burnings. The Revolutionary Guards claimed four tankers hit mines in the Strait of Hormuz, though BBC Verify found no evidence of that.\n\nGulf states are racing to mediate, fearing a second round would be worse. Israelis see bipartisan US support fading. On election morning, Trump even suggested cutting military aid to Israel at year's end because \"they don't need it.\"\n\nFurther afield, Europe's far right is distancing itself from Trump and blaming the Iran war for the defeat. Canadians hope for tariff relief. The Kremlin says it is counting on Trump to continue his \"peacemaking efforts\" on Ukraine."
+    },
+    "why": {
+     "zh": "盟友和对手都在重新押注一个在国内被削弱的特朗普，霍尔木兹海峡的航运和油价风险依然悬而未决。",
+     "en": "Friends and rivals are recalibrating around a weaker Trump at home, while risk to Hormuz shipping and oil prices remains unresolved."
+    },
+    "pro": {
+     "zh": "多位分析人士指出，国会易手会加强对伊朗和乌克兰政策的审查，但总统在外交上仍有很大自主权，在国内受限不等于在海外收手。伊朗国内主张放弃不造核武承诺的声音增多，说明德黑兰正把“威慑”重新摆上桌面。对以色列而言，失去的是几十年来两党共同背书的政治底盘。",
+     "en": "Analysts note that a Democratic Congress means more scrutiny of Iran and Ukraine policy, but presidents keep broad foreign-policy powers, so limits at home may not translate abroad. Growing calls inside Iran to drop its pledge not to build a bomb show Tehran putting deterrence back on the table. For Israel, what's eroding is decades of bipartisan backing in Washington."
+    },
+    "stat": {
+     "value": "4",
+     "label": {
+      "zh": "革命卫队称触雷起火的油轮数（BBC未证实）",
+      "en": "Tankers IRGC says hit mines (unverified by BBC)"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "威慑",
+       "en": "Deterrence"
+      },
+      "explain": {
+       "zh": "让对手因为害怕代价而不敢动手，就像门口挂着“内有恶犬”的牌子。",
+       "en": "Making an attack look too costly to try, like a \"beware of the dog\" sign on the gate."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o?at_medium=RSS&at_campaign=rss",
+      "title": "Iran's chief negotiator says Americans voted 'no to war'"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/04/us-midterm-elections-iran-war-speaker.html",
+      "title": "Americans have said 'NO TO WAR,' Iran speaker says as Democrats take Congress"
+     },
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/us-news/2026/nov/04/joy-iran-trump-defeat-us-midterm-elections-war",
+      "title": "Iran unveils ‘We will kill Trump’ banner – but US president may now be tempted to resume bombing"
+     },
+     {
+      "name": "NYT World",
+      "url": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
+      "title": "More Iranians Call for Nuclear Weapons After War With U.S."
+     },
+     {
+      "name": "NYT World",
+      "url": "https://www.nytimes.com/2026/11/03/world/middleeast/trump-iran-war-midterms-election.html",
+      "title": "As Trump’s Midterm Deadline Looms, Gulf Countries Brace for Possible Renewal of Iran War"
+     },
+     {
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/iranians-celebrate-democrat-victory-in-us-midterms?traffic_source=rss",
+      "title": "Iranians celebrate Democrat victory in US midterms"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "市场",
+     "en": "Markets"
+    },
+    "title": {
+     "zh": "道指大涨1500点，欧元区通胀破4%",
+     "en": "Dow jumps 1,500 points on Democratic win; euro zone inflation hits 4%"
+    },
+    "hook": {
+     "zh": "华尔街隔夜还在担心，开盘后却给出了44年来中期选举后最好的一天。",
+     "en": "Wall Street fretted overnight, then delivered its best post-midterm day in 44 years."
+    },
+    "story": {
+     "zh": "周三华尔街先跌后涨。隔夜股指期货一度因担心监管趋严而大跌，开盘后却一路走高，道指收涨约1500点，创44年来中期选举后最佳单日表现。亚马逊涨8%，苹果近7%，谷歌逾6%；特斯拉跌2%，小型AI云服务商CoreWeave跌10%。41项数据中心地方公投中，选民否决了40项。\n\n其他资产也跟着动。现货金涨3.4%至每盎司4061美元，白银涨5.1%；美元指数跌约0.3%，10年期美债收益率降逾6个基点至4.884%；英镑对一篮子货币升至脱欧公投以来最高。原油跌逾8%。\n\n市场的逻辑是：分裂的国会更难继续扩大赤字，伊朗战争升级的可能也在下降。隐患在后头：下一次债务上限对峙可能成为民主党逼特朗普让步的筹码，摩根大通交易员甚至提到政府停摆的可能。\n\n大西洋对岸没那么轻松。欧元区通胀三年来首次达到4%，10月能源通胀超过20%，加息已近在眼前。",
+     "en": "Wall Street flipped on Wednesday. Stock futures fell sharply overnight on fears of tougher regulation, then the market rallied from the open. The Dow closed up about 1,500 points, its best post-midterm day in 44 years. Amazon rose 8%, Apple nearly 7% and Google over 6%. Tesla fell 2% and AI cloud provider CoreWeave dropped 10%, after voters rejected data centers in 40 of 41 local ballot measures.\n\nEverything else moved too. Spot gold rose 3.4% to $4,061 an ounce and silver gained 5.1%. The dollar index slipped about 0.3%, and the 10-year Treasury yield fell more than 6 basis points to 4.884%. The pound hit its highest level against a basket of currencies since the Brexit referendum. Oil fell more than 8%.\n\nThe logic: a divided Congress makes bigger deficits harder, and escalation with Iran looks less likely. The catch comes later. The next debt-ceiling fight could become Democrats' lever to extract concessions from Trump, and JPMorgan traders even flagged a possible government shutdown.\n\nEurope got less cheerful news. Euro zone inflation hit 4% for the first time in three years, driven by energy inflation above 20% in October, and a rate hike looms."
+    },
+    "why": {
+     "zh": "更低的油价和利率对加油和贷款是好消息，但债务上限对峙和欧洲加息可能很快把波动带回来。",
+     "en": "Cheaper oil and lower yields help at the pump and on loans, but a debt-ceiling standoff and a European rate hike could bring volatility back fast."
+    },
+    "pro": {
+     "zh": "科技股内部分化值得注意：Needham分析师认为，更高的监管门槛会巩固现有巨头，因为超大规模云厂商有钱、有电、有经验，而新兴AI云商的风险和融资成本上升。StoneX的分析则指出，财政刺激减少利好长端利率下行和弱美元，但短期国债会出现“债务上限溢价”，美联储还可能再加息。黄金年内仍跌逾6%。",
+     "en": "The split inside tech matters. Needham argues higher regulatory barriers entrench incumbents: hyperscalers have cash, power and experience, while smaller neoclouds face more risk and pricier capital. StoneX notes less fiscal stimulus argues for lower long yields and a softer dollar, offset by debt-limit premia in Treasury bills and a Fed leaning towards another hike. Gold is still down more than 6% for the year."
+    },
+    "stat": {
+     "value": "1,500",
+     "label": {
+      "zh": "道指单日涨幅（点）",
+      "en": "Dow's one-day gain (points)"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "基点",
+       "en": "Basis point"
+      },
+      "explain": {
+       "zh": "0.01个百分点，是利率界的“分”，100个基点等于1%。",
+       "en": "One hundredth of a percentage point. It's the penny of interest rates, and 100 make 1%."
+      }
+     },
+     {
+      "term": {
+       "zh": "债务上限",
+       "en": "Debt ceiling"
+      },
+      "explain": {
+       "zh": "国会给联邦政府借钱设的额度，像信用卡限额，到顶不提额就可能违约。",
+       "en": "Congress's cap on federal borrowing. Like a credit card limit, hitting it without a raise risks default."
+      }
+     },
+     {
+      "term": {
+       "zh": "超大规模云厂商",
+       "en": "Hyperscaler"
+      },
+      "explain": {
+       "zh": "亚马逊、微软、谷歌这类最大的云服务商，自建巨型数据中心。",
+       "en": "The biggest cloud providers, like Amazon, Microsoft and Google, which build their own giant data centers."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVk1FS3BzdHJTaGpXZ0RUNjRmcFczWmFBZ2xiU2ZrM0tKM0w5VzhNWUFsbk5ENzBCdDg3Y1M3MWM5OWJLb3U4UjRxODg0U2xIUTZhT1ZLNDNZeWNhU3lndWlBUW9BVGlGQUZqMHN3cjk4QTQ1d0pmVkNyTldqWWdmYmtGR2wtd1ZrLVoxcWNaM1o2WHFuZlc0MUIzUGZJOF91SVJFMjVhYXl4VVBwOGlnbll6dUNjd2ppa09hTkU5TldxZ1hFM2s3YkRVV3l4Q20tZFU5bnRxS0lWWnZl?oc=5",
+      "title": "Stock market today: Dow rallies 1,500 points, S&P 500 and Nasdaq gain after Democrats win control of Congress"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/04/gold-silver-platinum-dollar-midterms.html",
+      "title": "Gold and silver prices jump, dollar dips as Democrats take control of Congress"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
+      "title": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/04/apple-and-other-big-tech-stocks-surge-after-2026-midterm-elections.html",
+      "title": "Hyperscalers and Apple surge after election results remove investor uncertainty"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
+      "title": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html",
+      "title": "Euro zone inflation hits 4% for first time in three years as interest rate hike looms"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "俄乌战争",
+     "en": "Ukraine War"
+    },
+    "title": {
+     "zh": "俄军轰炸乌克兰救援点，死亡升至40人",
+     "en": "Russian strike on Ukrainian aid site kills 40, dozens missing"
+    },
+    "hook": {
+     "zh": "一名遇难警察的执法记录仪，拍下了两轮轰炸之间人们走进防空洞的画面。",
+     "en": "A dead officer's bodycam caught the moments between two strikes, as villagers filed into a shelter."
+    },
+    "story": {
+     "zh": "周一，扎波罗热州前线村庄科米舒瓦哈的居民聚在一所学校领救援物资时，炸弹落了下来。乌方说俄军共投下九枚滑翔炸弹，有的重达3000公斤。泽连斯基周三宣布死亡人数升至40人，另有30多人可能还埋在废墟下；他对CBS说，最终可能多达70人。\n\n乌克兰警方公布的执法记录仪画面里，无线电传来更多滑翔炸弹来袭的警告，警察催居民“快进防空洞”，人们走进至少两层深的地下掩体。随后画面一黑，只剩寂静。乌方称这是“双重打击”，先炸领物资的人，再炸赶来的救援者，四名警察和两名救援人员遇难。BBC核实了拍摄地点。\n\n联合国驻乌人权监察团说，这次轰炸可能违反国际法。搜救已进入第三天，俄军无人机不时打断行动。\n\n乌俄美三方将于11月10日至11日在阿布扎比会谈，分析人士不指望突破。自2月谈判中断以来，俄方加强攻击，而基辅的西方拦截弹几乎耗尽。",
+     "en": "On Monday, villagers in Komyshuvakha, a front-line village in the Zaporizhzhia region, had gathered at a school to collect aid when the bombs fell. Ukraine says Russia dropped nine glide bombs, some weighing 3,000kg. On Wednesday President Zelensky raised the death toll to 40, with more than 30 people possibly still under the rubble. He told CBS the final toll could reach 70.\n\nPolice released bodycam footage from one of four officers killed. A radio voice warns of more glide bombs. \"Quickly to the shelter!\" an officer tells residents, who walk into a bunker at least two floors underground. Then the footage cuts to black and silence. Kyiv calls it a double-tap: first the aid queue, then rescuers and police. Four officers and two rescue workers died. BBC Verify confirmed where the video was filmed.\n\nThe UN human rights mission in Ukraine said the bombing likely violated international law. The search is in its third day, repeatedly interrupted by Russian drones.\n\nUS-brokered talks between Ukraine, Russia and the US are set for Abu Dhabi on Nov. 10-11. Analysts expect no breakthrough. Since talks stalled in February, Moscow has stepped up attacks as Kyiv has virtually run out of Western-supplied interceptors."
+    },
+    "why": {
+     "zh": "这是近五年战争中针对平民最致命的袭击之一，也给下周的和谈蒙上阴影；乌克兰防空缺口正在被反复利用。",
+     "en": "One of the deadliest strikes on civilians in nearly five years of war casts a shadow over next week's talks and exposes Ukraine's air-defence gap."
+    },
+    "pro": {
+     "zh": "滑翔炸弹是加装折叠翼和制导组件的航空炸弹，可在防空射程外投放，成本远低于导弹，拦截弹短缺时尤其难防。双重打击专挑救援人员下手，会让每次救援都变成赌命。和谈方面，莫斯科仍坚持要求乌方割地、非军事化并承诺不加入北约，而特朗普政府被认为倾向俄方立场，基辅和欧洲对此忧虑。",
+     "en": "Glide bombs are ordinary aerial bombs fitted with wings and guidance, released from beyond air-defence range at a fraction of a missile's cost, which makes them hardest to stop when interceptors run low. Double-tap strikes turn every rescue into a gamble. At the table, Moscow still demands territory, demilitarisation and a pledge never to join NATO, and the Trump administration's apparent sympathy for those positions worries Kyiv and Europe."
+    },
+    "stat": {
+     "value": "40",
+     "label": {
+      "zh": "已确认死亡人数（另有30多人可能被埋）",
+      "en": "Confirmed dead, with 30+ possibly still buried"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "滑翔炸弹",
+       "en": "Glide bomb"
+      },
+      "explain": {
+       "zh": "给普通炸弹装上翅膀和导航，让它像纸飞机一样滑向几十公里外的目标。",
+       "en": "A regular bomb given wings and guidance so it glides, paper-plane style, to a target far away."
+      }
+     },
+     {
+      "term": {
+       "zh": "双重打击",
+       "en": "Double-tap strike"
+      },
+      "explain": {
+       "zh": "第一次轰炸后间隔片刻再炸同一地点，专门击中赶来救援的人。",
+       "en": "Hitting the same spot twice, with the second strike timed to catch those rushing in to help."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "NBC News",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNY1VCeFk1SXVDWm5XTG1IUEVySGxSLV80RTZMOVQxV2FVa2dLcEZqQmpZdmszZUpTV2phNy1ma1ZZZF9lNmFvTXpVSjMwelNoWXJfcE4zemFpOGdkS0VERHc1SGdYd0lEWnp5MjJIWmNxQ0hPaDZsQ0QzWVN5dHZWV3hCMG96ZlhKejJQSk5fa1ViY2hYU1VHbzdmOVVSbkkwR2pCZWY3ajZ4VUxiSXc?oc=5",
+      "title": "Death toll hits 40 after Russian strike on Ukrainian aid site, dozens remain missing"
+     },
+     {
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/4/ukraine-raises-death-toll-from-russian-strike-on-zaporizhia-to-40-people?traffic_source=rss",
+      "title": "Ukraine raises death toll from Russian strike on Zaporizhia to 40 people"
+     },
+     {
+      "name": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c98rz6penv86o?at_medium=RSS&at_campaign=rss",
+      "title": "Ukraine says bodycam video shows deadly Russian double-tap bombing"
+     },
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/world/live/2026/nov/04/eu-ukraine-russia-france-germany-us-nato-europe-latest-news",
+      "title": "Zelenskyy says 40 now confirmed dead after ‘insane’ Russian attack on school – as it happened"
+     }
+    ]
+   },
+   {
+    "importance": 1,
+    "tag": {
+     "zh": "网络安全",
+     "en": "Cybersecurity"
+    },
+    "title": {
+     "zh": "黑客调高法国血库冷库温度",
+     "en": "Hackers turn up the heat on French blood bank cold stores"
+    },
+    "hook": {
+     "zh": "欧洲的冰箱黑客从超市冷柜一路摸到了存放血浆的冷库。",
+     "en": "Europe's fridge hackers have moved from supermarket freezers to the rooms that store blood plasma."
+    },
+    "story": {
+     "zh": "周一夜里，有人远程进入法国血液服务机构EFS三处冷库的控制系统，把温度和除霜阈值调到“极高水平”。好在报警系统响了，技术人员及时介入，血液制品没有受损。EFS为全法1900多家医院供应血液、血浆和血小板，每年服务超过100万名患者；被攻击的冷库由承包商运营。\n\n这并非孤例。本周近十几个欧洲国家的超市冷柜温度飙到50°C，造成数百万欧元食品损失：周一是比利时、爱沙尼亚、爱尔兰、芬兰、卢森堡、荷兰和瑞典，周二轮到意大利、德国、罗马尼亚和英国。上个月，法国多达700家超市的制冷设备被劫持；8月美国至少六个军事基地的商店也出现神秘冷柜故障，五角大楼正在调查。\n\n至今无人认领，动机不明。欧盟发言人说“这些不是孤立事件”，各机构正商讨集体应对。Sophos的威胁情报专家认为，最可能是国家行为体在“展示能力”，或是独狼黑客；西方情报官员则一直指控莫斯科在欧洲发动多种形式的破坏。",
+     "en": "Overnight on Monday, someone got into the control systems of three cold stores used by France's blood service, EFS, and pushed temperature and defrost thresholds to \"very high levels.\" Alarms went off, technicians stepped in, and no blood products were compromised. EFS supplies blood, plasma and platelets to more than 1,900 hospitals and supports over a million patients a year. The hit cold stores are run by its contractors.\n\nIt wasn't a one-off. This week supermarket fridges in almost a dozen European countries climbed as high as 50C, spoiling millions of euros of food. Belgium, Estonia, Ireland, Finland, Luxembourg, the Netherlands and Sweden reported problems on Monday, and Italy, Germany, Romania and the UK on Tuesday. Last month hackers seized cooling units in up to 700 French supermarkets. In August, mysterious fridge failures hit commissaries on at least six US military bases, and the Pentagon is investigating.\n\nNo one has claimed responsibility and no motive is known. An EU spokesperson said \"these are not isolated incidents\" and agencies are working on a joint response. Sophos threat-intelligence chief Rafe Pilling sees two plausible culprits: a state demonstrating its capability, or a lone-wolf hacker. Western intelligence officials accuse Moscow of a broad sabotage campaign in Europe."
+    },
+    "why": {
+     "zh": "联网的冰箱成了进入关键基础设施的后门，攻击目标已从食品升级到医疗物资。",
+     "en": "Internet-connected fridges have become a back door into critical infrastructure, and the targets have escalated from groceries to medical supplies."
+    },
+    "pro": {
+     "zh": "商用制冷系统越来越多地远程监控，控制软件若不及时打补丁，就等于把钥匙挂在门外。这次EFS并非被直接攻破，而是承包商的设备出了问题，典型的供应链薄弱环节。攻击覆盖多国、节奏同步、没有勒索要求，更像在测试和展示能力，而非图财，这也让归因更难。",
+     "en": "Commercial refrigeration is increasingly monitored and controlled remotely, and unpatched control software is like leaving the key under the mat. EFS itself wasn't breached; its contractors' equipment was, a classic weak link in the supply chain. Synchronised attacks across many countries with no ransom demand look more like probing and signalling than profit, which makes attribution harder."
+    },
+    "stat": {
+     "value": "50°C",
+     "label": {
+      "zh": "被黑超市冷柜最高温度",
+      "en": "Peak temperature in hacked supermarket fridges"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "物联网",
+       "en": "Internet of Things"
+      },
+      "explain": {
+       "zh": "能联网、可远程控制的日常设备，比如手机能调温的冰箱，方便也带来漏洞。",
+       "en": "Everyday devices that connect online and can be controlled remotely, like a fridge you adjust from your phone. Handy, but hackable."
+      }
+     },
+     {
+      "term": {
+       "zh": "混合攻击",
+       "en": "Hybrid attack"
+      },
+      "explain": {
+       "zh": "不开战却用网络攻击、破坏等手段制造混乱，像在战争门槛下面出拳。",
+       "en": "Using cyberattacks and sabotage to cause disruption without open war, punching just below the threshold of conflict."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/technology/2026/nov/04/france-national-blood-service-hack-cyber-attack-europe",
+      "title": "French blood banks hacked in latest cyber-attack on Europe"
+     },
+     {
+      "name": "DW.com",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQXVNNEdlbnFOY3BmcGl1dmdfWjJIZVdDM0c0anpPOUNvZ2NESDdzWGtreTliZWkwM2ozR1AwVEg2SXhSS251aG1xNHVKU2Etdjc3RV8xeF9YV0ZCZGRVYXlaWGljMlk0RWx1OTlUWmJtTFNZQ3l6bkFBdDVoQm9aOS1YRG5MMENfWmlHRUlPd2hPQQ?oc=5",
+      "title": "French blood banks targeted by refrigerator cyberattack"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPeDBfdnUzSGUzellWZVNfdElQclhWWFFORHpKZGJZSnREN1RRNC1SaFdsRmFaTDN6WFJYMGdSc2pOOUFpTnF5cHNsVHVaQl9DOS1ycVphdWh6dnFnbGp6WGhDU2wycWw0SHpqV3VEYzQ3cDhzUDVtZFoxaFF1TVc0SzBGaGF1QmoxN2ZhNUdfYy14em90N2dyUm1zV0tZY0Zmd0xyLWdiUkExNVRtRFozaVhYQzhEcFo1UzRYWGdIYlplSEpocUxVMVNkR2k1cXB3MW5kM0pwM21zRy0x?oc=5",
+      "title": "French blood banks hit alongside cyberattack on European supermarkets"
+     },
+     {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPS09zV09Sa2ZhQmNxSjByY3hPZldOYjFXUEdkMTdycnV0OXl6NTBXck9QcERJN1Z5SWhtOERhektQVE92ZUVrZXROc3BHSExMN0VpQXB1YkZmM2t1bFFWZk9tekZSY0t4Z0F0YndCc3NCUnBOa2pCLXVUQ1l0TUZFR1hzQ29JWm5NNGl6Sk0xckhhVGlvbU5tOWM1Mmp6YUtHSkpFOEdMTm94WkRhZDNVNVNpUGd0QQ?oc=5",
+      "title": "Cyberattack hits French blood bank site but no blood products are compromised"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/04/blood-bank-fridges-cyberattacks.html",
+      "title": "Blood banks targeted in latest European fridge cyberattacks"
+     },
+     {
+      "name": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c8vgxyvz6y9ro?at_medium=RSS&at_campaign=rss",
+      "title": "French blood storage impacted by freezer hacks as theories swirl about culprits"
+     }
+    ]
+   }
+  ]
+ },
+ "quick_hits": [
+  {
+   "section": "ai",
+   "title": {
+    "zh": "OpenAI自动修补948个Linux漏洞",
+    "en": "OpenAI patches 948 Linux kernel bugs"
+   },
+   "line": {
+    "zh": "OpenAI称其自主流程在Linux内核中发现、验证并修补了948个本地提权漏洞。",
+    "en": "OpenAI says an autonomous pipeline found, validated and patched 948 local privilege-escalation vulnerabilities in the Linux kernel."
+   },
+   "sources": [
+    {
+     "name": "OpenAI",
+     "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+     "title": "A thousand fewer paths to root"
+    }
+   ]
+  },
+  {
+   "section": "ai",
+   "title": {
+    "zh": "科技巨头隐性AI债务激增",
+    "en": "Big Tech's hidden AI debt swells"
+   },
+   "line": {
+    "zh": "日经报道，美国科技巨头的隐性AI债务半年内增长90%，达到3.2万亿美元。",
+    "en": "Nikkei reports that US tech giants' hidden AI debt rose 90% in six months to $3.2 trillion."
+   },
+   "sources": [
+    {
+     "name": "asia.nikkei.com",
+     "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+     "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months"
+    }
+   ]
+  },
+  {
+   "section": "ai",
+   "title": {
+    "zh": "Anthropic开发模型身份验证系统",
+    "en": "Anthropic builds model ID check"
+   },
+   "line": {
+    "zh": "名为FlashProve的系统可验证AI回答是否真正来自其声称的模型。",
+    "en": "The system, called FlashProve, would let anyone verify that an AI response really came from the model it claims."
+   },
+   "sources": [
+    {
+     "name": "TechCrunch AI",
+     "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+     "title": "Anthropic is working on a system to prove AI models’ identity"
+    },
+    {
+     "name": "ProPakistani",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYUlSZmtYRXA1WGQ1YTAwN0t0Nng2eGdTZmt2NkVFWmlhbERrUk9xUXdOeHctaE9CaGVzRmdITnRYSnlFS0dNem5UaG12aW5xc3RuYTJ2Z2VyVExyVVoyYnhjcXlLZzdvOFNCbGpxckxYWmsyUVB1cE9MdlNCMXh1cVZTME5QWVk2QklBcWlVanBMU1haZzJycEFEUTRZbElNWTd0MGIzSktaQdIBrwFBVV95cUxQb29zQTh4ZG8wdk5KMV9JNHZRdEVJSjZTSUNkTnJPZFFsQXVsS1lpaFJuNDZncUtuMV83V2FNdDF2TjkydG5VQ0E2RmNWRjFDSHl6M1VyNzJkT2NlcmJ1NXU0Vlh0NnBseC0zZGxjRGpIcWx3NjZySzVLelM4dkVSSnNlRldUcFAydjYzeXBFcVFxbmVfM09NWHVRQ2R2NmdXZXN5TGlzdmh6V3IzdVNB?oc=5",
+     "title": "Anthropic Building Tool to Expose Chinese Models Secretly Using Claude"
+    }
+   ]
+  },
+  {
+   "section": "ai",
+   "title": {
+    "zh": "苹果AI在华试行，由阿里支持",
+    "en": "Apple AI arrives in China via Alibaba"
+   },
+   "line": {
+    "zh": "延迟两年后，苹果开始在中国试行AI功能，背后由阿里巴巴提供支持。",
+    "en": "After a two-year delay, Apple has begun trialing its AI features in China, powered by Alibaba."
+   },
+   "sources": [
+    {
+     "name": "Euronews.com",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPLWpUUlhwdEZwakZDdE5XWUIzMUtjeDhUVHUzYXpaRi1DUDV3WUEzNXZCQ2lSMkFoZXhmLUR4TURNV1BnUVFyQVZxMFl4U1JJN2IweGhKMDdCVWE3R2hWczNtdjk3UHJCR0tXcXpCN2kzZmZ0cXNWSnhEbG1YbHBSLUdzRnZvcXR3bmtiUUtB?oc=5",
+     "title": "Apple begins AI trial in China, powered by Alibaba"
+    },
+    {
+     "name": "Free Malaysia Today",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTk5QVHFuaFNHS29XVTVnN2NsZDlFa3ROOUZiSzFUQUhyREszN2lNZzlURXpTU1AzTWtRSWh4eDdyUUNueS1LbmRIQVFNeVBwa041VEJ4b3NYU1hpV3I1OFVFbEtDMzdid0t0ZlJPUnhfb09nSXZsNl94Sk5aTmVQWHkzWWZrQThhMG8zNlF6NEExSjVhQ1Foa1owUVo5bWRWdjFiQmUzZTFlRWpDeDRF?oc=5",
+     "title": "Apple AI tools come to China after 2-year delay"
+    }
+   ]
+  },
+  {
+   "section": "ai",
+   "title": {
+    "zh": "AI代理只订了4单Uber",
+    "en": "AI agents booked just four Uber rides"
+   },
+   "line": {
+    "zh": "Uber披露，第三季度仅有4次行程由第三方AI代理预订。",
+    "en": "Uber disclosed that third-party AI agents arranged only four rides in the third quarter."
+   },
+   "sources": [
+    {
+     "name": "The Verge AI",
+     "url": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation",
+     "title": "Uber only fulfilled 4 rides from AI agents last quarter"
+    },
+    {
+     "name": "TechCrunch AI",
+     "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
+     "title": "Almost no one uses AI agents to book their Uber, company says"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "英国埃博拉患者从刚果撤离",
+    "en": "UK Ebola patient evacuated from Congo"
+   },
+   "line": {
+    "zh": "一名感染埃博拉的英国医护人员被撤回英国治疗，世卫组织同时批准两款新疫苗进入试验。",
+    "en": "A British healthcare worker with Ebola is being flown home for treatment, as WHO approves trials of two new vaccines."
+   },
+   "sources": [
+    {
+     "name": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQcWlPc0VXTnppeWJBWUNQLUY3d0NoWXdJVjJwd0djQ1doZE5qOGFKNWdSVUFHTTdsR2ZkbC1hY2hyLS1ZZnZETlg2M0J3d3lPeDRocGJRLTgwTXdaTHpoR2VrcjZqYkFjLVZmU3BGNmhKZjNnLTlTWjVRU0xlNFdrZWJjRUYzR1pjQTNOVEdrSGRuNDU2RGRpNjc1U0JDNExjTE1hZFFwQUMxM0hJSWg3Z09ZYnZXV1BDeGdaVnE4TENDZnpqdFRLQnQ0QzVTRW50SFB0blRwWXVNTXF1ZkE?oc=5",
+     "title": "British healthcare worker with Ebola to be evacuated from Congo to UK, document shows"
+    },
+    {
+     "name": "The Guardian World",
+     "url": "https://www.theguardian.com/world/2026/nov/04/british-healthcare-worker-ebola-evacuated-drc-to-uk-document-shows",
+     "title": "British healthcare worker with Ebola evacuated from DR Congo to UK"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "印尼窃听案引发军队部署",
+    "en": "Indonesia deploys troops over wiretap case"
+   },
+   "line": {
+    "zh": "多名将军因涉嫌窃听总统电话被捕，印尼随后向雅加达部署数千名士兵。",
+    "en": "Indonesia sent thousands of troops to Jakarta after generals were arrested over alleged tapping of the president's phones."
+   },
+   "sources": [
+    {
+     "name": "AP News",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcm00LS1FQ20tcTUySUZXLUFIR1Z1Q0o1THkyRXRZN1htZmh2YkxhMnlMOFIzTVk5T3dNU3A1dmsydGExSHlmWm9iWEhMS0lTc2ZmX1VUdmozaGNsdnBkdW1CTXk2VVQ4M2pJOHNZQTE1NjNNV0hleEVyV210dkFiNUQ3WUl1dG5EdlpIMzNwNHJDNTczWjh2akxrTlZyaGVNWFk0dnlhWWZoQlB0?oc=5",
+     "title": "Indonesia deploys thousands of troops after generals arrested over wiretapping allegations"
+    },
+    {
+     "name": "DW",
+     "url": "https://www.dw.com/en/indonesia-deploys-troops-to-jakarta-after-wiretapping-allegations/a-79853779?maca=en-rss-en-world-4025-rdf",
+     "title": "Indonesia deploys troops to Jakarta after wiretapping allegations"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "西班牙交通部长因铁路事故辞职",
+    "en": "Spain's transport minister resigns"
+   },
+   "line": {
+    "zh": "一起高铁事故造成近70人死亡，交通部长随后辞职，这是不到一年内第二起高铁事故。",
+    "en": "He quit after a high-speed rail crash killed nearly 70 people, the second such accident in under a year."
+   },
+   "sources": [
+    {
+     "name": "NYT World",
+     "url": "https://www.nytimes.com/2026/11/03/world/europe/spain-train-crash-transport-minister-resigns-oscar-puente.html",
+     "title": "Spain’s Transport Minister Resigns After Deadly High-Speed Rail Crash"
+    },
+    {
+     "name": "The Guardian World",
+     "url": "https://www.theguardian.com/world/2026/nov/04/spains-deadly-train-crashes-have-damaged-public-trust-in-the-system",
+     "title": "Spain’s deadly train crashes have damaged public confidence in the system"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "南非地方选举，非国大承压",
+    "en": "ANC under pressure in local polls"
+   },
+   "line": {
+    "zh": "选民对断水断电不满，非国大的得票率预计不足三分之一。",
+    "en": "Voters angry over water and power outages are expected to give the ANC less than a third of the vote."
+   },
+   "sources": [
+    {
+     "name": "The Guardian World",
+     "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts",
+     "title": "ANC faces anger over poor services as South Africans vote in local elections"
+    },
+    {
+     "name": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss",
+     "title": "ANC under pressure to reverse South Africa decline"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "欧洲多架航班遭炸弹恐吓",
+    "en": "Hoax bomb threats hit European flights"
+   },
+   "line": {
+    "zh": "至少7架飞机受到威胁后被搜查或备降，均安全落地，未发现爆炸物。",
+    "en": "At least seven planes were searched or diverted; all landed safely and no explosives were found."
+   },
+   "sources": [
+    {
+     "name": "AP News",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZkdXcG1iZGRwUVNncG1XV0ctTzAxa3lVQXhJYzdUcVVTdHFxSkFQV2J4UzVLeWpQRkk0RmgxS3lxQW1nYUdSVlhlVnNKc09NaEdRNkd5UXFjMkNibjh4VnJLZjFRNk5TeV8tcUpOWHF5WUVMUktMRDBCbk5wWlRNM0twei1vZ0RiZE1sSE9WN1k5R05tcl9QdUpR?oc=5",
+     "title": "Flights across Europe searched and diverted after hoax bomb threats"
+    },
+    {
+     "name": "NYT World",
+     "url": "https://www.nytimes.com/2026/11/03/world/europe/bomb-threats-europe-flights-planes.html",
+     "title": "Bomb Threats Disrupt Several Flights Across Europe"
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "candidates": 344,
+  "outlets": 116
+ }
+}
