@@ -21,7 +21,7 @@ GitHub Actions (cron, 每天 00:15 UTC + 02:40 UTC 兜底)
    │                       + X / Twitter（可选，配置 X_BEARER_TOKEN 后启用）
    │                       → 只保留前一天（BRIEF_TZ 时区）的条目，去重，统计“多家媒体同时报道”信号
    │
-   ├─ 2. 主编 Claude ───── 从几百条候选里挑出 AI 6 条 + 世界 6 条 + 速览 10 条，合并同一事件，写头条与导语
+   ├─ 2. 主编 Claude ───── 从几百条候选里挑出 AI 技术前沿 3 条 + AI 产业动态 2 条 + 世界 6 条 + 速览 10 条，合并同一事件，写头条与导语
    ├─ 3. 读原文 ────────── 抓取入选报道的正文摘录，给写作提供事实依据
    ├─ 4. 写手 Claude ───── 两个版面并行，逐条写中英双语：故事 · 为什么重要 · 专业视角 · 关键数字 · 名词解释
    │                       （JSON Schema 结构化输出；来源链接由代码从原始条目回填，模型不能编造链接）
@@ -50,7 +50,7 @@ GitHub Actions (cron, 每天 00:15 UTC + 02:40 UTC 兜底)
 | `BRIEF_MODEL` | `claude-opus-5-5` | 写作模型；想省钱可设 `claude-sonnet-5-5` |
 | `BRIEF_EFFORT` | `high` | 思考强度 `low`/`medium`/`high`/`xhigh` |
 
-篇数可在 `pipeline/run.py` 顶部用环境变量 `BRIEF_AI_STORIES` / `BRIEF_WORLD_STORIES` / `BRIEF_QUICK_HITS` 调整；信源在 `pipeline/sources.json` 增删即可。
+篇数可在 `pipeline/run.py` 顶部用环境变量 `BRIEF_AI_TECH_STORIES` / `BRIEF_AI_NEWS_STORIES` / `BRIEF_WORLD_STORIES` / `BRIEF_QUICK_HITS` 调整；信源在 `pipeline/sources.json` 增删即可。
 想换成北京时间凌晨生成：把 `BRIEF_TZ` 设为 `Asia/Shanghai`，并把 workflow 里的 cron 改为 `15 16 * * *`（UTC 16:15 = 北京 00:15）。
 
 **成本**：默认 Opus 5.5，每天约 3 次调用，大约 $1/天上下（随新闻量浮动）；Sonnet 5.5 约一半。

@@ -32,7 +32,7 @@ EDITOR_SCHEMA = {
             "items": {
                 "type": "object",
                 "properties": {
-                    "section": {"type": "string", "enum": ["ai", "world"]},
+                    "section": {"type": "string", "enum": ["ai_tech", "ai_news", "world"]},
                     "working_title": {"type": "string"},
                     "angle": {"type": "string"},
                     "item_ids": {"type": "array", "items": {"type": "integer"}},
@@ -111,8 +111,18 @@ SAFETY = (
 
 EDITOR_SYSTEM = f"""You are the editor-in-chief of Daybreak, a bilingual (Chinese + English) morning brief.
 Each morning you look at everything published in the previous day and decide what a smart, busy reader
-actually needs to know. Two desks: AI (models, products, research, chips, policy, money in AI) and
-World (geopolitics, economy and markets, major society/science/climate events).
+actually needs to know. Two desks:
+
+AI desk, in two parts — keep them strictly apart:
+- ai_tech — how the technology itself moved: new models and what they can now do, benchmark results,
+  research papers and new methods (training, reasoning, agents, interpretability, efficiency), open-source
+  releases, developer tools/APIs, chip and hardware architecture, technical safety findings.
+  The test: "what can AI do now, or how does it work now, that it couldn't yesterday?"
+- ai_news — the AI industry around the technology: funding, deals, earnings, company moves and people,
+  regulation and policy, lawsuits, adoption, public backlash.
+  A launch whose story is mainly the business (pricing, a partnership, a valuation) is ai_news.
+
+World desk (world): geopolitics, economy and markets, major society/science/climate events.
 
 How you choose:
 - Significance over noise: what changes things for many people, markets, or the direction of AI.
@@ -139,6 +149,8 @@ Voice (both languages):
 
 Fields for every story:
 - tag: 1-3 word topic label (e.g. 大模型 / Models, 芯片 / Chips, 中东 / Middle East, 市场 / Markets).
+  For an AI technology story, make the story explain what changed technically and how it works
+  (with an analogy), not the business around it; for AI industry news, focus on money, power and consequences.
 - title: a clear, specific headline (zh ≤ 22 characters, en ≤ 12 words). No clickbait.
 - hook: one sentence that makes you want to read on.
 - story: the narrative, 3-4 short paragraphs separated by a blank line (\\n\\n). zh ≈ 220-380 characters,
@@ -212,7 +224,7 @@ def _candidate_lines(items: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def edit(items: list[dict], date: str, n_ai: int, n_world: int, n_quick: int) -> dict:
+def edit(items: list[dict], date: str, n_tech: int, n_news: int, n_world: int, n_quick: int) -> dict:
     user = f"""Edition date: {date}. Below are {len(items)} candidate items published in the previous day.
 
 <sources>
@@ -220,7 +232,9 @@ def edit(items: list[dict], date: str, n_ai: int, n_world: int, n_quick: int) ->
 </sources>
 
 Plan the edition:
-1. stories: pick exactly {n_ai} AI stories and {n_world} World stories, most important first within each desk.
+1. stories: pick exactly {n_tech} ai_tech stories, {n_news} ai_news stories and {n_world} world stories,
+   most important first within each group. Do NOT fill ai_tech with industry news — if the day is thin on
+   technical progress, take the most substantive technical items available (papers, releases, tools).
    For each give a working_title, the angle the writer should take (one sentence, English), and every item id that covers it.
    Desk choice follows the story, not the feed label (an AI-chip export ban can be AI; a war is World).
 2. quick_hits: {n_quick} further items worth one line each (mix of both desks, not overlapping the stories),
@@ -245,7 +259,8 @@ def write(plan: list[dict], items: list[dict], texts: dict[int, str], date: str,
                 + (f"  article_excerpt: {body}\n" if body else "")
                 + "  </item>"
             )
-        blocks.append(f"<story plan_index=\"{k}\" working_title=\"{p['working_title']}\">\n angle: {p['angle']}\n" + "\n".join(srcs) + "\n</story>")
+        part = {"ai_tech": ' part="AI technology"', "ai_news": ' part="AI industry news"'}.get(p["section"], "")
+        blocks.append(f"<story plan_index=\"{k}\"{part} working_title=\"{p['working_title']}\">\n angle: {p['angle']}\n" + "\n".join(srcs) + "\n</story>")
     desk_name = "AI desk (人工智能)" if desk == "ai" else "World desk (全球要闻)"
     user = f"""Edition date: {date}. Write the {desk_name} stories planned by the editor, in the same order,
 one output story per plan_index.

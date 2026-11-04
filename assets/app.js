@@ -4,7 +4,8 @@
   const I18N = {
     zh: {
       listen: "听简报", listenAllTitle: "朗读今天的简报", archive: "往期", prev: "前一天", next: "后一天",
-      deskAi: "人工智能", deskAiSub: "模型、产品、算力与资本",
+      deskAi: "人工智能", deskAiSub: "先讲技术怎么变了，再讲产业发生了什么",
+      aiTech: "技术前沿", aiTechSub: "模型、研究与工程突破", aiNews: "产业动态", aiNewsSub: "资本、公司与政策",
       deskWorld: "全球要闻", deskWorldSub: "地缘、经济与社会",
       deskQuick: "简讯", deskQuickSub: "还值得知道的事，每条一句话",
       tagline: "人工智能 · 全球要闻 · 每日凌晨出版", todayKicker: "今日要点", issue: (n) => `第 ${n} 期`, terms: "名词", listenShort: "朗读",
@@ -18,7 +19,8 @@
     },
     en: {
       listen: "Listen", listenAllTitle: "Read today's brief aloud", archive: "Archive", prev: "Previous day", next: "Next day",
-      deskAi: "Artificial Intelligence", deskAiSub: "Models, products, compute and capital",
+      deskAi: "Artificial Intelligence", deskAiSub: "First how the technology moved, then what the industry did",
+      aiTech: "Technology", aiTechSub: "Models, research and engineering", aiNews: "Industry", aiNewsSub: "Money, companies and policy",
       deskWorld: "The World", deskWorldSub: "Geopolitics, economy and society",
       deskQuick: "In Brief", deskQuickSub: "More worth knowing, one line each",
       tagline: "AI · The World · Published every dawn", todayKicker: "Today", issue: (n) => `No. ${n}`, terms: "Terms", listenShort: "Listen",
@@ -120,14 +122,32 @@
       ed.stats ? `<span><b>${ed.stats.outlets}</b> ${t("outlets")}</span>` : "",
     ].join("");
 
-    const tocCol = (desk, key) => ed.sections[desk].length
-      ? `<div><p class="toc-desk">${t(key)}</p><ol>${ed.sections[desk].map((s, i) => `<li><a href="#${desk}-${i + 1}">${esc(L(s.title))}</a></li>`).join("")}</ol></div>`
-      : "";
+    const tocItems = (desk, list) => list.map(([s, i]) => `<li><a href="#${desk}-${i + 1}">${esc(L(s.title))}</a></li>`).join("");
+    const tocCol = (desk, key) => {
+      const all = ed.sections[desk].map((s, i) => [s, i]);
+      if (!all.length) return "";
+      if (desk === "ai" && all.some(([s]) => s.kind)) {
+        return `<div><p class="toc-desk">${t(key)}</p>` + ["tech", "news"].map((k) => {
+          const part = all.filter(([s]) => (s.kind || "news") === k);
+          return part.length ? `<p class="toc-sub">${t(k === "tech" ? "aiTech" : "aiNews")}</p><ol start="${part[0][1] + 1}" style="counter-reset:t ${part[0][1]}">${tocItems(desk, part)}</ol>` : "";
+        }).join("") + "</div>";
+      }
+      return `<div><p class="toc-desk">${t(key)}</p><ol>${tocItems(desk, all)}</ol></div>`;
+    };
     $("#toc").innerHTML = `<h4>${t("toc")}</h4><div class="toc-cols">${tocCol("ai", "deskAi")}${tocCol("world", "deskWorld")}</div>`;
 
     for (const desk of ["ai", "world"]) {
       $(`#desk-${desk}`).hidden = !ed.sections[desk].length;
-      $(`#stories-${desk}`).innerHTML = ed.sections[desk].map((s, i) => storyHTML(s, i, desk)).join("");
+      let lastKind = null;
+      $(`#stories-${desk}`).innerHTML = ed.sections[desk].map((s, i) => {
+        let head = "";
+        if (desk === "ai" && s.kind && s.kind !== lastKind) {
+          const k = s.kind === "tech" ? "aiTech" : "aiNews";
+          head = `<div class="subdesk"><h3>${t(k)}</h3><p>${t(k + "Sub")}</p></div>`;
+          lastKind = s.kind;
+        }
+        return head + storyHTML(s, i, desk);
+      }).join("");
     }
     $("#desk-quick").hidden = !ed.quick_hits.length;
     $("#quick").innerHTML = ed.quick_hits.map((q) => {

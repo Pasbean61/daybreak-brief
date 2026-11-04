@@ -23,7 +23,8 @@ DATA = ROOT / "data"
 EDITIONS = DATA / "editions"
 TZ = ZoneInfo(os.environ.get("BRIEF_TZ", "Europe/London"))
 
-N_AI = int(os.environ.get("BRIEF_AI_STORIES", "6"))
+N_AI_TECH = int(os.environ.get("BRIEF_AI_TECH_STORIES", "3"))  # AI desk, part 1: technology
+N_AI_NEWS = int(os.environ.get("BRIEF_AI_NEWS_STORIES", "2"))  # AI desk, part 2: industry news
 N_WORLD = int(os.environ.get("BRIEF_WORLD_STORIES", "6"))
 N_QUICK = int(os.environ.get("BRIEF_QUICK_HITS", "10"))
 MAX_CANDIDATES = int(os.environ.get("BRIEF_MAX_CANDIDATES", "520"))
@@ -101,8 +102,9 @@ def build(day: Date, force: bool, collect_only: bool) -> int:
     from pipeline import writer  # imported late so --collect-only needs no API key
 
     print("▸ Editor-in-chief is planning the edition")
-    plan = writer.edit(items, day.isoformat(), N_AI, N_WORLD, N_QUICK)
-    desks = {d: [s for s in plan["stories"] if s["section"] == d] for d in ("ai", "world")}
+    plan = writer.edit(items, day.isoformat(), N_AI_TECH, N_AI_NEWS, N_WORLD, N_QUICK)
+    by = lambda sec: [s for s in plan["stories"] if s["section"] == sec]
+    desks = {"ai": by("ai_tech") + by("ai_news"), "world": by("world")}  # tech always before news
 
     print("▸ Reading the source articles")
     wanted = sorted({i for s in plan["stories"] for i in s["item_ids"][:4] if 0 <= i < len(items)})
@@ -117,9 +119,11 @@ def build(day: Date, force: bool, collect_only: bool) -> int:
 
     sections = {"ai": [], "world": []}
     for d, stories in drafted.items():
-        for s in stories:
+        for s in sorted(stories, key=lambda s: s["plan_index"]):
             k = s.pop("plan_index")
             ids = s.pop("source_ids") or (desks[d][k]["item_ids"] if 0 <= k < len(desks[d]) else [])
+            if d == "ai" and 0 <= k < len(desks[d]):
+                s["kind"] = "tech" if desks[d][k]["section"] == "ai_tech" else "news"
             s["sources"] = source_list(ids, items)
             sections[d].append(s)
 
