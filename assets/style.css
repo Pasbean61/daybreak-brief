@@ -4,6 +4,7 @@
 :root {
   --paper: #F3EEE4;
   --paper-2: #EBE4D7;
+  --desk: #E2DACA;           /* the table under the sheet */
   --ink: #1B1915;
   --ink-2: #3B372F;
   --muted: #7C766A;
@@ -23,9 +24,12 @@ html { -webkit-text-size-adjust: 100%; scroll-padding-top: 64px; }
 body {
   margin: 0;
   color: var(--ink);
-  background-color: var(--paper);
-  /* barely-there newsprint grain */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 0.055 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  /* the desk the paper lies on: an engraved crosshatch, like a printing plate */
+  background-color: var(--desk);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 0.055 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='7'%3E%3Cpath d='M0 7L7 0M-1 1L1-1M6 8L8 6' stroke='%231B1915' stroke-opacity='.075' stroke-width='.6'/%3E%3Cpath d='M0 0L7 7M-1 6L1 8M6-1L8 1' stroke='%231B1915' stroke-opacity='.035' stroke-width='.5'/%3E%3C/svg%3E");
+  background-attachment: fixed;
   font: 400 17.5px/1.85 var(--serif-zh);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -69,10 +73,26 @@ a { color: inherit; }
 .lang button { border: 0; background: none; height: 26px; min-width: 32px; padding: 0 9px; border-radius: 999px; font: 600 12px/1 var(--sans); color: var(--muted); }
 .lang button.on { background: var(--ink); color: var(--paper); }
 
-main { max-width: var(--page); margin: 0 auto; padding: 0 16px 72px; }
+/* the sheet: clean paper for reading, lying on the hatched desk */
+main {
+  position: relative;
+  max-width: calc(var(--page) + 112px); margin: 26px auto 56px; padding: 0 56px 72px;
+  background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 0.055 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  border: 1px solid rgba(27, 25, 21, .10);
+  box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 1px 2px rgba(27,25,21,.06), 0 18px 48px -18px rgba(27,25,21,.22);
+}
+main::before { /* inner printer's frame */
+  content: ""; position: absolute; inset: 9px; border: 1px solid var(--rule-soft); pointer-events: none;
+}
 
 /* ------------------------------------------------ nameplate */
-.nameplate { padding-top: 26px; text-align: center; }
+.nameplate { position: relative; padding-top: 34px; text-align: center; }
+/* engraved city-at-daybreak vignette between title and rule */
+.np-art {
+  height: clamp(64px, 13vw, 150px); margin: 4px auto 0;
+  background: url("masthead.svg") center bottom / auto 100% no-repeat;
+  opacity: .5;
+}
 .np-line {
   display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
   padding: 9px 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule);
@@ -81,7 +101,7 @@ main { max-width: var(--page); margin: 0 auto; padding: 0 16px 72px; }
 .np-line > :first-child { text-align: left; }
 .np-line > :last-child { text-align: right; }
 .np-tag { color: var(--muted); }
-.np-title { margin: 18px 0 14px; line-height: 1; }
+.np-title { margin: 22px 0 0; line-height: 1; }
 .np-en { display: block; font: 600 clamp(54px, 11vw, 112px)/.9 var(--serif-en); letter-spacing: -.035em; font-variation-settings: "opsz" 72; }
 .np-zh { display: block; margin-top: 12px; font: 600 clamp(13px, 2vw, 15px)/1 var(--serif-zh); letter-spacing: .9em; padding-left: .9em; color: var(--ink-2); }
 .np-rule { height: 6px; border-top: 3px solid var(--ink); border-bottom: 1px solid var(--ink); }
@@ -246,7 +266,13 @@ html[lang="en"] .sheet-card h3 { font: 600 24px/1.2 var(--serif-en); }
   .speak { margin-left: auto; }
   .speak span { display: none; }
 }
+@media (max-width: 900px) {
+  main { margin: 14px 12px 40px; padding: 0 28px 64px; }
+}
 @media (max-width: 640px) {
+  main { margin: 0; padding: 0 16px 64px; border: 0; box-shadow: none; }
+  main::before { display: none; }
+  .np-art { background-size: 150% auto; }
   body { font-size: 17px; }
   html[lang="en"] body { font-size: 18px; }
   .topbar { grid-template-columns: 1fr auto; }
