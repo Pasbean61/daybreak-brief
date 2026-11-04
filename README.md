@@ -1,3 +1,5 @@
+**🌐 在线阅读 · Live site：<https://pasbean61.github.io/daybreak-brief/>**
+
 # Daybreak · 破晓日报
 
 每天凌晨自动生成的中英双语晨报：把前一天的 **AI 新闻** 和 **全球要闻** 讲成一听就懂的小故事，同时保留专业深度。
