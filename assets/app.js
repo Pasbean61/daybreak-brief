@@ -4,9 +4,10 @@
   const I18N = {
     zh: {
       listen: "听简报", listenAllTitle: "朗读今天的简报", archive: "往期", prev: "前一天", next: "后一天",
-      deskAi: "人工智能", deskAiSub: "模型、产品、算力与资本 —— 昨天 AI 世界发生了什么",
-      deskWorld: "全球要闻", deskWorldSub: "地缘、经济与社会 —— 世界昨天的重要转折",
-      deskQuick: "一句话速览", deskQuickSub: "还值得知道的事，每条一句话",
+      deskAi: "人工智能", deskAiSub: "模型、产品、算力与资本",
+      deskWorld: "全球要闻", deskWorldSub: "地缘、经济与社会",
+      deskQuick: "简讯", deskQuickSub: "还值得知道的事，每条一句话",
+      tagline: "人工智能 · 全球要闻 · 每日凌晨出版", todayKicker: "今日要点", issue: (n) => `第 ${n} 期`, terms: "名词", listenShort: "朗读",
       howTitle: "这份简报是怎么来的",
       how: "每天凌晨，系统自动从 OpenAI、Google DeepMind、Reuters、AP、BBC、Hacker News 等数十个信源抓取前一天的新闻，由 Claude 担任主编挑选与合并，再逐条写成中英双语的故事化解读。每条都附原始来源，方便你核实。",
       archiveTitle: "往期简报", stop: "停止", why: "为什么重要", pro: "专业视角", sources: "来源", lead: "头条",
@@ -17,9 +18,10 @@
     },
     en: {
       listen: "Listen", listenAllTitle: "Read today's brief aloud", archive: "Archive", prev: "Previous day", next: "Next day",
-      deskAi: "Artificial Intelligence", deskAiSub: "Models, products, compute and capital — what moved in AI yesterday",
-      deskWorld: "The World", deskWorldSub: "Geopolitics, economy and society — the turns that mattered yesterday",
+      deskAi: "Artificial Intelligence", deskAiSub: "Models, products, compute and capital",
+      deskWorld: "The World", deskWorldSub: "Geopolitics, economy and society",
       deskQuick: "In Brief", deskQuickSub: "More worth knowing, one line each",
+      tagline: "AI · The World · Published every dawn", todayKicker: "Today", issue: (n) => `No. ${n}`, terms: "Terms", listenShort: "Listen",
       howTitle: "How this brief is made",
       how: "Every night an automated pipeline gathers the previous day's news from dozens of sources — OpenAI, Google DeepMind, Reuters, AP, BBC, Hacker News and more. Claude acts as editor-in-chief, picks and merges what matters, and writes each story as a plain-language explainer in Chinese and English. Every story links back to its sources.",
       archiveTitle: "Past editions", stop: "Stop", why: "Why it matters", pro: "Pro lens", sources: "Sources", lead: "Lead story",
@@ -57,6 +59,10 @@
     return Math.max(1, Math.round(lang === "zh" ? n / 450 : n / 5.6 / 230));
   }
   const paras = (s) => L(s).split(/\n\s*\n|\n/).map((p) => p.trim()).filter(Boolean);
+  // Chinese headlines: keep each clause together so lines break at punctuation.
+  const clauses = (s) => lang === "zh"
+    ? esc(s).split(/(?<=[，、：；！？])/).map((c) => `<span class="cl">${c}</span>`).join("")
+    : esc(s);
   const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
 
   // ------------------------------------------------------------ static text
@@ -76,22 +82,22 @@
     const lead = s.importance >= 3;
     const terms = (s.terms || []).filter((x) => L(x.term));
     return `<article class="story${lead ? " lead" : ""}" id="${id}" data-id="${id}">
-      <div class="story-top">
-        <div class="kicker"><span class="num">${String(i + 1).padStart(2, "0")}</span>
-          ${L(s.tag) ? `<span class="tag">${esc(L(s.tag))}</span>` : ""}
-          ${lead ? `<span class="lead-badge">${t("lead")}</span>` : ""}</div>
-        <button class="speak" type="button" data-speak="${id}" title="${t("listenStory")}" aria-label="${t("listenStory")}">${ICON_SPEAK}</button>
-      </div>
-      <h3>${esc(L(s.title))}</h3>
-      <p class="hook">${esc(L(s.hook))}</p>
-      <div class="body-wrap${hasStat ? " has-stat" : ""}">
+      <aside class="s-side">
+        <span class="num">${i + 1}</span>
+        ${L(s.tag) ? `<span class="tag">${esc(L(s.tag))}</span>` : ""}
+        ${lead ? `<span class="lead-badge">${t("lead")}</span>` : ""}
+        ${hasStat ? `<div class="stat"><div class="v">${esc(s.stat.value)}</div><div class="l">${esc(L(s.stat.label))}</div></div>` : ""}
+        <button class="speak" type="button" data-speak="${id}" title="${t("listenStory")}" aria-label="${t("listenStory")}">${ICON_SPEAK}<span>${t("listenShort")}</span></button>
+      </aside>
+      <div class="s-main">
+        <h3>${clauses(L(s.title))}</h3>
+        <p class="hook">${esc(L(s.hook))}</p>
         <div class="body">${paras(s.story).map((p) => `<p>${esc(p)}</p>`).join("")}</div>
-        ${hasStat ? `<aside class="stat"><div class="v">${esc(s.stat.value)}</div><div class="l">${esc(L(s.stat.label))}</div></aside>` : ""}
+        ${L(s.why) ? `<div class="why"><span class="lbl">${t("why")}</span><p>${esc(L(s.why))}</p></div>` : ""}
+        ${L(s.pro) ? `<details class="pro"><summary><span class="lbl">${t("pro")}</span><span class="chev">+</span></summary><div class="pro-body"><p>${esc(L(s.pro))}</p></div></details>` : ""}
+        ${terms.length ? `<div class="terms"><span class="terms-lbl">${t("terms")}</span>${terms.map((x, k) => `<button type="button" class="term" data-term="${id}-${k}">${esc(L(x.term))}</button>`).join("")}<p class="term-explain" hidden></p></div>` : ""}
+        ${(s.sources || []).length ? `<div class="sources"><span class="lbl">${t("sources")}</span>${s.sources.map((src) => `<a href="${esc(src.url)}" target="_blank" rel="noopener noreferrer" title="${esc(src.title || "")}">${esc(src.name || host(src.url))}</a>`).join("")}</div>` : ""}
       </div>
-      ${L(s.why) ? `<div class="why"><span class="lbl">${t("why")}</span><p>${esc(L(s.why))}</p></div>` : ""}
-      ${L(s.pro) ? `<details class="pro"><summary><span class="lbl">${t("pro")}</span><span class="chev">⌄</span></summary><div class="pro-body"><p>${esc(L(s.pro))}</p></div></details>` : ""}
-      ${terms.length ? `<div class="terms">${terms.map((x, k) => `<button type="button" class="term" data-term="${id}-${k}">${esc(L(x.term))}</button>`).join("")}<p class="term-explain" hidden></p></div>` : ""}
-      ${(s.sources || []).length ? `<div class="sources"><span>${t("sources")}</span>${s.sources.map((src) => `<a href="${esc(src.url)}" target="_blank" rel="noopener noreferrer" title="${esc(src.title || "")}">${esc(src.name || host(src.url))}</a>`).join("")}</div>` : ""}
     </article>`;
   }
 
@@ -100,8 +106,11 @@
     if (!edition) return;
     const ed = edition;
     document.title = `${L(ed.headline)} · Daybreak 破晓日报`;
-    $("#dateline").textContent = fmtDate(ed.date);
-    $("#headline").textContent = L(ed.headline);
+    $("#npDate").textContent = fmtDate(ed.date);
+    $("#topbarDate").textContent = fmtDate(ed.date);
+    const n = index ? index.editions.length - index.editions.findIndex((e) => e.date === ed.date) : 0;
+    $("#npIssue").textContent = n > 0 && n <= (index?.editions.length || 0) ? I18N[lang].issue(n) : "";
+    $("#headline").innerHTML = clauses(L(ed.headline));
     $("#lede").textContent = L(ed.lede);
     const nStories = ed.sections.ai.length + ed.sections.world.length;
     $("#meta").innerHTML = [
@@ -123,7 +132,7 @@
     $("#desk-quick").hidden = !ed.quick_hits.length;
     $("#quick").innerHTML = ed.quick_hits.map((q) => {
       const src = (q.sources || [])[0];
-      return `<li><div><span class="qt">${esc(L(q.title))}</span><span class="qs">${esc(I18N[lang].sec[q.section] || "")}</span></div>
+      return `<li><div class="qhead"><span class="qt">${esc(L(q.title))}</span><span class="qs">${esc(I18N[lang].sec[q.section] || "")}</span></div>
         <p class="ql">${esc(L(q.line))}${src ? `<a href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">${esc(src.name || host(src.url))} ↗</a>` : ""}</p></li>`;
     }).join("");
 
@@ -171,7 +180,7 @@
     const want = (location.hash.match(/\d{4}-\d{2}-\d{2}/) || [])[0] || index.editions[0]?.date;
     if (!want || !index.editions.some((e) => e.date === want)) {
       applyStatic();
-      $("#dateline").textContent = want ? fmtDate(want) : "—";
+      $("#npDate").textContent = want ? fmtDate(want) : "—";
       renderArchive();
       return showMessage(t("empty"));
     }
@@ -197,7 +206,7 @@
     const h = document.documentElement;
     const p = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight);
     $("#progress").style.width = `${Math.min(100, p * 100)}%`;
-    $(".topbar").classList.toggle("scrolled", h.scrollTop > 8);
+    $(".topbar").classList.toggle("scrolled", h.scrollTop > 200);
   }
 
   // ------------------------------------------------------------ speech

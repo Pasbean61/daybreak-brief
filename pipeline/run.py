@@ -76,8 +76,14 @@ def update_index() -> None:
 def build(day: Date, force: bool, collect_only: bool) -> int:
     out_path = EDITIONS / f"{day.isoformat()}.json"
     if out_path.exists() and not force and not collect_only:
-        print(f"Edition {day} already exists — skipping (use --force to rebuild).")
-        return 0
+        # An edition built before its day was over (e.g. a manual test run) is
+        # provisional: the nightly run rebuilds it once with the full day.
+        built = datetime.fromisoformat(json.loads(out_path.read_text())["generated_at"])
+        day_over = datetime.combine(day + timedelta(days=1), time(0, 0), TZ)
+        if built >= day_over:
+            print(f"Edition {day} already exists — skipping (use --force to rebuild).")
+            return 0
+        print(f"Edition {day} was built before the day ended — rebuilding with the full day.")
 
     start, end = window(day)
     print(f"▸ Collecting {start:%Y-%m-%d %H:%M} → {end:%Y-%m-%d %H:%M} UTC")
