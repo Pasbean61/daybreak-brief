@@ -32,6 +32,10 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v7
+        with:
+          # always the branch tip, not the triggering commit: runs queue up, and a
+          # queued push run must not publish a site older than the bot's last edition
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v7
         with:
