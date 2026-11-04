@@ -5,7 +5,7 @@
 每天凌晨自动生成的中英双语晨报：把前一天的 **AI 新闻** 和 **全球要闻** 讲成一听就懂的小故事，同时保留专业深度。
 A bilingual morning brief, written automatically every night: yesterday's AI and world news, told as plain-language stories with a professional edge.
 
-**报纸日报版式**（米白新闻纸 · 墨黑衬线 · 朱红点缀） · 中文 / English 一键切换 · 浏览器朗读（听简报）· 往期归档 · 每条附原始来源
+**破晓天幕 × 日报版式**（午夜蓝到日出橙的渐变天空，上面铺一张干净的新闻纸） · 中文 / English 一键切换 · 浏览器朗读（听简报）· 往期归档 · 每条附原始来源
 
 ---
 

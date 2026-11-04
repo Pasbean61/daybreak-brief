@@ -1,10 +1,11 @@
-/* Daybreak — newsprint edition
+/* Daybreak — a sheet of newsprint laid over the sky at dawn.
    One column of type on warm paper, ruled like a broadsheet.
    Colour is spent only on small labels; everything else is ink. */
 :root {
   --paper: #F3EEE4;
   --paper-2: #EBE4D7;
-  --desk: #E2DACA;           /* the table under the sheet */
+  --night: #0C1122;          /* the sky before dawn */
+  --dawn: linear-gradient(90deg, #3B4BA0, #B4446E 38%, #EE7F3E 70%, #F5C35A);
   --ink: #1B1915;
   --ink-2: #3B372F;
   --muted: #7C766A;
@@ -20,16 +21,25 @@
 }
 
 * { box-sizing: border-box; }
+html { background: var(--night); }
+/* the sky at daybreak: night blue above, the sun coming up from below.
+   Painted on a fixed layer so it stays put while the paper scrolls over it. */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(110% 60% at 50% 112%, rgba(255, 160, 84, .70), rgba(255, 160, 84, 0) 62%),
+    radial-gradient(55% 45% at 4% 92%, rgba(205, 64, 96, .55), rgba(205, 64, 96, 0) 70%),
+    radial-gradient(50% 42% at 98% 80%, rgba(245, 178, 82, .42), rgba(245, 178, 82, 0) 70%),
+    radial-gradient(70% 55% at 88% -6%, rgba(70, 104, 214, .50), rgba(70, 104, 214, 0) 70%),
+    radial-gradient(60% 50% at 6% 4%, rgba(112, 66, 170, .38), rgba(112, 66, 170, 0) 70%),
+    linear-gradient(180deg, #0B1020 0%, #141A35 38%, #33244A 68%, #6E3346 88%, #A14A3E 100%);
+}
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: 64px; }
 body {
   margin: 0;
   color: var(--ink);
-  /* the desk the paper lies on: an engraved crosshatch, like a printing plate */
-  background-color: var(--desk);
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 0.055 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='7'%3E%3Cpath d='M0 7L7 0M-1 1L1-1M6 8L8 6' stroke='%231B1915' stroke-opacity='.075' stroke-width='.6'/%3E%3Cpath d='M0 0L7 7M-1 6L1 8M6-1L8 1' stroke='%231B1915' stroke-opacity='.035' stroke-width='.5'/%3E%3C/svg%3E");
-  background-attachment: fixed;
+  background: transparent;
   font: 400 17.5px/1.85 var(--serif-zh);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -48,12 +58,18 @@ a { color: inherit; }
   position: sticky; top: 0; z-index: 20;
   display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
   height: 52px; padding: 0 max(16px, calc((100vw - var(--page)) / 2));
-  background: rgba(243, 238, 228, .9);
-  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  background: rgba(11, 16, 32, .55);
+  backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid transparent; transition: border-color .25s;
   font-family: var(--sans);
 }
-.topbar.scrolled { border-bottom-color: var(--rule); }
+.topbar { color: #F4EFE6; }
+.topbar.scrolled { border-bottom-color: rgba(255, 255, 255, .12); }
+.topbar .brand-zh, .topbar .topbar-date { color: rgba(244, 239, 230, .62); }
+.topbar .tool, .topbar .lang { border-color: rgba(255, 255, 255, .22); color: rgba(244, 239, 230, .86); }
+.topbar .tool:hover { border-color: rgba(255, 255, 255, .7); color: #fff; }
+.topbar .lang button { color: rgba(244, 239, 230, .6); }
+.topbar .lang button.on { background: #F4EFE6; color: var(--ink); }
 .brand { display: flex; align-items: baseline; gap: 8px; text-decoration: none; opacity: 0; transition: opacity .25s; }
 .topbar.scrolled .brand { opacity: 1; }
 .brand-en { font: 600 20px/1 var(--serif-en); letter-spacing: -.01em; }
@@ -73,26 +89,21 @@ a { color: inherit; }
 .lang button { border: 0; background: none; height: 26px; min-width: 32px; padding: 0 9px; border-radius: 999px; font: 600 12px/1 var(--sans); color: var(--muted); }
 .lang button.on { background: var(--ink); color: var(--paper); }
 
-/* the sheet: clean paper for reading, lying on the hatched desk */
+/* the sheet: clean paper for reading, laid over the dawn sky */
 main {
   position: relative;
-  max-width: calc(var(--page) + 112px); margin: 26px auto 56px; padding: 0 56px 72px;
-  background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 0.055 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  border: 1px solid rgba(27, 25, 21, .10);
-  box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 1px 2px rgba(27,25,21,.06), 0 18px 48px -18px rgba(27,25,21,.22);
+  max-width: calc(var(--page) + 112px); margin: 30px auto 64px; padding: 0 56px 72px;
+  background: var(--paper);
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .06), 0 2px 6px rgba(0, 0, 0, .18), 0 40px 90px -30px rgba(0, 0, 0, .65);
 }
-main::before { /* inner printer's frame */
-  content: ""; position: absolute; inset: 9px; border: 1px solid var(--rule-soft); pointer-events: none;
+main::before { /* a thin band of sunrise along the top edge */
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px;
+  border-radius: 3px 3px 0 0; background: var(--dawn);
 }
 
 /* ------------------------------------------------ nameplate */
 .nameplate { position: relative; padding-top: 34px; text-align: center; }
-/* engraved city-at-daybreak vignette between title and rule */
-.np-art {
-  height: clamp(64px, 13vw, 150px); margin: 4px auto 0;
-  background: url("masthead.svg") center bottom / auto 100% no-repeat;
-  opacity: .5;
-}
 .np-line {
   display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
   padding: 9px 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule);
@@ -101,7 +112,7 @@ main::before { /* inner printer's frame */
 .np-line > :first-child { text-align: left; }
 .np-line > :last-child { text-align: right; }
 .np-tag { color: var(--muted); }
-.np-title { margin: 22px 0 0; line-height: 1; }
+.np-title { margin: 22px 0 16px; line-height: 1; }
 .np-en { display: block; font: 600 clamp(54px, 11vw, 112px)/.9 var(--serif-en); letter-spacing: -.035em; font-variation-settings: "opsz" 72; }
 .np-zh { display: block; margin-top: 12px; font: 600 clamp(13px, 2vw, 15px)/1 var(--serif-zh); letter-spacing: .9em; padding-left: .9em; color: var(--ink-2); }
 .np-rule { height: 6px; border-top: 3px solid var(--ink); border-bottom: 1px solid var(--ink); }
@@ -270,9 +281,7 @@ html[lang="en"] .sheet-card h3 { font: 600 24px/1.2 var(--serif-en); }
   main { margin: 14px 12px 40px; padding: 0 28px 64px; }
 }
 @media (max-width: 640px) {
-  main { margin: 0; padding: 0 16px 64px; border: 0; box-shadow: none; }
-  main::before { display: none; }
-  .np-art { background-size: 150% auto; }
+  main { margin: 8px 8px 36px; padding: 0 16px 64px; }
   body { font-size: 17px; }
   html[lang="en"] body { font-size: 18px; }
   .topbar { grid-template-columns: 1fr auto; }
