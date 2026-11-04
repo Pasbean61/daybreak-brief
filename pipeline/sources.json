@@ -1,0 +1,37 @@
+{
+  "_comment": "Sources the daily pipeline reads. section = ai | world. weight nudges the editor (1 = normal, 2 = primary/official source). Add or remove feeds freely; a dead feed is skipped, never fatal.",
+  "feeds": [
+    {"name": "OpenAI", "url": "https://openai.com/news/rss.xml", "section": "ai", "weight": 2},
+    {"name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "section": "ai", "weight": 2},
+    {"name": "Google AI", "url": "https://blog.google/technology/ai/rss/", "section": "ai", "weight": 2},
+    {"name": "AI labs (via Google News)", "url": "https://news.google.com/rss/search?q=OpenAI+OR+Anthropic+OR+%22Google+DeepMind%22+OR+%22Meta+AI%22+OR+xAI+OR+Mistral+OR+DeepSeek+OR+Qwen+when:1d&hl=en-US&gl=US&ceid=US:en", "section": "ai", "weight": 1},
+    {"name": "AI China (via Google News)", "url": "https://news.google.com/rss/search?q=DeepSeek+OR+Alibaba+Qwen+OR+Moonshot+Kimi+OR+Zhipu+OR+ByteDance+AI+when:1d&hl=en-US&gl=US&ceid=US:en", "section": "ai", "weight": 1},
+    {"name": "NVIDIA Blog", "url": "https://blogs.nvidia.com/feed/", "section": "ai", "weight": 1},
+    {"name": "Hugging Face", "url": "https://huggingface.co/blog/feed.xml", "section": "ai", "weight": 1},
+    {"name": "The Verge AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "section": "ai", "weight": 1},
+    {"name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "section": "ai", "weight": 1},
+    {"name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/", "section": "ai", "weight": 1},
+    {"name": "MIT Technology Review", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed", "section": "ai", "weight": 1},
+    {"name": "Ars Technica AI", "url": "https://arstechnica.com/ai/feed/", "section": "ai", "weight": 1},
+    {"name": "Wired AI", "url": "https://www.wired.com/feed/tag/ai/latest/rss", "section": "ai", "weight": 1},
+    {"name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "section": "ai", "weight": 1},
+    {"name": "AI news (Google News)", "url": "https://news.google.com/rss/search?q=artificial+intelligence+OR+OpenAI+OR+%22large+language+model%22+when:1d&hl=en-US&gl=US&ceid=US:en", "section": "ai", "weight": 1},
+
+    {"name": "Reuters (via Google News)", "url": "https://news.google.com/rss/search?q=site:reuters.com+when:1d&hl=en-US&gl=US&ceid=US:en", "section": "world", "weight": 2},
+    {"name": "AP (via Google News)", "url": "https://news.google.com/rss/search?q=site:apnews.com+when:1d&hl=en-US&gl=US&ceid=US:en", "section": "world", "weight": 2},
+    {"name": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "section": "world", "weight": 2},
+    {"name": "BBC Business", "url": "https://feeds.bbci.co.uk/news/business/rss.xml", "section": "world", "weight": 1},
+    {"name": "The Guardian World", "url": "https://www.theguardian.com/world/rss", "section": "world", "weight": 1},
+    {"name": "NYT World", "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", "section": "world", "weight": 1},
+    {"name": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "section": "world", "weight": 1},
+    {"name": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "section": "world", "weight": 1},
+    {"name": "DW", "url": "https://rss.dw.com/rdf/rss-en-world", "section": "world", "weight": 1},
+    {"name": "CNBC World", "url": "https://www.cnbc.com/id/100727362/device/rss/rss.html", "section": "world", "weight": 1},
+    {"name": "Google News Top", "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en", "section": "world", "weight": 1}
+  ],
+  "hackernews": {"min_points": 120, "section": "ai"},
+  "x": {
+    "_comment": "Only used when the X_BEARER_TOKEN secret is set (X API v2 recent search, Basic tier or higher).",
+    "accounts": ["OpenAI", "AnthropicAI", "GoogleDeepMind", "sama", "karpathy", "demishassabis", "ylecun", "AndrewYNg", "MetaAI", "MistralAI", "nvidia", "huggingface", "xai", "Reuters", "AP", "BBCBreaking"]
+  }
+}

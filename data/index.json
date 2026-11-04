@@ -1,0 +1,21 @@
+{
+ "updated": "2026-11-04T22:24:34+00:00",
+ "editions": [
+  {
+   "date": "2026-11-03",
+   "headline": {
+    "zh": "美国投票日，AI 的账单摊开了",
+    "en": "America votes, and AI's bill comes due"
+   },
+   "lede": {
+    "zh": "昨天，美国人投票决定国会归属，特朗普剩下两年的政治空间就此揭晓；与此同时，美伊一边空袭一边谈判，霍尔木兹海峡的命运或在两天内见分晓。AI 世界则迎来一次“对账”：Anthropic 晒出 170 亿美元季度收入，也晒出更深的亏损，科技巨头 3.2 万亿美元的隐形承诺让市场开始紧张。",
+    "en": "Yesterday Americans voted on who controls Congress — and how much room Trump has for his final two years — while the US and Iran traded strikes and offers, with the Strait of Hormuz's fate possibly clear within two days. In AI it was a day of reckoning: Anthropic showed $17 billion in quarterly revenue alongside deeper losses, and $3.2 trillion in Big Tech's hidden AI commitments put markets on edge."
+   },
+   "counts": {
+    "ai": 5,
+    "world": 5,
+    "quick": 10
+   }
+  }
+ ]
+}

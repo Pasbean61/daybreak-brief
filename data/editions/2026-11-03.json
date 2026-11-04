@@ -1,0 +1,920 @@
+{
+ "date": "2026-11-03",
+ "generated_at": "2026-11-04T09:30:00+00:00",
+ "model": "claude-opus-5-5",
+ "headline": {
+  "zh": "美国投票日，AI 的账单摊开了",
+  "en": "America votes, and AI's bill comes due"
+ },
+ "lede": {
+  "zh": "昨天，美国人投票决定国会归属，特朗普剩下两年的政治空间就此揭晓；与此同时，美伊一边空袭一边谈判，霍尔木兹海峡的命运或在两天内见分晓。AI 世界则迎来一次“对账”：Anthropic 晒出 170 亿美元季度收入，也晒出更深的亏损，科技巨头 3.2 万亿美元的隐形承诺让市场开始紧张。",
+  "en": "Yesterday Americans voted on who controls Congress — and how much room Trump has for his final two years — while the US and Iran traded strikes and offers, with the Strait of Hormuz's fate possibly clear within two days. In AI it was a day of reckoning: Anthropic showed $17 billion in quarterly revenue alongside deeper losses, and $3.2 trillion in Big Tech's hidden AI commitments put markets on edge."
+ },
+ "sections": {
+  "ai": [
+   {
+    "importance": 3,
+    "tag": {
+     "zh": "AI 公司财务",
+     "en": "AI Business"
+    },
+    "title": {
+     "zh": "Anthropic 上市前亮账本：收入飙升，亏损也在扩大",
+     "en": "Anthropic opens its books: revenue soars, so do losses"
+    },
+    "hook": {
+     "zh": "一家公司一个季度卖出 170 亿美元，却越卖越亏——这是 AI 行业最真实的一张账单。",
+     "en": "A company that sold $17 billion in a quarter and still lost more money — the most honest bill in AI."
+    },
+    "story": {
+     "zh": "Claude 背后的公司 Anthropic 正在准备上市。周一，它更新了递交给监管机构的招股文件，把财报多公布了一个季度。数字很惊人：截至 9 月 30 日的这个季度，收入达到 170 亿美元，上一季度还是 115 亿。\n\n但同一份文件也显示，运营亏损在扩大，用来跑模型的算力成本吃掉了更多收入。打个比方：餐厅生意火爆、翻台率翻倍，可食材和房租涨得比营业额还快。按理说规模越大、单位成本越低，但 Anthropic 的算力毛利反而在变差。\n\n另一边，有分析把季度数字拆成月度后认为，它的增长在 7 到 9 月明显放缓。与此同时，据 The Information 报道，Anthropic 正在向潜在投资者展示 Claude 帮忙设计芯片的能力——言下之意是：未来也许能用自己的 AI 降低自己的算力账单。",
+     "en": "Anthropic, the company behind Claude, is getting ready to go public. On Monday it updated its filing with regulators, adding one more quarter of results. The headline number is staggering: revenue of $17 billion in the quarter to September 30, up from $11.5 billion the quarter before.\n\nBut the same filing shows the operating loss growing, and compute — the cost of actually running the models — eating a larger share of revenue. Think of a restaurant that doubles its covers while the price of ingredients and rent climbs even faster. Scale is supposed to make each meal cheaper; here, compute margins got worse.\n\nSome analysts who broke the quarter into months argue growth slowed sharply between July and September. Meanwhile, The Information reports that Anthropic has been showing prospective investors how Claude helps design chips — a hint that its own AI might one day bring its own compute bill down."
+    },
+    "why": {
+     "zh": "这是投资者第一次系统看到顶级大模型公司的真实成本结构，它会影响整个 AI 行业的估值逻辑。",
+     "en": "It is the first detailed look investors have had at what a frontier AI lab really costs to run — and it will shape how the whole sector is valued."
+    },
+    "pro": {
+     "zh": "关键不在收入，而在推理成本曲线：价格战让每个 token 越来越便宜，但更强的模型和更长的推理链让每次请求消耗的算力越来越多。若毛利不能随规模改善，AI 实验室的商业模式就更像资本密集的公用事业，而不是高毛利的软件公司。自研芯片是对冲英伟达定价权的常见路径。",
+     "en": "The story is not revenue but the inference cost curve. Price competition pushes the price per token down, while stronger models and longer reasoning chains push compute per request up. If gross margin does not improve with scale, frontier labs look less like high-margin software and more like capital-intensive utilities. Custom silicon is the standard hedge against Nvidia's pricing power."
+    },
+    "stat": {
+     "value": "$17B",
+     "label": {
+      "zh": "第三季度收入（上季 115 亿）",
+      "en": "Q3 revenue (vs $11.5B in Q2)"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "招股书 S-1",
+       "en": "S-1 filing"
+      },
+      "explain": {
+       "zh": "公司上市前交给美国证监会的“体检报告”，必须公开财务和风险。",
+       "en": "The 'medical report' a company files with the US SEC before listing, disclosing its finances and risks."
+      }
+     },
+     {
+      "term": {
+       "zh": "算力毛利",
+       "en": "Compute margin"
+      },
+      "explain": {
+       "zh": "收入扣掉运行模型的服务器成本后剩下的比例，越高越赚钱。",
+       "en": "The share of revenue left after paying for the servers that run the models — higher means more profitable."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+      "title": "Anthropic is still grappling with the economics of compute"
+     },
+     {
+      "name": "Euronews.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdzgzUTdESU9ZQzhxRGJKalU0SFdZUUh3QTQ4Rnd1ZW42R3prZC1pUVB5YVVXR1h1Nkk0eXR6bG1faWl5Q1RCWk42X29ia3psZnlfZXE0VENtMEgxeDJJTWdEaHh4N29HTF9mVlJHemwtTjBGaGZRMzJ5MlRNQzcyXzdPeEFrV1V5VWFpMEQ4WmZEQThhSnp0bTQ0X1hMZ0lPdUxsX1J5c3p1ZFVhSC1oQWVOenEwZ3ZPQlE?oc=5",
+      "title": "Anthropic swings to loss as massive compute bill looms over IPO"
+     },
+     {
+      "name": "The Information",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYnpwS0FzRk9KWUhPNC1rT3JnNWdLN1NhTWM0VU5zWHkyZEo5NVR1dXJhTWdVY2R0ZGEwcVhDTGZ3TkR5SGRIemoyenlCUU1TV2xMTzNBa0xtZDJSb1hGeUVqVlhBVmJNRVFkVS1qb21LdmtqOUxmWEtVOEgwd3JnRnNJMHJIQXdfYndBMUpjZWNPaGRwSW55ZWJsdEk?oc=5",
+      "title": "Anthropic Touts Claude’s Chip Design Skills to IPO Investors"
+     },
+     {
+      "name": "Hacker News",
+      "url": "https://www.regenerator1.com/p/anthropics-growth-just-flattened",
+      "title": "Anthropic's growth just flattened"
+     },
+     {
+      "name": "saastr.com",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPTXQwZFNiOUJqZHp0Y1RwalhkME5IRkpSSWl5a3h1ZlUweVhONjZuYXdYamdSaDFEMTVsRFFTS2ZjRkNqajhYTlRyWTRSQllIVWY1cHpMVmo5SmR5MGJuVG40VzkwTFlRRUdTQTlKUHIzX3VXby1SSW1GbHJheEY2Z2pmbFl3aTJ3aU9sc3BONkJ4cEdhWi0takFsWnhCdEpSU0s3Qk9YRkowX2lXYjhXd0h1azdMMnhjVTBXLVhxQy1ENXQxSUs3aG15Y0hhV29VNEpfSHJkTDJjN05kQ0ttSDlmSU1heFlIek44N1Z2VQ?oc=5",
+      "title": "5 Interesting Learnings from Anthropic at $17 Billion in Quarterly Revenue: $5.4B Added vs. $6.8B the Quarter Before, 900% NRR, and $895 Billion in Compute Commitments"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "教育",
+     "en": "Education"
+    },
+    "title": {
+     "zh": "谷歌给学校出选择题：关掉 AI，也就没了搜索",
+     "en": "Google to schools: switch off AI and you lose Search too"
+    },
+    "hook": {
+     "zh": "AI 已经深深嵌进搜索引擎，想要“纯净版”谷歌，答案是：没有。",
+     "en": "AI is now woven into Search so deeply that there is no AI-free Google left to offer."
+    },
+    "story": {
+     "zh": "谷歌周二宣布，明年起，面向中小学生的 AI 工具默认关闭，学校管理员要手动打开才能用，涉及 Gemini、NotebookLM、课堂版 Gemini 和谷歌搜索。谷歌说，这是和学校、老师、研究者与政策制定者商量后的决定。\n\n听起来是把选择权交给学校，但有个附加条件：如果学校选择完全限制 AI，学生就连谷歌搜索也用不了，只会看到一条提示。谷歌教育副总裁 Chris Phillips 对《纽约时报》解释说，“搜索和 AI 已经深度整合”。\n\n这就像一家餐厅说你可以不要味精，但所有菜都已经提前调好味——不要味精，就只能不点菜。谷歌同时承诺，会为学校提供“不直接给答案”的 AI 学习工具。",
+     "en": "Google said on Tuesday that, starting next year, its AI tools for K-12 students will be switched off by default, and school administrators will have to turn them on. The change covers Gemini, NotebookLM, Gemini in Classroom and Google Search, and Google says it follows consultations with schools, teachers, researchers and policymakers.\n\nIt sounds like handing schools the choice — with a catch. If a school restricts AI altogether, students lose Google Search as well and see a message instead. 'Search and AI are deeply integrated,' Chris Phillips, Google's vice president for education, told The New York Times.\n\nIt is a bit like a restaurant offering to hold the seasoning when every dish is already seasoned: say no, and there is nothing left to order. Google also promises AI study tools for schools that are designed not to simply hand over answers."
+    },
+    "why": {
+     "zh": "全球大量学校依赖谷歌的教育产品，这一决定实际上在逼学校在“接受 AI”与“失去搜索”之间二选一。",
+     "en": "Huge numbers of schools run on Google's education products; this effectively forces them to choose between accepting AI and losing search."
+    },
+    "pro": {
+     "zh": "这是“捆绑”策略在 AI 时代的新版本：当生成式摘要成为搜索结果页的一部分，技术上剥离它的成本被转嫁给了用户。对监管者而言，问题在于“默认关闭”是否真实有效——如果关闭的代价是失去核心服务，选择权就只是名义上的。",
+     "en": "This is bundling for the AI era. Once generative summaries are part of the results page, the cost of separating them is pushed onto the customer. For regulators, the question is whether 'off by default' means anything when switching off costs you the core product — a choice in name only."
+    },
+    "stat": {
+     "value": "",
+     "label": {
+      "zh": "",
+      "en": ""
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "K-12",
+       "en": "K-12"
+      },
+      "explain": {
+       "zh": "美国从幼儿园到高中毕业的 13 个年级，相当于中小学阶段。",
+       "en": "The US school years from kindergarten through 12th grade — primary and secondary school."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
+      "title": "Google will let schools disable its AI tools, but not without sacrificing Search"
+     },
+     {
+      "name": "Ars Technica AI",
+      "url": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+      "title": "Google will let schools skip AI tools, but they have to give up search, too"
+     },
+     {
+      "name": "Hacker News",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "title": "Google will turn off search for schools that reject AI"
+     },
+     {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObGtOMHhjQzVNYWRRMEw5cTYtWG9OOGREZGRvV3Bqd1EzUGhaUVQzYzdQX0ExMkp1MWdxZEN5LTJyRHYtUzROVldKeTFuSTdWb0VpelMyV2tkaWowU0xfbXBOanlKdGNIV1E3NWVla1YtSkhmRU4tdVZBTXhwY2YxWkFBdGVBaVB4N2VUVUlTZGtfdWJBbWtZVmE1VnM?oc=5",
+      "title": "Google will cut off search access for students at schools that reject AI"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "AI 资本",
+     "en": "AI Money"
+    },
+    "title": {
+     "zh": "AI 的隐形账单：3.2 万亿美元承诺与一场芯片股暴跌",
+     "en": "AI's hidden bill: $3.2 trillion in promises and a chip-stock rout"
+    },
+    "hook": {
+     "zh": "科技巨头建数据中心的钱，很多并不写在资产负债表上。",
+     "en": "Much of what Big Tech owes for its AI build-out never appears on the balance sheet."
+    },
+    "story": {
+     "zh": "据《日经亚洲》统计，谷歌、Meta 等美国科技巨头与 AI 相关的“表外”承诺和义务，在短短六个月里几乎翻倍，达到约 3.2 万亿美元，规模相当于它们资产的八成。所谓表外，就是长期租约、算力采购合同这类不算作正式借款、却迟早要付钱的承诺。\n\n市场开始紧张。英特尔在 10 月 30 日因业绩指引不佳暴跌近 29%，创 1974 年以来最差单日表现；本周一，尽管标普 500 里约七成股票上涨，芯片股却几乎全线下跌，一天蒸发超过 4000 亿美元市值，美光、闪迪、希捷等存储股跌了 6% 到 8%。\n\n现实瓶颈也在别处：电。《纽约时报》报道，排队等电网接入的数据中心，开始用退役飞机的喷气发动机改装成燃气发电机。在北弗吉尼亚，接入 100 兆瓦电网大约要等七年，而“飞机引擎电站”24 个月就能让数据中心跑起来。",
+     "en": "According to Nikkei Asia, the AI-related off-balance-sheet commitments of US tech giants such as Google and Meta have almost doubled in six months to about $3.2 trillion — roughly 80% of their assets. 'Off-balance-sheet' means things like long leases and compute purchase contracts: not formally debt, but bills that will come due.\n\nMarkets are getting nervous. Intel fell nearly 29% on October 30 after a disappointing forecast, its worst day since 1974. On Monday, even as about seven in ten S&P 500 stocks rose, nearly every chip stock fell, wiping more than $400 billion off the group in a single session; memory and storage names like Micron, Sandisk and Seagate dropped 6–8%.\n\nThe physical bottleneck is power. The New York Times reports that data centers stuck in grid queues are turning to retired jet engines rebuilt to burn natural gas. Connecting 100 megawatts to the grid in Northern Virginia takes about seven years; a jet-engine plant can have a data center running in 24 months."
+    },
+    "why": {
+     "zh": "AI 繁荣越来越依赖借来的钱和临时拼凑的电力，一旦需求不及预期，压力会传导到股市、债市和电价。",
+     "en": "The AI boom increasingly runs on borrowed money and improvised power; if demand disappoints, the strain spreads to stocks, credit and electricity prices."
+    },
+    "pro": {
+     "zh": "表外承诺的风险在于透明度：租赁与产能合同在会计上可以不确认为负债，但现金流义务是刚性的。结合利率上升与 AI 收入增速放缓的迹象，市场正在重新给“算力超级周期”定价——存储和代工这类周期性最强的环节往往最先反映。",
+     "en": "The risk of off-balance-sheet commitments is opacity: leases and capacity contracts need not be booked as debt, yet the cash obligations are rigid. With rates rising and signs of slowing AI revenue growth, markets are repricing the 'compute supercycle' — and the most cyclical links, memory and foundry, usually move first."
+    },
+    "stat": {
+     "value": "$3.2T",
+     "label": {
+      "zh": "美国科技巨头 AI 表外承诺（半年近翻倍）",
+      "en": "US Big Tech AI off-balance-sheet commitments, nearly doubled in 6 months"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "表外负债",
+       "en": "Off-balance-sheet"
+      },
+      "explain": {
+       "zh": "不写进正式负债、但未来必须支付的承诺，像签了长期合同却没算进房贷。",
+       "en": "Obligations not recorded as debt but still owed — like a long-term contract that never shows up as a mortgage."
+      }
+     },
+     {
+      "term": {
+       "zh": "兆瓦",
+       "en": "Megawatt"
+      },
+      "explain": {
+       "zh": "电力单位，100 兆瓦大约够几万户家庭同时用电。",
+       "en": "A unit of power; 100 MW is roughly enough for tens of thousands of homes."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "Hacker News",
+      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+      "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months"
+     },
+     {
+      "name": "Hacker News",
+      "url": "https://finance.yahoo.com/markets/article/the-intel-stock-collapse-is-getting-worse--and-the-37-trillion-chip-rout-is-spreading-212154947.html",
+      "title": "Intel stock collapse worsens as $3.5T chip rout spreads"
+     },
+     {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+      "title": "Data centers are turning to old jet engines as the wait for power grows"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "开源与推理",
+     "en": "Open Models"
+    },
+    "title": {
+     "zh": "跑模型的生意火了：Fal 估值半年翻倍到 160 亿美元",
+     "en": "Running AI is the hot business: Fal doubles to $16 billion"
+    },
+    "hook": {
+     "zh": "训练模型是造发动机，推理是开车上路——现在钱开始涌向“路上”。",
+     "en": "Training a model builds the engine; inference is driving it — and the money is moving to the road."
+    },
+    "story": {
+     "zh": "总部在旧金山的 Fal 是一家帮客户托管和运行 AI 视频、图像、音频模型的公司。它刚完成 13 亿美元融资，由 Bessemer 领投，英伟达、T. Rowe Price 等跟投，估值 160 亿美元，是今年 4 月 80 亿美元的两倍。据彭博社报道，它的年化收入今年早些时候已超过 8 亿美元。\n\n驱动力是“推理”需求，也就是让训练好的模型真正干活、生成结果。尤其是使用开源模型的客户越来越多，Baseten、Fireworks AI、Modal 等同类公司也在快速增长。\n\n同一天，英国金融科技公司 Revolut 的做法也印证了这个趋势：据 The Register 报道，它把 AI 编程工具从 Claude 换成自己部署的开源模型 GLM，编程相关的 AI 成本降低了约 10 倍。",
+     "en": "San Francisco-based Fal hosts and runs AI video, image and audio models for customers. It has just raised $1.3 billion led by Bessemer, with Nvidia and T. Rowe Price joining, at a $16 billion valuation — double the $8 billion it was worth in April. Bloomberg reports its annualised revenue passed $800 million earlier this year.\n\nThe driver is inference: putting trained models to work generating results, especially for customers using open-source models. Rivals such as Baseten, Fireworks AI and Modal are growing fast too.\n\nOn the same day, British fintech Revolut offered a case study. According to The Register, it cut its AI coding costs roughly tenfold by moving from Claude to a self-hosted open model, GLM."
+    },
+    "why": {
+     "zh": "当开源模型“够用”，企业就会算成本账，这正在改变谁能从 AI 里赚到钱。",
+     "en": "Once open models are 'good enough', companies start doing the cost maths — and that changes who makes money from AI."
+    },
+    "pro": {
+     "zh": "推理基础设施的护城河在于 GPU 利用率、冷启动延迟和多模型调度，而不是模型本身。开源权重让企业可以把工作负载迁到自有或第三方算力上，闭源实验室因此面临定价压力——这也解释了为何头部实验室的单位经济性备受关注。",
+     "en": "The moat in inference infrastructure is GPU utilisation, cold-start latency and multi-model scheduling, not the model itself. Open weights let enterprises move workloads onto their own or third-party compute, putting pricing pressure on closed labs — one reason frontier-lab unit economics are under such scrutiny."
+    },
+    "stat": {
+     "value": "$16B",
+     "label": {
+      "zh": "Fal 最新估值（4 月为 80 亿）",
+      "en": "Fal's new valuation (vs $8B in April)"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "推理",
+       "en": "Inference"
+      },
+      "explain": {
+       "zh": "让训练好的模型回答问题、生成内容的过程，就像学成的厨师开始真正做菜。",
+       "en": "Running a trained model to produce answers — like a trained chef actually cooking."
+      }
+     },
+     {
+      "term": {
+       "zh": "开源模型",
+       "en": "Open-weight model"
+      },
+      "explain": {
+       "zh": "公开参数、任何人都能下载部署的模型，类似可以自己装修的毛坯房。",
+       "en": "A model whose weights are published so anyone can run it themselves — like a house you can fit out your own way."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+      "title": "AI inference startup Fal doubles its valuation to $16B as demand surges"
+     },
+     {
+      "name": "The Register",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQY0M5dTRTTnNGNEtyd19HVlFLSFh6ZGFoTTdRR0djZWdRak9zLVVfR0lOQV94OGtyeFRKNkZxa2J4MVgxODAtM29XbmpCT291UmFNZVJ0Q1lZd0pkQmVSZFBBNGxXMy1iaEVJbzNONEpxX0g0NW93NDNwTjNSUXNOV1d1T3NFNUtSUy1jc1ZadWVDczE4eG9rcU9FdUZ6UWlreGdCYU9XTHJWdXRLSmZ6RDNNaDZVNGtzeTBTTXFqVTN2NDNnU0VTZUZSWWI2TmFZRVBKMWRQc0I0V0hYX0MzRGYza2FVXzA?oc=5",
+      "title": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted"
+     },
+     {
+      "name": "Hacker News",
+      "url": "https://twitter.com/guilleflorvs/status/2117379073785696395",
+      "title": "Revolut moves to self-hosted GLM"
+     }
+    ]
+   },
+   {
+    "importance": 1,
+    "tag": {
+     "zh": "开发者信任",
+     "en": "Developer Trust"
+    },
+    "title": {
+     "zh": "你的 AI 工具，可能在你不知道时“自作主张”",
+     "en": "Your AI tools may be making choices you never approved"
+    },
+    "hook": {
+     "zh": "两条开发者社区热帖，指向同一个问题：谁在掌控你电脑里的 AI？",
+     "en": "Two viral developer threads point at the same question: who controls the AI on your machine?"
+    },
+    "story": {
+     "zh": "Hacker News 上周二最热的帖子之一（近 1500 赞）来自一份 GitHub 问题报告：一位用户称，打开 API 调试工具 Postman 的桌面版后，自己的 AI 编程助手开始出现异常。排查后发现，Postman 在用户范围内自动安装了针对 Codex 和 Claude 的插件、一个启动指令钩子和一个远程 MCP 连接，导致编程助手反复把 API 工作转交给 Postman。\n\n另一条热帖则讨论 OpenAI 似乎在悄悄重新开启用 Codex 对话训练模型的选项。需要注意，这两件事目前都来自用户报告和社区讨论，公司方面的完整回应尚未见诸报道。\n\n但它们共同揭示了一个新风险：AI 编程助手能读写代码、调用外部服务，一旦被其他软件“顺手”改了配置，你的数据可能流向你没同意的地方。",
+     "en": "One of Tuesday's top Hacker News posts (nearly 1,500 points) was a GitHub issue report. A user said that after opening the Postman desktop app — a popular API testing tool — their AI coding agents started misbehaving. On investigation they found Postman had installed, user-wide, plugins for Codex and Claude, a startup instruction hook and a remote MCP connection, so the agents kept routing API work through Postman.\n\nAnother thread discussed reports that OpenAI seems to be quietly re-enabling the option to train on Codex chats. Both stories currently rest on user reports and community discussion; full company responses have not yet been reported.\n\nTogether they expose a new kind of risk: coding agents can read and write code and call outside services. If other software quietly rewires them, your data can end up somewhere you never agreed to."
+    },
+    "why": {
+     "zh": "AI 助手正在成为电脑上权限最大的软件之一，它的配置一旦被篡改，影响远超普通插件。",
+     "en": "AI agents are becoming some of the most privileged software on a computer; tampering with their setup matters far more than an ordinary plugin."
+    },
+    "pro": {
+     "zh": "这是“智能体供应链”问题：MCP 服务器、技能和启动钩子构成了新的攻击面，类似浏览器扩展早年的乱象。合理的防线包括：配置变更需显式授权、插件签名与来源校验、以及对外部 MCP 连接的最小权限控制。",
+     "en": "This is an agent supply-chain problem: MCP servers, skills and startup hooks form a new attack surface, much like the early days of browser extensions. Sensible defences are explicit consent for config changes, signed plugins with provenance checks, and least-privilege rules for remote MCP connections."
+    },
+    "stat": {
+     "value": "1,478",
+     "label": {
+      "zh": "Hacker News 热度（赞）",
+      "en": "Hacker News points"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "MCP",
+       "en": "MCP"
+      },
+      "explain": {
+       "zh": "让 AI 助手连接外部工具和数据的通用“插座标准”。",
+       "en": "A common 'plug socket' standard that lets AI assistants connect to outside tools and data."
+      }
+     },
+     {
+      "term": {
+       "zh": "钩子",
+       "en": "Hook"
+      },
+      "explain": {
+       "zh": "在程序某个时刻自动触发的代码，比如每次启动时先执行一段指令。",
+       "en": "Code that runs automatically at a set moment — for example, every time a program starts."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "Hacker News",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data"
+     },
+     {
+      "name": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=50352757",
+      "title": "OpenAI seems to be silently re-enabling model training on Codex chats"
+     }
+    ]
+   }
+  ],
+  "world": [
+   {
+    "importance": 3,
+    "tag": {
+     "zh": "美国中期选举",
+     "en": "US Midterms"
+    },
+    "title": {
+     "zh": "美国中期选举投票：国会控制权悬而未决",
+     "en": "America votes: control of Congress hangs in the balance"
+    },
+    "hook": {
+     "zh": "这一票决定的，是特朗普剩下两年是“一路绿灯”还是“处处碰壁”。",
+     "en": "The vote decides whether Trump's last two years run on green lights or gridlock."
+    },
+    "story": {
+     "zh": "11 月 3 日，美国选民走进投票站，选出新一届国会。这场中期选举的核心问题很简单：共和党能否继续掌握国会两院。若共和党守住，特朗普在剩余两年里推动政策几乎畅通无阻；若民主党拿下一院或两院，他的立法议程将严重受阻，政府运转甚至可能陷入僵局。\n\n选前，博彩市场和民调都认为民主党占优，尤其有望夺回众议院。截至本期发稿，美联社等已宣布几场参议院结果：佐治亚州的奥索夫、弗吉尼亚州的沃纳成功连任，伊利诺伊州的朱莉安娜·斯特拉顿当选，均为民主党人——但这些都在民主党原本的优势或守势州，整体格局要等计票完成，可能需要数天。\n\n投票当天还有个插曲：特朗普在接受福克斯新闻电话采访时突然表示，美国每年约 40 亿美元的对以色列军事援助将在年底停止，“他们不需要了”。",
+     "en": "On November 3, Americans voted for a new Congress. The core question was simple: can Republicans keep both chambers? If they do, Trump faces little resistance for his final two years; if Democrats take one or both, his legislative agenda is badly hobbled and even basic government functions could gridlock.\n\nBefore polling day, betting markets and polls favoured Democrats, especially to flip the House. As this edition went out, AP and others had called several Senate races: Jon Ossoff re-elected in Georgia, Mark Warner re-elected in Virginia and Juliana Stratton elected in Illinois — all Democrats, but in seats the party already held or was defending. The overall picture depends on counting that could take days.\n\nThere was an election-day surprise too. In a phone interview with Fox News, Trump said roughly $4 billion a year in US military aid to Israel would end at the close of this year because 'they don't need it'."
+    },
+    "why": {
+     "zh": "国会控制权决定预算、关税、对外援助和调查权，直接影响美国政策走向与全球市场。",
+     "en": "Control of Congress decides budgets, tariffs, foreign aid and investigations — it steers US policy and global markets."
+    },
+    "pro": {
+     "zh": "历史上执政党在中期选举通常失分，市场则倾向于“分治政府”带来的政策不确定性下降。需要关注的是：众议院席位的最终分配往往取决于少数摇摆选区和邮寄选票统计；而对以援助表态若要落地，同样绕不开国会拨款权。",
+     "en": "Historically the president's party loses ground in midterms, and markets often welcome the reduced policy risk of divided government. Watch the handful of swing districts and mail-ballot counts that usually settle the House — and note that any end to Israel aid would still run through Congress's power of the purse."
+    },
+    "stat": {
+     "value": "$4B",
+     "label": {
+      "zh": "特朗普称将于年底停止的对以年度军援",
+      "en": "Annual Israel military aid Trump says will end"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "中期选举",
+       "en": "Midterms"
+      },
+      "explain": {
+       "zh": "美国总统四年任期中间举行的国会选举，常被视为对总统的“期中考试”。",
+       "en": "US congressional elections held halfway through a presidential term — often a referendum on the president."
+      }
+     },
+     {
+      "term": {
+       "zh": "跛脚鸭",
+       "en": "Lame duck"
+      },
+      "explain": {
+       "zh": "任期将满、影响力下降的执政者，就像赛季末已确定离队的队长。",
+       "en": "A leader nearing the end of their term with fading clout — like a captain who has already announced they're leaving."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/03/midterm-elections-congress-trump-democrats-republicans.html",
+      "title": "What the 2026 midterm elections could mean for Trump's final two years"
+     },
+     {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcmxERUpSM1lpOEU0NTVpYkxnTUNwMFliMW92Z3ZoR2xYVVpVUEVISVdPejJHeTlGT0tLTG1hb2wza1ZHUUZpSTlaYWtWRFVMenMyY2M2SHNQa25iX1cycW5aSG9GdndVb0RKTjUxQzdjUlFjWDhPZGFDZ010QW1LaGdLOUJkbVlTNmEybmR1Q2xiOHRhbzNEeVdOaFpHU0lFWEE?oc=5",
+      "title": "Democrat Jon Ossoff wins reelection to U.S. Senate from Georgia"
+     },
+     {
+      "name": "PBS",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPaDljYWtRODVlYWp3UFJmQ2xJOXc5NzB1NFU3OGhOUVNhYVFEeUphUGhZRld0XzFjcmtoNnU0bEZhdy03UzlVSkdGR2VmMVVlcnl4S0RzV2VVNkRxVVczN2tTWWxSMkhVeHlzOUhwellwTGQ4bkVzeUxPd2tKTXJucVdWZjVkQ2Zid0FZeDZzcjYtdjR4R1U2QmFERXVwQ1NVZEdMZ9IBqgFBVV95cUxNQWFYMnlTZ3BJcnd0eXdUdlZjQjBtUktHZkJkUHdkcGZwNWxPdHhUNWJyMU9mUXFHcEUwTXFHclJUX0x2d3J3b29xb1pXaExyNVJiWDhNY0RXZzVicG9nWHA1ZkFJQWswZnliYVhkSnZhU2tzQ3ZiYVV6YkVZalFCcWltcy1Gai1FYTNLNzNuakZuSER4T1JzNHhUNFlPTkJPS3Q4djc3azZ5QQ?oc=5",
+      "title": "Democrat Mark Warner wins reelection to U.S. Senate from Virginia"
+     },
+     {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON0NSWWItbE1HSW5rUjNoNUhrRjNmQWJFdVdSRzZBcHR6bjdGbzhnZVhWNDFRUDhYd3g2azNaWURJX21ESkpraGJGUmd4MWliRVRVekN5djVKM2lvbDdSRGoyeHdvUmlsd1prNDRPN0sxUm9zanVSbV9oek03ZGNWeFVUMGJUd1FmcWFZNklqSFNjbnBCQVh0SC1pRzQ3blJOc2dUeGZR?oc=5",
+      "title": "Democrat Juliana Stratton wins election to U.S. Senate from Illinois"
+     },
+     {
+      "name": "NPR World",
+      "url": "https://www.npr.org/2026/11/03/g-s1-151445/up-first-newsletter-midterms-election-day-iran-war-lindsay-clancy",
+      "title": "Control of Congress is at stake today. And, judge to consider motion in Clancy case"
+     },
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/us-news/2026/nov/03/donald-trump-usa-end-military-aid-to-israel-end-year-midterms",
+      "title": "Trump claims US will end military aid to Israel by end of this year"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "中东",
+     "en": "Middle East"
+    },
+    "title": {
+     "zh": "美国空袭伊朗格什姆岛，谈判仍在继续",
+     "en": "US strikes Iran's Qeshm Island as talks carry on"
+    },
+    "hook": {
+     "zh": "一边是导弹，一边是谈判桌——未来两天可能决定这场战争的方向。",
+     "en": "Missiles on one side, a negotiating table on the other — the next two days may set the war's course."
+    },
+    "story": {
+     "zh": "周一深夜，美国对伊朗霍尔木兹海峡中的格什姆岛发动了“有限打击”，据报道目标是用来对付美方资产的地对空导弹。消息先由伊朗民众在社交媒体曝出，随后美国中央司令部证实。就在几小时前，副总统万斯还表示，结束战争的外交努力正朝着正确方向发展。\n\n谈判并没有中断。据《纽约时报》，伊朗官员称，作为与美国达成协议的一部分，伊朗可以在两天内重新开放霍尔木兹海峡；卡塔尔代表团已抵达德黑兰继续斡旋。调解方认为，两天内就能看清美伊间接谈判是否还有基础。伊朗首席谈判代表则表示，美国必须采取行动防止战争重燃。\n\n局势中还有另一股力量：以色列声称伊朗拥有化学武器，这在美国官员中引发分歧，部分人认为内塔尼亚胡想把特朗普重新拉回军事行动。",
+     "en": "Late on Monday the US carried out 'limited strikes' on Iran's Qeshm Island in the Strait of Hormuz, reportedly targeting surface-to-air missiles being used against US assets. Iranians first posted about it on social media; US Central Command then confirmed it. Only hours earlier, Vice-President JD Vance had said diplomatic efforts to end the war were moving in the right direction.\n\nTalks have not stopped. According to The New York Times, Iranian officials said Iran could reopen the Strait of Hormuz within two days as part of a deal with the US, and a Qatari delegation arrived in Tehran to keep mediating. Mediators believe it will be clear within two days whether there is a basis for continued indirect talks. Iran's chief negotiator said the US must act to prevent renewed war.\n\nThere is another force in play: Israeli claims that Iran holds chemical weapons have divided US officials, some of whom suggest Benjamin Netanyahu is trying to draw Trump back into military action."
+    },
+    "why": {
+     "zh": "霍尔木兹海峡承载着全球大量石油运输，它是否重开直接关系到油价和全球通胀。",
+     "en": "A large share of the world's oil passes through the Strait of Hormuz; whether it reopens feeds straight into oil prices and global inflation."
+    },
+    "pro": {
+     "zh": "“边打边谈”是典型的强制外交：有限打击旨在削弱对方防空能力、提高谈判筹码，同时避免全面升级。对市场而言，关键变量是海峡通航时间表与保险费率；对外交而言，卡塔尔的斡旋渠道和以色列的情报叙事将左右美国的决策空间。",
+     "en": "Fighting while talking is classic coercive diplomacy: limited strikes degrade air defences and raise leverage without full escalation. For markets the key variables are the timetable for reopening the strait and shipping insurance rates; diplomatically, Qatar's channel and Israel's intelligence claims will shape Washington's room to manoeuvre."
+    },
+    "stat": {
+     "value": "48h",
+     "label": {
+      "zh": "伊朗称协议达成后重开海峡所需时间",
+      "en": "Time Iran says it needs to reopen the strait under a deal"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "霍尔木兹海峡",
+       "en": "Strait of Hormuz"
+      },
+      "explain": {
+       "zh": "波斯湾通往外海的狭窄水道，被称为全球石油运输的“咽喉”。",
+       "en": "The narrow channel out of the Persian Gulf — the chokepoint for much of the world's oil."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/03/us-strikes-irans-qeshm-island",
+      "title": "US strikes Iran’s Qeshm Island as Vance voices optimism about a deal"
+     },
+     {
+      "name": "NYT World",
+      "url": "https://www.nytimes.com/2026/11/02/world/middleeast/iran-deal-strait-of-hormuz.html",
+      "title": "Iran Says It Would Reopen Strait of Hormuz in 2 Days as Part of U.S. Deal"
+     },
+     {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOM2pBMjlPX0dlMUxUN1BQVExSMVRwRTBnQkx6TkFaRW4zT1NsTE9jNzhHbnZSMVFXd1lHQ3gwWFJEbW85aGdhbTJVY0VWN1FyTVZLTUdSblVHYzAtTHVoN2ZvZkNyWWtPR3pVVWRBSUxaTWZldUR0QktaZWlMSm42cEdiWFNhcUIwNFdpUUN4a0JjQQ?oc=5",
+      "title": "Iran’s chief negotiator says the US must act to prevent renewed war, and other Mideast news"
+     },
+     {
+      "name": "NYT World",
+      "url": "https://www.nytimes.com/2026/11/03/world/middleeast/iran-chemical-weapons-israel-trump.html",
+      "title": "Israeli Claims of Iranian Chemical Weapons Divide U.S. Officials"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "俄乌战争",
+     "en": "Russia–Ukraine"
+    },
+    "title": {
+     "zh": "俄军袭击乌克兰救援物资点，至少 29 人遇难",
+     "en": "Russian strike on Ukrainian aid site kills at least 29"
+    },
+    "hook": {
+     "zh": "人们排队领救援物资的地方，变成了一个弹坑。",
+     "en": "A place where people queued for aid became a crater."
+    },
+    "story": {
+     "zh": "在乌克兰南部扎波罗热州的科米舒瓦哈村，一处发放人道主义援助的设施和避难所遭到俄军袭击。截至周二，遇难人数升至 29 人，另有 48 人失踪。救援人员在废墟中连夜搜寻，却不断抬出遇难者。当地军政负责人称，这是该地区平民伤亡最惨重的悲剧之一。\n\n同一夜，俄罗斯向九个地区发射了 289 架攻击无人机、17 枚弹道导弹和 59 枚巡航导弹，袭击发电厂、损坏医院。泽连斯基特意指出，这轮空袭恰好与美国大选同时发生。\n\n据《纽约时报》报道，袭击发生数小时后，美国宣布与俄乌两国的和谈将在中断九个月后恢复。",
+     "en": "In Komyshuvakha, a village in Ukraine's southern Zaporizhzhia region, a Russian attack hit a facility and shelter where people gathered to receive humanitarian aid. By Tuesday the death toll had risen to 29, with 48 still missing. Rescuers searched the rubble through the night but kept carrying out bodies; the region's acting military chief called it one of the worst tragedies for civilian casualties in the area.\n\nThe same night Russia fired 289 attack drones, 17 ballistic missiles and 59 cruise missiles across nine regions, hitting power plants and damaging hospitals. President Zelensky pointedly noted that the barrage coincided with the US elections.\n\nHours after the attack, The New York Times reports, the United States said peace talks with both countries would resume after a nine-month pause."
+    },
+    "why": {
+     "zh": "冬季前对电网的大规模打击和对平民的伤害，将直接影响即将恢复的和谈筹码。",
+     "en": "Mass strikes on the power grid before winter, and the toll on civilians, will weigh directly on the peace talks about to restart."
+    },
+    "pro": {
+     "zh": "俄方的组合打击（大量廉价无人机消耗防空 + 弹道/巡航导弹打击关键目标）是本轮战争的典型模式，目的是在冬季前削弱乌克兰能源体系。和谈恢复的时间点与大规模空袭重叠，显示双方都在为谈判桌前的筹码加码。",
+     "en": "Russia's mix — swarms of cheap drones to exhaust air defences, then ballistic and cruise missiles at key targets — is the signature pattern of this war, aimed at crippling Ukraine's energy system before winter. Talks restarting alongside a massive barrage suggests both sides are building leverage for the table."
+    },
+    "stat": {
+     "value": "365",
+     "label": {
+      "zh": "一夜发射的无人机与导弹总数",
+      "en": "Drones and missiles launched in one night"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "弹道导弹 vs 巡航导弹",
+       "en": "Ballistic vs cruise missile"
+      },
+      "explain": {
+       "zh": "弹道导弹像抛出去的石头，高速从高空砸下；巡航导弹像低飞的小飞机，贴地绕行。",
+       "en": "A ballistic missile is like a thrown stone falling fast from high up; a cruise missile is like a small plane flying low and steering around."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "NPR World",
+      "url": "https://www.npr.org/2026/11/03/g-s1-151439/russia-ukraine-war",
+      "title": "Death toll hits 29 after Russian strike on Ukrainian aid site, with 48 still missing"
+     },
+     {
+      "name": "NYT World",
+      "url": "https://www.nytimes.com/2026/11/03/world/europe/komyshuvakha-zaporizhzhia-attack-ukraine.html",
+      "title": "Strike on Ukraine Humanitarian Hub Is Feared to Be Among War’s Deadliest"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "加密与网络安全",
+     "en": "Crypto & Cyber"
+    },
+    "title": {
+     "zh": "63 亿美元币安被盗案揭秘：假面试和被攻破的 AI 工具",
+     "en": "Inside the $6.3bn Binance hack: fake interviews and a hijacked AI tool"
+    },
+    "hook": {
+     "zh": "史上最大的加密货币盗窃，从一场“求职面试”开始。",
+     "en": "The biggest crypto theft in history began with a job interview."
+    },
+    "story": {
+     "zh": "全球最大加密货币交易所币安公布了 10 月 29 日被盗事件的初步调查：黑客偷走了创纪录的 63 亿美元。联席 CEO 滕瑞希对 CNBC 说，攻击者“花了几个月一步步渗透”：6 月，他们做了一个假冒的开发者工具，诱骗一名工程师安装；9 月，又冒充招聘方给另一位工程师安排了一系列面试，最后的编程测试里藏着能绕过安全检测的恶意程序。\n\n得手后，他们还利用了被攻破的内部 AI 工具，最终控制了币安的钱包系统。币安称“这本不该发生”，并表示已用自有资金补足了约 98% 的受影响资产。\n\n美国联邦调查局、特勤局和多家网络安全机构认定，这是朝鲜国家支持的黑客组织 TraderTraitor 所为。朝鲜领导人的妹妹金与正周二否认，称指控是“荒谬的言论”。",
+     "en": "Binance, the world's largest crypto exchange, has published initial findings on the October 29 breach in which hackers stole a record $6.3 billion. Co-CEO Richard Teng told CNBC the attackers 'spent months building their way in': in June they set up a fake developer tool and lured one engineer into installing it; in September they posed as recruiters and ran a series of interviews with another engineer, ending in a coding exercise that hid malware designed to evade security.\n\nFrom there they also exploited compromised internal AI tools and ultimately took control of Binance's wallet infrastructure. Binance said 'this should not have happened' and says it has replenished about 98% of the affected assets from its own resources.\n\nThe FBI, the Secret Service and cyber analysts blame North Korea's state-backed group TraderTraitor. Kim Yo Jong, sister of leader Kim Jong Un, denied it on Tuesday, calling the accusations 'absurd rhetoric'."
+    },
+    "why": {
+     "zh": "最坚固的系统也会被“人”攻破；企业内部的 AI 工具正在成为黑客的新目标。",
+     "en": "Even the strongest systems fall through people — and internal AI tools are becoming a new target for attackers."
+    },
+    "pro": {
+     "zh": "这是一次典型的 APT（高级持续性威胁）攻击链：供应链投毒（假开发工具）→ 社会工程（假面试）→ 横向移动 → 接管高权限工具。内部 AI 工具因拥有广泛系统权限，一旦失守等于给了攻击者一把万能钥匙。行业影响是托管与安全基础设施的估值溢价上升。",
+     "en": "A textbook APT kill chain: supply-chain poisoning (fake dev tool) → social engineering (fake interviews) → lateral movement → takeover of privileged tooling. Internal AI tools often hold broad system access, so compromising one is like handing over a master key. For the industry, custody and security infrastructure now command a valuation premium."
+    },
+    "stat": {
+     "value": "$6.3B",
+     "label": {
+      "zh": "史上最大加密货币盗窃",
+      "en": "Largest crypto theft on record"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "社会工程",
+       "en": "Social engineering"
+      },
+      "explain": {
+       "zh": "不攻破系统，而是骗“人”开门，比如冒充招聘方或同事。",
+       "en": "Tricking people rather than breaking systems — say, posing as a recruiter or colleague."
+      }
+     },
+     {
+      "term": {
+       "zh": "冷/热钱包",
+       "en": "Wallet infrastructure"
+      },
+      "explain": {
+       "zh": "交易所存放加密资产的“保险柜”系统，控制了它就能转走资金。",
+       "en": "The 'vault' systems where an exchange keeps crypto — control them and you can move the funds."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+      "title": "Binance says fake job interviews used as part of $6.3bn crypto hack"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/03/binance-co-ceo-teng-says-hackers-used-fake-job-interviews-to-steal-6point3-billion-in-crypto.html",
+      "title": "Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto"
+     },
+     {
+      "name": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/c6rey4v53exgo?at_medium=RSS&at_campaign=rss",
+      "title": "North Korea denies being behind record $6.3bn Binance hack"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/03/binance-breach-puts-custody-at-center-of-crypto-infrastructure-trade.html",
+      "title": "Binance breach puts custody at center of crypto infrastructure trade"
+     }
+    ]
+   },
+   {
+    "importance": 1,
+    "tag": {
+     "zh": "英国与欧盟",
+     "en": "UK & EU"
+    },
+    "title": {
+     "zh": "英欧敲定食品贸易协议草案，拆掉脱欧后的“关卡”",
+     "en": "UK and EU agree draft deal to scrap post-Brexit food checks"
+    },
+    "hook": {
+     "zh": "一车英国奶酪进欧洲，终于可能不用再填那么多表了。",
+     "en": "A lorry of British cheese bound for Europe may finally face less paperwork."
+    },
+    "story": {
+     "zh": "据 BBC 报道，英国和欧盟已就取消食品和农产品出口的脱欧后检查达成协议草案。这份约 200 页的“卫生与植物检疫”（SPS）协议文本已发给欧盟各国，周三将在布鲁塞尔讨论，目标是在本月晚些时候的英欧峰会上敲定。\n\n脱欧后，英国离开了欧盟单一市场，食品出口商要面对额外检查、证书和延误，很多小企业因此放弃了欧洲市场。这份协议是所谓“脱欧重置”中迄今最重要的一块。英国政府称，它最终每年能为英国经济带来 51 亿英镑的收益。\n\n与之一同分发的，还有碳排放交易和青年旅行工作计划的协议文本，以及一份 15 页的领导人联合声明草案。",
+     "en": "The UK and EU have agreed a draft deal to remove post-Brexit checks on food and agricultural exports, the BBC reports. The roughly 200-page 'sanitary and phytosanitary' (SPS) text has been circulated to EU nations ahead of a meeting in Brussels on Wednesday, with the aim of sealing it at a UK-EU summit later this month.\n\nLeaving the single market meant extra checks, certificates and delays for food exporters, and many small firms gave up on Europe. This is the most significant part of the so-called Brexit reset so far; the government claims it will eventually bring £5.1 billion a year in benefits to the UK economy.\n\nTexts on emissions trading and a youth travel and work scheme were circulated alongside it, plus a 15-page draft joint statement for leaders."
+    },
+    "why": {
+     "zh": "这是脱欧以来英欧关系最实质的一次修复，直接影响食品价格、农场主和出口企业。",
+     "en": "It is the most substantive repair to UK-EU ties since Brexit, touching food prices, farmers and exporters."
+    },
+    "pro": {
+     "zh": "SPS 协议通常要求英国在相关领域动态对齐欧盟规则，这意味着用部分监管自主权换取市场准入——这正是脱欧辩论的核心权衡。它也可能为北爱尔兰贸易安排减压。",
+     "en": "SPS deals usually require dynamic alignment with EU rules in the covered areas — trading some regulatory autonomy for market access, the central trade-off of the whole Brexit debate. It may also ease pressure on Northern Ireland's trading arrangements."
+    },
+    "stat": {
+     "value": "£5.1bn",
+     "label": {
+      "zh": "英国政府预估的年度经济收益",
+      "en": "Annual benefit the UK government claims"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "SPS",
+       "en": "SPS"
+      },
+      "explain": {
+       "zh": "关于食品安全、动植物检疫的规则，决定一块肉、一棵菜能不能过境。",
+       "en": "Rules on food safety and animal and plant health — they decide whether a steak or a lettuce can cross a border."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cmp3grwre9xdo?at_medium=RSS&at_campaign=rss",
+      "title": "UK and EU agree draft deal to scrap Brexit red tape over food exports"
+     }
+    ]
+   }
+  ]
+ },
+ "quick_hits": [
+  {
+   "section": "world",
+   "title": {
+    "zh": "巴西发布全球首份化石燃料退出路线图",
+    "en": "Brazil publishes first global fossil-fuel phase-out roadmap"
+   },
+   "line": {
+    "zh": "去年联合国气候大会东道主巴西称，各国现在就能开始摆脱煤、油、气依赖，不必等待新技术。",
+    "en": "Last year's UN climate summit host says countries can start breaking their dependence on coal, oil and gas now, without waiting for new technology."
+   },
+   "sources": [
+    {
+     "name": "The Guardian World",
+     "url": "https://www.theguardian.com/environment/2026/nov/03/brazil-first-global-roadmap-phasing-out-fossil-fuels",
+     "title": "Brazil publishes first global ‘roadmap’ for phasing out fossil fuels"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "西班牙交通大臣因高铁事故辞职",
+    "en": "Spain's transport minister resigns over rail crash"
+   },
+   "line": {
+    "zh": "一起造成近 70 人死亡的高铁事故后，奥斯卡·普恩特辞职；这是不到一年内的第二起高铁事故。",
+    "en": "Óscar Puente quit after a high-speed crash that killed nearly 70 people — the second such accident in under a year."
+   },
+   "sources": [
+    {
+     "name": "NYT World",
+     "url": "https://www.nytimes.com/2026/11/03/world/europe/spain-train-crash-transport-minister-resigns-oscar-puente.html",
+     "title": "Spain’s Transport Minister Resigns After Deadly High-Speed Rail Crash"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "波兰加强对俄边境安保",
+    "en": "Poland tightens security on its Russian border"
+   },
+   "line": {
+    "zh": "总理图斯克称，俄罗斯飞地加里宁格勒出现“令人不安的动向”。",
+    "en": "Prime Minister Donald Tusk cited 'disturbing movement' in Russia's Kaliningrad exclave."
+   },
+   "sources": [
+    {
+     "name": "NYT World",
+     "url": "https://www.nytimes.com/2026/11/03/world/europe/poland-russia-kaliningrad.html",
+     "title": "Poland Beefs Up Security at Border With Russia"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "美国华盛顿州出现禽流感死亡病例",
+    "en": "US bird-flu death in Washington state"
+   },
+   "line": {
+    "zh": "一名接触奶牛的居民死于禽流感，为美国今年首例；卫生官员称公众风险较低。",
+    "en": "A resident exposed to dairy cows died of bird flu, the first US death this year; officials say public risk remains low."
+   },
+   "sources": [
+    {
+     "name": "Fox News",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcGg3ZkVDMzVucmgteGJON0xfQ3hDczV1S3p4YlRJXzNoaTVKTW1kQjdFVlNoenFiVEtCQjR2Z1lmeVotcWhTRjd1NEtoTWlEU3RJMGZNU0JPdkhhSkR0clF1WEozNTEydEVLY1c1c0huYS1XRFp0R2g0NENWaHoyekdIWXRKN1YwczZRcDdfS3JicnloMGt4YzllUzUxUjdZV0JxUGJDNNIBrAFBVV95cUxPWlY5MHFWR0RQdEZ0Yi1mYUIydnhZVXlnRlFqWlpIVnpydzNnOHVNUDhqVVJibnVQZ3ZUY0s0QXluZGtad0RldXlxOF9tamlJRmVpeS1LbTl3YWs3bFRCV1RBYmFFZHJPY1E3QTZkWFdibjlVSGJ4bTF4Ql8wT3pjV3pMQ2paTGxyZnRRSUx2WDAzak5PUWZOdlpOZzAwa0pybEUyOEh5SFRVVEJJ?oc=5",
+     "title": "Bird flu kills US resident after dairy cow exposure, marking nation’s third death"
+    }
+   ]
+  },
+  {
+   "section": "ai",
+   "title": {
+    "zh": "Canva 宣布大规模裁员调岗",
+    "en": "Canva announces sweeping job cuts"
+   },
+   "line": {
+    "zh": "1271 人（约占员工 22%）将被裁员、调岗或迁往中心城市；CEO 称增长十年来首次放缓，AI 冲击是原因之一。",
+    "en": "1,271 staff (about 22%) will lose jobs, move roles or relocate; the CEO says growth slowed for the first time in a decade amid AI pressure."
+   },
+   "sources": [
+    {
+     "name": "BBC Business",
+     "url": "https://www.bbc.co.uk/news/articles/cw77pg7neydmo?at_medium=RSS&at_campaign=rss",
+     "title": "Canva announces major job cuts after 'our hardest year yet'"
+    }
+   ]
+  },
+  {
+   "section": "ai",
+   "title": {
+    "zh": "苹果：AI 陪伴与约会应用限 18 岁以上",
+    "en": "Apple makes AI companions and dating apps 18+"
+   },
+   "line": {
+    "zh": "涉及性或恋爱内容的 AI 陪伴类应用须标为 18+，开发者自 11 月 16 日起需填写新的内容描述。",
+    "en": "Apps offering sexual or romantic AI companionship must be rated 18+; new content descriptors are required from November 16."
+   },
+   "sources": [
+    {
+     "name": "TechCrunch AI",
+     "url": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
+     "title": "Apple restricts dating apps and AI companions to users 18 and up"
+    }
+   ]
+  },
+  {
+   "section": "ai",
+   "title": {
+    "zh": "Anthropic 研发 FlashProve，证明“答案确实出自这个模型”",
+    "en": "Anthropic's FlashProve aims to prove which model wrote an answer"
+   },
+   "line": {
+    "zh": "这套开源系统用密码学证明某个输出来自某个特定模型，就像给 AI 回答加上可验证的签名。",
+    "en": "The open-source system would give a cryptographic proof that an output came from a specific model — a verifiable signature for AI answers."
+   },
+   "sources": [
+    {
+     "name": "TechCrunch AI",
+     "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+     "title": "Anthropic is working on a system to prove AI models’ identity"
+    },
+    {
+     "name": "Anthropic",
+     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1qTzctMkJVc25sdVRiNlRUcGhHNjF1d2dJU2s0alBCZmFBVlZHS1VJNXlad0VHQnpDYnZLaEpJTklaUUdCVE1GRnNuN1REYWxBZkVwdFFyeWhDd3F1Mi0zWGlZVQ?oc=5",
+     "title": "Progress on provable inference for large language models"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "美国将南非移出《非洲增长与机会法案》",
+    "en": "US removes South Africa from AGOA trade programme"
+   },
+   "line": {
+    "zh": "这是特朗普政府针对南非的最新措施，南非将失去对美出口的关税优惠。",
+    "en": "The latest Trump administration measure against South Africa, which loses preferential tariff access to the US market."
+   },
+   "sources": [
+    {
+     "name": "NYT World",
+     "url": "https://www.nytimes.com/2026/11/02/world/africa/trump-south-africa-trade-program-agoa.html",
+     "title": "Trump Removes South Africa From the African Growth and Opportunity Act Trade Program"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "无人机成苏丹战争中平民的头号杀手",
+    "en": "Drones are now the top killer of civilians in Sudan"
+   },
+   "line": {
+    "zh": "据联合国统计，今年无人机已成为苏丹平民死亡的首要原因，当地还面临饥荒与干旱。",
+    "en": "UN figures show drones have become the leading cause of civilian deaths this year, in a country already facing famine and drought."
+   },
+   "sources": [
+    {
+     "name": "NYT World",
+     "url": "https://www.nytimes.com/2026/11/03/world/africa/sudan-drone-civilians-nyala.html",
+     "title": "Drones Emerge as the Top Killer of Civilians in Sudan’s War"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "澳大利亚高等法院审理社媒禁令挑战",
+    "en": "Australia's top court hears challenge to social-media ban"
+   },
+   "line": {
+    "zh": "Reddit 与当地数字权益组织主张，禁止 16 岁以下使用主流平台的法律侵犯宪法权利。",
+    "en": "Reddit and a digital-rights group argue the under-16 ban on major platforms infringes constitutional rights."
+   },
+   "sources": [
+    {
+     "name": "NYT World",
+     "url": "https://www.nytimes.com/2026/11/03/world/asia/australia-social-media-ban-high-court.html",
+     "title": "Australian Court Hears Challenge to Social Media Ban"
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "candidates": 212,
+  "outlets": 64
+ }
+}

@@ -1,0 +1,98 @@
+name: Daily brief
+
+on:
+  schedule:
+    - cron: "15 0 * * *"   # 00:15 UTC  — just after midnight in London
+    - cron: "40 2 * * *"   # 02:40 UTC  — backup run; skips if the edition already exists
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Edition date YYYY-MM-DD (blank = yesterday)"
+        required: false
+      force:
+        description: "Rebuild even if that edition exists"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths-ignore: ["data/**", "**.md"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-brief
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Collect, edit and write the edition
+        if: github.event_name != 'push'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          BRIEF_TZ: ${{ vars.BRIEF_TZ || 'Europe/London' }}
+          BRIEF_MODEL: ${{ vars.BRIEF_MODEL || 'claude-opus-5-5' }}
+          BRIEF_EFFORT: ${{ vars.BRIEF_EFFORT || 'high' }}
+          INPUT_DATE: ${{ inputs.date }}
+          INPUT_FORCE: ${{ inputs.force }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::Add an ANTHROPIC_API_KEY repository secret (Settings → Secrets and variables → Actions)."
+            exit 1
+          fi
+          args=()
+          if [ -n "$INPUT_DATE" ]; then args+=(--date "$INPUT_DATE"); fi
+          if [ "$INPUT_FORCE" = "true" ]; then args+=(--force); fi
+          python -m pipeline.run "${args[@]}"
+
+      - name: Commit the new edition
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "daybreak-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+          else
+            git commit -m "Edition $(ls -t data/editions | head -1 | sed 's/.json//')"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp -R index.html assets data _site/
+          touch _site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

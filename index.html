@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cut">
+<title>Daybreak 破晓日报</title>
+<meta name="description" content="每天清晨，用讲故事的方式读懂昨天的 AI 与世界。A bilingual morning brief on AI and the world.">
+<meta name="theme-color" content="#FBFAF7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='40' r='16' fill='%23B8913A'/%3E%3Crect x='6' y='40' width='52' height='3' rx='1.5' fill='%231C1B19'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+<header class="topbar">
+  <a class="brand" href="./" aria-label="Daybreak home">
+    <svg viewBox="0 0 64 40" class="mark" aria-hidden="true"><circle cx="32" cy="34" r="15" class="sun"/><rect x="2" y="34" width="60" height="2.4" rx="1.2" class="horizon"/></svg>
+    <span class="brand-en">Daybreak</span><span class="brand-zh">破晓日报</span>
+  </a>
+  <nav class="tools">
+    <button class="tool" id="listenAll" type="button" data-i18n-title="listenAllTitle">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none"/></svg>
+      <span data-i18n="listen">听简报</span>
+    </button>
+    <button class="tool" id="archiveBtn" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2" fill="none"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none"/></svg>
+      <span data-i18n="archive">往期</span>
+    </button>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="zh">中</button><button type="button" data-lang="en">EN</button>
+    </div>
+  </nav>
+</header>
+
+<main id="app">
+  <section class="masthead">
+    <p class="eyebrow"><span id="dateline">—</span></p>
+    <h1 id="headline" class="headline"><span class="shimmer">&nbsp;</span></h1>
+    <p id="lede" class="lede"></p>
+    <div class="meta" id="meta"></div>
+    <div class="daynav">
+      <button type="button" id="prevDay" class="ghost">← <span data-i18n="prev">前一天</span></button>
+      <button type="button" id="nextDay" class="ghost"><span data-i18n="next">后一天</span> →</button>
+    </div>
+  </section>
+
+  <nav class="toc" id="toc" aria-label="Sections"></nav>
+
+  <section class="desk" id="desk-ai">
+    <header class="desk-head">
+      <span class="desk-no">I</span>
+      <div><h2 data-i18n="deskAi">人工智能</h2><p data-i18n="deskAiSub">模型、产品、算力与资本 —— 昨天 AI 世界发生了什么</p></div>
+    </header>
+    <div class="stories" id="stories-ai"></div>
+  </section>
+
+  <section class="desk" id="desk-world">
+    <header class="desk-head">
+      <span class="desk-no">II</span>
+      <div><h2 data-i18n="deskWorld">全球要闻</h2><p data-i18n="deskWorldSub">地缘、经济与社会 —— 世界昨天的重要转折</p></div>
+    </header>
+    <div class="stories" id="stories-world"></div>
+  </section>
+
+  <section class="desk" id="desk-quick">
+    <header class="desk-head">
+      <span class="desk-no">III</span>
+      <div><h2 data-i18n="deskQuick">一句话速览</h2><p data-i18n="deskQuickSub">还值得知道的事，每条一句话</p></div>
+    </header>
+    <ol class="quick" id="quick"></ol>
+  </section>
+
+  <section class="colophon">
+    <div class="rule"><span></span></div>
+    <p data-i18n="howTitle" class="how-title">这份简报是怎么来的</p>
+    <p data-i18n="how" class="how">每天凌晨，系统自动从 OpenAI、Google DeepMind、Reuters、AP、BBC、Hacker News 等数十个信源抓取前一天的新闻，由 Claude 担任主编挑选与合并，再逐条写成中英双语的故事化解读。每条都附原始来源，方便你核实。</p>
+    <p class="fine" id="fine"></p>
+  </section>
+</main>
+
+<div class="sheet" id="archive" hidden>
+  <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="archiveTitle">
+    <header><h3 id="archiveTitle" data-i18n="archiveTitle">往期简报</h3><button type="button" class="x" id="closeArchive" aria-label="Close">×</button></header>
+    <ul id="archiveList"></ul>
+  </div>
+</div>
+
+<div class="player" id="player" hidden>
+  <span class="pulse"></span><span id="playerText"></span>
+  <button type="button" id="playerStop" data-i18n="stop">停止</button>
+</div>
+
+<noscript><p style="padding:2rem;text-align:center">Daybreak needs JavaScript to load today's edition.</p></noscript>
+<script src="assets/app.js"></script>
+</body>
+</html>

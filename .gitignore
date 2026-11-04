@@ -1,0 +1,6 @@
+candidates.json
+__pycache__/
+*.pyc
+.venv/
+_site/
+.DS_Store
