@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-04T23:22:48+00:00",
+ "updated": "2026-11-05T06:50:49+00:00",
  "editions": [
   {
    "date": "2026-11-04",
    "headline": {
-    "zh": "民主党横扫国会，伊朗战争成败因",
-    "en": "Democrats sweep Congress as Iran war and data centers sink GOP"
+    "zh": "民主党横扫国会，选民向数据中心说不",
+    "en": "Democrats sweep Congress as voters reject the Iran war and data centers"
    },
    "lede": {
-    "zh": "美国中期选举中，民主党同时拿下参众两院，特朗普承认伊朗战争拖累了共和党，副总统万斯也开始与这场战争划清界限。选民还几乎在所有投票中否决了数据中心项目，给AI基建热潮泼了冷水；股市却大涨，道指涨约1500点。AI领域，OpenAI展示了自动发现并修补近千个Linux内核漏洞的系统，中国开源模型也再迎新品。",
-    "en": "Democrats took both chambers of Congress in a midterm rout that Trump himself partly blamed on the Iran war, while JD Vance began edging away from it. Voters also rejected data centers in nearly every ballot measure, a blow to the AI buildout, even as stocks rallied and the Dow gained 1,500 points. In AI, OpenAI showed an autonomous system that found and patched nearly a thousand Linux kernel bugs, and new open-weight models kept arriving."
+    "zh": "美国中期选举结果揭晓：民主党同时拿下众议院和参议院，特朗普承认伊朗战争拖累了共和党，副总统万斯更公开与这场战争划清界限。市场应声上涨，油价跌破每桶90美元。几乎所有关于数据中心的地方公投也都遭到否决，给AI基建热潮泼了一盆冷水。",
+    "en": "America's midterms delivered a clean sweep: Democrats took both the House and the Senate, Trump conceded the Iran war hurt his party, and JD Vance went further and distanced himself from it. Stocks jumped and oil slid below $90 a barrel. Voters also turned down data centers in nearly every ballot measure, a cold shower for the AI building boom."
    },
    "counts": {
     "ai": 5,
