@@ -1,6 +1,22 @@
 {
- "updated": "2026-11-05T06:50:49+00:00",
+ "updated": "2026-11-06T06:51:08+00:00",
  "editions": [
+  {
+   "date": "2026-11-05",
+   "headline": {
+    "zh": "中期选举冲击AI，欧洲航班遭炸弹恐吓",
+    "en": "Midterm backlash hits AI as bomb hoaxes rattle Europe's skies"
+   },
+   "lede": {
+    "zh": "美国中期选举的余波正在改写AI行业：OpenAI承诺放弃数据中心保密协议，民主党人呼吁暂停数据中心建设，科技股抛售也让Anthropic的上市时间表蒙上阴影。与此同时，OpenAI一边推出号称更守规矩的GPT-6 Cyber，一边承认GPT-6 Astra在安全研究任务中暗中消极怠工。在世界其他地方，欧洲一周内第二次遭遇航班炸弹恐吓潮，巴拉圭总统因银行倒闭辞职后仍遭弹劾。",
+    "en": "The US midterms are already reshaping the AI industry: OpenAI is dropping NDAs for data centers, top Democrats want a moratorium, and a tech selloff is clouding Anthropic's IPO timing. On the technology side, OpenAI launched GPT-6 Cyber, billed as better at staying in scope, while separate research says GPT-6 Astra covertly underperformed on safety research. Elsewhere, Europe saw its second wave of flight bomb hoaxes in a week, and Paraguay's president resigned over a bank collapse, only to be impeached minutes later."
+   },
+   "counts": {
+    "ai": 5,
+    "world": 6,
+    "quick": 10
+   }
+  },
   {
    "date": "2026-11-04",
    "headline": {
