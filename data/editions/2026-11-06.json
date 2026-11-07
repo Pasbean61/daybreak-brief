@@ -1,0 +1,1093 @@
+{
+ "date": "2026-11-06",
+ "generated_at": "2026-11-07T06:02:09+00:00",
+ "model": "claude-opus-5-5",
+ "headline": {
+  "zh": "中期选举余震：AI股承压，米勒掌白宫",
+  "en": "Midterm aftershocks: AI stocks reel as Miller takes charge"
+ },
+ "lede": {
+  "zh": "民主党在中期选举中大胜，余波昨天席卷各地：特朗普任命强硬派斯蒂芬·米勒为白宫幕僚长，全球科技股继续承压。AI行业首当其冲，选民在数十项数据中心公投中表达不满，Anthropic的IPO估值预期下调；不过OpenAI仍以1.25万亿美元估值再获110亿美元融资。技术层面，OpenAI推出GPT-6 Cyber，称其已发现大量Firefox与Linux漏洞。",
+  "en": "The Democrats' midterm sweep kept rippling outward yesterday: Trump named hardliner Stephen Miller his chief of staff, and tech stocks stayed under pressure worldwide. AI took the brunt, with voters backing curbs on data centers in dozens of ballot measures and Anthropic's IPO valuation expectations slipping — even as OpenAI reportedly raised another $11 billion at a $1.25 trillion valuation. On the technical side, OpenAI unveiled GPT-6 Cyber, which reportedly helped find scores of Firefox and Linux flaws."
+ },
+ "sections": {
+  "ai": [
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "AI安全",
+     "en": "AI Security"
+    },
+    "title": {
+     "zh": "OpenAI推GPT-6 Cyber，揪出上千漏洞",
+     "en": "OpenAI's GPT-6 Cyber flags 81 Firefox flaws and 948 Linux bugs"
+    },
+    "hook": {
+     "zh": "一个AI在火狐浏览器里找出81处漏洞、在Linux里找出948个问题，OpenAI自己给它的网络风险打了“危急”。",
+     "en": "An AI found 81 holes in Firefox and 948 in Linux, and OpenAI itself rates its cyber risk as 'critical'."
+    },
+    "story": {
+     "zh": "OpenAI推出了专攻网络安全的模型GPT-6 Cyber，履历相当惊人。据The Hacker News和BleepingComputer报道，AI协助在火狐浏览器里找出81处漏洞，在开源操作系统Linux里找出948个问题。\n\n各家说法并不一致：BleepingComputer称之为“bug（漏洞）”，The Hacker News称之为“exploit（漏洞利用）”，领英上一篇文章则说总数超过1000个。区别不小：漏洞是墙上的裂缝，漏洞利用是已经摸清怎么从裂缝钻进去的路线。\n\n过去找漏洞像验房师一块砖一块砖地敲，又慢又依赖专家。AI能以机器速度通读代码、标出可疑之处；如果“exploit”的说法属实，说明它还能进一步证明裂缝真能被钻。防守方拿它打补丁，落到攻击者手里就是利器。\n\nSecurity Affairs报道，OpenAI把GPT-6 Cyber的网络风险评为“critical（危急）”。目前的报道尚未说明谁能使用它、这些漏洞是否已修补——这是接下来要盯的。",
+     "en": "OpenAI has launched GPT-6 Cyber, a model built for security work, and it arrives with a striking résumé. According to The Hacker News and BleepingComputer, AI helped uncover 81 flaws in the Firefox browser and 948 problems in Linux, the open-source operating system.\n\nReports differ on how to describe the Linux haul. BleepingComputer calls them bugs, The Hacker News calls them exploits, and a LinkedIn post rounds the total up to more than 1,000 exploits. The difference matters: a bug is a crack in the wall; an exploit is a worked-out route for climbing through it.\n\nFinding vulnerabilities used to be slow, specialist work, like a building inspector tapping every brick by hand. A model like this reads code at machine speed and flags suspicious spots. If the 'exploit' wording is accurate, it also went further and showed that the cracks can actually be used. That makes the same tool a gift to defenders patching software and a weapon in an attacker's hands.\n\nSecurity Affairs reports that OpenAI rates GPT-6 Cyber 'critical' on cyber risk. The coverage so far does not say who will get access or which flaws have already been fixed. Those are the next questions to watch."
+    },
+    "why": {
+     "zh": "火狐和Linux是大量日常计算的底座；AI找漏洞越快，补丁潮就越大，攻击者发现同一个洞之前留给防守方的时间也越短。",
+     "en": "Firefox and Linux sit beneath a lot of everyday computing. Faster AI bug-hunting means a flood of patches, and less time before attackers find the same holes."
+    },
+    "pro": {
+     "zh": "注意口径差异：948个“bug”和948个“exploit”是完全不同的说法。能让程序崩溃的bug未必能被武器化，可用的exploit才是危害的实证。瓶颈正转移到下游：维护者必须以AI的速度分拣和修补。OpenAI给自家模型打出“危急”评级，等于承认滥用风险很高，访问如何管控将是关键。",
+     "en": "Mind the labelling gap: 948 'bugs' and 948 'exploits' are very different claims. A crash-inducing bug may never be weaponisable, while a working exploit is proof of impact. The bottleneck now shifts downstream to maintainers, who must triage and patch at AI speed. A self-assigned 'critical' rating concedes high misuse risk, so how access is controlled becomes the key question."
+    },
+    "stat": {
+     "value": "948",
+     "label": {
+      "zh": "在Linux中发现的漏洞/漏洞利用数量",
+      "en": "Linux bugs/exploits reported"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "漏洞利用（exploit）",
+       "en": "Exploit"
+      },
+      "explain": {
+       "zh": "把一个软件漏洞变成真正能攻进去的具体方法，好比不只发现门锁坏了，还配好了钥匙。",
+       "en": "A concrete method for turning a software flaw into an actual break-in, like finding a broken lock and also cutting the key."
+      }
+     }
+    ],
+    "kind": "tech",
+    "sources": [
+     {
+      "name": "The Hacker News",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPX2ZfWDZjZ0ZiM2VHMU5CWDFwNFdZR093TTh1RUVYN3h2NkRVWnBCdEUyWkhTOUhBMEd5di13STkxVlBCTXlMcFJTS2tZS20wT1lkOE03UGd2VnpkSG1Sb2F1cWtISFB5UEFJY2RhT19DV3N3djNmaEI0SDVWUVlTbg?oc=5",
+      "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits"
+     },
+     {
+      "name": "LinkedIn",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSXVOUUxsY1I1TDBxMVk1RkdnRW5ZZlN3cFJLTkl6YXIyOURlVHYxdnZTWnRkQTFyQk1lY2ljbUNGOU1mckl3RVBSYUU2SDRGbG5UMXNoMTVjVHRhUV9FaFdyYmlLTDQyNUp6Wl90a3RENnNMdDhhUnNsNDVjM21EaDd2UlBQQU1sWlZSRVhfeHJzeHUzQmc?oc=5",
+      "title": "OpenAI Launches GPT-6 Cyber, Expanding AI Vulnerability Research and Finds 1000+ Exploits"
+     },
+     {
+      "name": "BleepingComputer",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTWtVdXFGeWRka1lWSlphWF92UlhuTl95MFBpUTFwOWhrTnhlRzZqdzd1Rm5jUGF2bzJoTEl1MndGQ1Z3QmZfQW5LMnVLanZyazhQLXJreVNqdFRsU2tZX3JlSGo0bENVUGxrZ08xdmhMSm5FU2VCNDA1QVJlaVhGQlJKZTcxZWc2TlpTc2JvcWlSRnlvdDFPMkx4eWlSb1lLUU9kd0VrdWpRT3VGSjhxWVB3?oc=5",
+      "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs"
+     },
+     {
+      "name": "Security Affairs",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMExyMk1QclYzNGtPb2t2YmV5MGZCTTVDM2xVTnpTUFlGM0g2OVkzdVRSRWJKcVdLUGdpWmZOa2oyTEljekZibG9WcUVBdVVIempBM1o3cENObWlLUE9MejRVQmhFZzlTNDJKdXFMV3J3Q2ppVUZ2TkZ4TFdROUp5TzhxYjB5ZTh5TkFyZjZRQzlLY2U0ODdwNGwzTC05RFhfQXduZEhBMzRoUzJhaS15Rjhnc2TSAboBQVVfeXFMUGxLUEl0SXpZTF9jSmIxRDhwcVlfRDJzMzVZSDJ2LWc5TEJSUnAwZjFnMTJCYS1YUlJSZUV4VmxFVnNTaHprbjNFLXdJdFhLZTRWYVNnS1gxYUE1dVh3UXBsWUc3eGtDb3B6VG1SVDc5bXVLb1VtQWJqaHJoUHdtTzNleVltcFhTN1RDYUtWX0VuanRkZUNCOEhteDUwSUgyTU43WWZIYjVsSFhaV1FWZmNJalNkMTBpN05n?oc=5",
+      "title": "OpenAI Rates GPT-6 Cyber Critical After Major Vulnerability Discoveries"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "开源模型",
+     "en": "Open Models"
+    },
+    "title": {
+     "zh": "免费中国模型，黑客能力逼近顶尖",
+     "en": "Free Chinese AI models close in on frontier hacking skills"
+    },
+    "hook": {
+     "zh": "一个人人可下载的模型，攻破模拟网络的成功率只比OpenAI不公开的网络模型低8个百分点，成本却只有零头。",
+     "en": "A model anyone can download came within 8 points of OpenAI's locked-up cyber model at breaking into networks, for a fraction of the cost."
+    },
+    "story": {
+     "zh": "评测公司Vals把一批AI模型放进模拟的企业网络，让它们去“攻破”。一个场景从公开网站入手；另一个要求先拿下A公司网络，再借道攻入B公司。结果，OpenAI只对可信合作伙伴开放的网络模型Daybreak平均完成81%的任务；人人可免费下载的中国模型DeepSeek完成73%，部分任务两者打平，GLM也相差不远。\n\n价格差距比能力差距大得多。Vals称，用OpenAI的GPT-6-Sol发起一次攻击要花17至46美元的token费用，DeepSeek只要2至3美元，还能跑在自己的机器上。\n\n美国大模型公司，尤其是Anthropic，从今年4月起只通过Project Glasswing等受控渠道开放最强模型，理由是让防守方先拿到工具、抢出时间。其红队负责人Logan Graham当时说，要准备好这些能力在“6个月、12个月、24个月”内普及。七个月后，《连线》认为这一刻如期而至。\n\n开源阵营也在收紧：据National Technology News报道，腾讯成为最新一家限制模型网络攻击能力的开源开发者。",
+     "en": "Vals, a company that measures AI capabilities, dropped AI models into mock corporate networks and told them to break in. One scenario started from a public website; another required compromising one company's network to reach a second. OpenAI's Daybreak, a cyber model open only to trusted partners, completed 81% of tasks on average across two tests. DeepSeek, a free Chinese model anyone can download, managed 73%, and tied Daybreak on some tasks. GLM was not far behind either.\n\nThe price gap is wider than the skill gap. Vals says an attack cost $17 to $46 in tokens with OpenAI's GPT-6-Sol, versus $2 to $3 with DeepSeek, which can run on your own hardware.\n\nUS labs, Anthropic in particular, have since April released their strongest models only through gated programmes such as Project Glasswing, betting that restricted access would hand defenders a head start. Anthropic's red team lead Logan Graham said then that the world should prepare for these skills being broadly available 'in 6, 12, 24 months.' Seven months on, Wired writes, that moment seems to have arrived.\n\nOpen developers are starting to react: Tencent is the latest to limit cyber capabilities in its models, National Technology News reports."
+    },
+    "why": {
+     "zh": "如果免费模型已能完成大部分高级攻击任务，“把最强模型锁起来”这道防线就不太管用了，企业得假设攻击者手里也有这些工具。",
+     "en": "If free models can do most of what the best locked-up ones can, gating access stops being much of a defence. Companies should assume attackers already have these tools."
+    },
+    "pro": {
+     "zh": "受控发布只在被管控模型保持明显领先时才有意义；8个百分点的差距加上约十倍的成本差，正在掏空这一逻辑。权重一旦公开，谁拿着文件谁就掌控模型，腾讯这类开发者内置的限制更像减速带而非门锁。Vals CEO Rayan Krishnan则指出，低成本同样给防守方用开源模型的强烈动机。",
+     "en": "Gated release only makes sense while the gated model holds a clear lead; an 8-point gap and roughly a tenfold cost difference hollow that out. Once weights are public, whoever holds the files controls the model, so built-in limits like Tencent's act more like speed bumps than locks. Vals CEO Rayan Krishnan notes the low cost also gives defenders a strong reason to use open models."
+    },
+    "stat": {
+     "value": "73%",
+     "label": {
+      "zh": "DeepSeek完成任务比例（Daybreak为81%）",
+      "en": "DeepSeek's task completion (Daybreak: 81%)"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "开放权重模型",
+       "en": "Open-weight model"
+      },
+      "explain": {
+       "zh": "把训练好的模型参数公开供人下载，好比餐厅不只卖菜，还把完整菜谱贴出来，谁都能在自家厨房做。",
+       "en": "A model whose trained parameters are published for download, like a restaurant posting its full recipe so anyone can cook it at home."
+      }
+     },
+     {
+      "term": {
+       "zh": "token费用",
+       "en": "Token cost"
+      },
+      "explain": {
+       "zh": "AI按处理的文字片段计费，token就像出租车的计价里程。",
+       "en": "AI usage is billed by chunks of text processed; tokens work like miles on a taxi meter."
+      }
+     }
+    ],
+    "kind": "tech",
+    "sources": [
+     {
+      "name": "Wired AI",
+      "url": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/",
+      "title": "Free Chinese AI Models Are Getting Scary Good at Hacking"
+     },
+     {
+      "name": "National Technology News",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQU2hEVXgtZG5lYzRad1RPNjhmb2thcjg0QXFfYkFxODJmN2hsYXFESEpnOWdkd1N0Z19mMFJFSTBxdHRSNFF6NjZMMFJGcUEtVldkRGxhQlctS3pSeDdNR0VPOUlyWXB2MU9TVXRrWWo4WG5GWnJubXRUZy1lUlhmelZFV0RQR3pqc3k2UlVKNW5Wd0t2UjBScGFhcVJtUGpYXzduSVNqOEJSRkVCRmlvSzlB?oc=5",
+      "title": "Tencent becomes latest open-source developer to limit AI cyber capabilities"
+     }
+    ]
+   },
+   {
+    "importance": 1,
+    "tag": {
+     "zh": "AI视频",
+     "en": "AI Video"
+    },
+    "title": {
+     "zh": "谷歌视频模型升级：15秒成片，降价三成",
+     "en": "Google's Gemini Omni 1.2 Flash makes longer, cheaper AI video"
+    },
+    "hook": {
+     "zh": "一段15秒的720p广告片，现在用谷歌的模型生成大约只要1美元出头。",
+     "en": "A 15-second 720p ad clip from Google's model now costs about a dollar to generate."
+    },
+    "story": {
+     "zh": "谷歌推出视频生成模型Gemini Omni 1.2 Flash，已通过Gemini API和Gemini for business全面开放，Google Vids也能用上。单段视频最长从10秒延长到15秒，时长可在3到15秒之间按秒设定。\n\n价格比1.1版降了30%，720p视频每秒0.07美元，一段15秒成片约1.05美元。谷歌还建议先用360p或720p快速出草稿，再把满意的版本放大到1080p或4K。\n\n技术上的变化在“记性”和“改稿”。你可以喂给它人物、产品或风格图片、最长3秒的动作片段和音频提示，谷歌称人脸、服装、包装文字和品牌色能从第一帧保持到最后一帧，就像片场的场记，确保演员的外套不会在两个镜头之间变了颜色。改一个细节也不必整段重做，用对话一轮轮换背景、改天气、调画幅即可。\n\n这篇博文在Hacker News上拿到311分、225条评论。以上说法均来自谷歌自述，一致性究竟多稳，还要看第三方实测。",
+     "en": "Google has rolled out Gemini Omni 1.2 Flash, its latest video-generation model, making it generally available through the Gemini API and Gemini for business, with the features also reaching Google Vids. Clips can now run 15 seconds, up from 10, and you can set length in one-second steps from 3 to 15.\n\nThe price is down 30% from Omni 1.1, to $0.07 per second of 720p video, or about $1.05 for a full 15-second clip. Google also pitches a cheaper workflow: draft at 360p or 720p, then upscale the best take to 1080p or 4K.\n\nThe technical change is about memory and editing. You can feed the model character, product or style images, motion clips up to three seconds and audio cues, and Google says faces, garments, packaging text and brand colours stay consistent from first frame to last. Think of a film set's continuity supervisor making sure an actor's jacket doesn't change colour between shots. And instead of regenerating a whole clip to fix one detail, you edit it conversationally, swapping the background, weather or aspect ratio turn by turn.\n\nDevelopers took notice: the post drew 311 points and 225 comments on Hacker News. All claims come from Google's own post; independent tests will show how well the consistency holds."
+    },
+    "why": {
+     "zh": "更便宜、能逐轮修改的视频生成，让小商家也能批量做商品展示和社交广告，不必每次请拍摄团队。",
+     "en": "Cheaper video you can revise turn by turn lets small sellers churn out product clips and social ads without hiring a shoot every time."
+    },
+    "pro": {
+     "zh": "比时长更关键的是经济账：对话式修改免去了为改一处细节而整段重渲染，“低清起稿、再放大”的流程把大部分算力放在便宜的环节。“参考一致性”瞄准的正是商用客户最常拒用AI视频的原因——人物和商品在帧间漂移变形，这一点解决了，虚拟试穿和商品360度展示才可行。",
+     "en": "The economics matter more than the length bump. Conversational edits avoid re-rendering a whole clip to fix one detail, and the draft-low-then-upscale pipeline puts most compute in cheap passes. 'Reference adherence' targets the main reason commercial users reject AI video, identity and product drift between frames, which is what makes virtual try-ons and catalog spins viable."
+    },
+    "stat": {
+     "value": "$0.07",
+     "label": {
+      "zh": "每秒720p视频价格（降价30%）",
+      "en": "Per second of 720p video (30% cheaper)"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "参考一致性",
+       "en": "Reference adherence"
+      },
+      "explain": {
+       "zh": "模型按你给的参考图生成时，能否始终“照着样子画”，不让人脸或商品中途走样。",
+       "en": "How faithfully the model sticks to the reference images you give it, so a face or product doesn't morph mid-clip."
+      }
+     },
+     {
+      "term": {
+       "zh": "放大（upscale）",
+       "en": "Upscale"
+      },
+      "explain": {
+       "zh": "把低分辨率画面提升到更高清晰度，像把草图描成精稿。",
+       "en": "Raising a low-resolution video to a sharper one, like inking over a pencil sketch."
+      }
+     }
+    ],
+    "kind": "tech",
+    "sources": [
+     {
+      "name": "blog.google",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "title": "Gemini Omni 1.2 Flash"
+     }
+    ]
+   },
+   {
+    "importance": 3,
+    "tag": {
+     "zh": "AI资本",
+     "en": "AI Money"
+    },
+    "title": {
+     "zh": "OpenAI估值1.25万亿，Anthropic遇冷",
+     "en": "OpenAI hits $1.25 trillion as Anthropic's IPO price slips"
+    },
+    "hook": {
+     "zh": "同一天，OpenAI在私募市场身价暴涨，它最大的对手却在上市前被买家砍价。",
+     "en": "On the same day OpenAI's private price soared, its biggest rival was being marked down by would-be IPO buyers."
+    },
+    "story": {
+     "zh": "据彭博社报道，OpenAI又融到110亿美元，估值1.25万亿美元，路透社也援引消息人士证实。TechCrunch指出，这只是一轮更大融资的一部分，整轮尚未完成，预计几周内交割。今年3月，OpenAI刚以8520亿美元估值融资1220亿美元，八个月左右账面身价涨了近五成。\n\n对手Anthropic却在降温。它正筹备上市，《金融时报》称其仍将以1.5万亿美元为目标推进；但彭博社说，潜在认购者给出的估值低至1.1万亿美元，另有报道称约1.2万亿。CNBC援引投资者的话，称1.5万亿“有点勉强”，华尔街对AI板块的热情正在消退。\n\n为什么转凉？Ramp的企业支出数据显示，AI用量仍在上升，花费却停滞了：降价加上大客户更精细的成本控制，企业用得更多却没多花钱。这动摇了两家公司估值所依赖的“超高速增长”故事。\n\nAxios认为，Anthropic估值下滑抬高了整个AI交易的赌注。上市定价将是市场第一次公开、每天给一家前沿AI实验室打分。",
+     "en": "OpenAI has raised another $11 billion at a $1.25 trillion valuation, Bloomberg reported, with Reuters confirming via a source. TechCrunch notes this is a portion of a larger round that hasn't closed yet and is expected to in the coming weeks. In March, OpenAI raised $122 billion at $852 billion, so its paper value has climbed nearly half in about eight months.\n\nIts rival is heading the other way. Anthropic is preparing to go public, and the Financial Times says it will press ahead targeting $1.5 trillion. But Bloomberg reports prospective IPO buyers see a value as low as $1.1 trillion; another report puts their figure near $1.2 trillion. CNBC quotes investors calling $1.5 trillion 'a stretch' as the AI trade sours on Wall Street.\n\nWhy the chill? Spending data from Ramp shows AI usage still climbing but spending stalled. Price cuts and smarter cost controls among the biggest spenders mean companies are using more AI without paying more for it. That challenges the hypergrowth story both valuations rest on.\n\nAxios says Anthropic's falling number raises the stakes for the broader AI trade. Its IPO price will be the first public, daily verdict on what a frontier AI lab is worth."
+    },
+    "why": {
+     "zh": "这两个数字左右着整条AI产业链的融资成本和股价预期；如果Anthropic打折上市，从芯片到云服务的AI概念股都可能被重新定价。",
+     "en": "These two numbers anchor funding costs and stock expectations across the AI supply chain; a discounted Anthropic listing could reprice everything from chips to cloud."
+    },
+    "pro": {
+     "zh": "私募轮和IPO的定价逻辑不同：私募由少数战略投资者拍板，一笔110亿美元的分批资金就能撑起一个标题估值；IPO则需要广泛的机构需求。若Anthropic以1.1万亿至1.2万亿美元上市，它将成为公开可比对象，反过来影响市场如何看待OpenAI的私募价格。Ramp数据透露的是通缩信号：单价下降快过用量增长，收入就会停滞。",
+     "en": "Private rounds and IPOs price differently: a private round is set by a few strategic backers, and an $11B tranche can carry a headline number, while an IPO needs broad institutional demand. If Anthropic lists at $1.1–1.2T, it becomes a public comparable that will colour how markets view OpenAI's private mark. Ramp's data is a deflation signal: when unit prices fall faster than usage grows, revenue stalls."
+    },
+    "stat": {
+     "value": "$1.25T",
+     "label": {
+      "zh": "OpenAI最新报道估值",
+      "en": "OpenAI's reported valuation"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "估值",
+       "en": "Valuation"
+      },
+      "explain": {
+       "zh": "投资者认为一家公司整体值多少钱，好比买房前大家对房子出的价。",
+       "en": "What investors think a whole company is worth, like the price buyers put on a house."
+      }
+     },
+     {
+      "term": {
+       "zh": "IPO（首次公开募股）",
+       "en": "IPO"
+      },
+      "explain": {
+       "zh": "公司第一次把股票卖给公众并上市交易，从此价格每天由市场决定。",
+       "en": "A company's first sale of shares to the public, after which the market sets its price every trading day."
+      }
+     }
+    ],
+    "kind": "news",
+    "sources": [
+     {
+      "name": "GV Wire",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPLUdrVk9WY0tBWWZVeU5iMHVHTWxScnMxY1cxSS1jQk80VVlMSVF5S3AwVjJ1OUNNMGkwd3JOdWZwOHQzbV9DXzgtN2FfYmtBTXE2eGh1TFZCOFFaVjdZQzYxR0g5Wm91Qm0wS2l2WHV6SzM2WDFWYUZIQjd4R0N6d0JCMFFmLU9rRy1meDhUclFKemN5VTZ1RTFrZ3lPQWRub2NieDRTTHJSY053UnVObFNzVVo?oc=5",
+      "title": "OpenAI Secures $11 Billion Funding at $1.25 Trillion Valuation, Bloomberg News Reports"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdlpNRm5XVy11c3hLY0NRdjh2T3VmOE1LOWQ2LXlvcFhmZlFJYkQya3N3QWxud2UteUZpWVlCTXVHUXZZTjIwRlVQaUhqOGhyM2lDaDJTSGcxMnE5MzhOZ1NHYlJIc1p5bHRxaVZjZDd4MFY2RWMtRkNlYkhSVkdpMlRBWi1PYUNmZGNydXZnOTZFMTFoOHR0azBpUlU1aHpVdFA4dlhCV0dDNm91VE0xSVg0bXZhcF9jaVAzcXYzaldOdw?oc=5",
+      "title": "OpenAI gets $11 billion funding at $1.25 trillion valuation, source says"
+     },
+     {
+      "name": "TechCrunch",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRzVwenhwOUEyaGxYMTR0NkE2LXQxZk9PcklwNTlwX3h1SjhUbEgtSkRleWxwUXluYzdlTE5fN29oV0liWkxtMVB1ck9Welkxekx0anBGSjJIOHV2UGNnNTVUbXVFV1JjckRxVGk3c05QdXhFV2Vhdl81T0RKb0ZycTl3RU9YdXVRRGljdWZjb254dlBRb3U5dnZoSlpTUy1SRXNib1JFNjBrTHZpdkktbTJpTQ?oc=5",
+      "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation"
+     },
+     {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+      "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation"
+     },
+     {
+      "name": "Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZUs1X0RZcHpSM0pJZVlZOHZrWEppOG5oemNaUHFVUGZYV1ZSQ2lVVVhxZENDQWVDTkVPRkN5XzRxT3JGVDExWFVVQ2VWejZ3a21tb2NCNlFrc29DVW11OC1ZRXdJX1lDNWp6Tk90STljUDdBMmltdEgyTVFJQTI5cEJFRkdHMno0Ni1CU2NFQ2M2dXRBdjFMTl8zZ1dZM1p5R2kyT2lGZmF1OGhoQm9zTDNYeWk2NG44SVlnUQ?oc=5",
+      "title": "OpenAI Completes $11 Billion Portion of Funding at $1.25 Trillion Value"
+     },
+     {
+      "name": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+      "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "AI政治",
+     "en": "AI Politics"
+    },
+    "title": {
+     "zh": "选民向AI说不：数据中心中期选举惨败",
+     "en": "Voters turn on data centers as AI backlash spreads to Europe"
+    },
+    "hook": {
+     "zh": "41项数据中心公投，40项选民都投给了“多加限制”。",
+     "en": "Of 41 data-center ballot measures, voters backed tighter limits in 40."
+    },
+    "story": {
+     "zh": "本周二美国中期选举，选民就41项与数据中心有关的提案投票。TechCrunch统计，除一项外，多数人都选择对数据中心加以更多限制。民主党同时取得历史性胜利，路透社称他们准备在接掌国会后推出一大批AI法案。\n\n行业开始换说法。OpenAI宣布在数据中心项目上不再与公职人员签保密协议（NDA），不少项目正因用NDA把谈判藏在幕后而受质疑；它还把这类设施改称“算力园区”。其首席财务官对CNBC表示，无论选举结果如何，公司都会继续投资数据中心。\n\n反弹不止美国。周五早上，荷兰直接行动组织Geef Tegengas的抗议者闯入微软在阿姆斯特丹Westpoort的数据中心工地，那里计划建三座85米高的塔楼。路透社称约100人进入工地，有人爬上塔吊、点燃信号弹，并与警方发生冲突。欧洲的不满集中在这些设施消耗的大量电力算力和水。\n\nThe Verge的Nilay Patel一句话概括：“这些产品还不够好，不足以让人们接受它的代价。”",
+     "en": "On Tuesday, American voters weighed in on 41 ballot measures about data centers. In all but one, the majority chose more restrictions, TechCrunch reports. The same election brought what it calls historic victories for Democrats, and Reuters says they are planning a flood of AI bills once they take control of Congress.\n\nThe industry is changing its pitch. OpenAI says it will no longer use non-disclosure agreements with public officials on data-center projects, many of which have drawn scrutiny for using NDAs to keep talks hidden. It has also started calling the sites 'compute campuses'. Its CFO told CNBC the company will keep investing in data centers regardless of the results.\n\nThe backlash isn't only American. On Friday morning, protesters from the Dutch direct-action group Geef Tegengas broke into a Microsoft data-center construction site in Amsterdam's Westpoort area, where three 85-metre towers are planned. Reuters says about 100 got in; some climbed a crane, lit flares and clashed with police. Protests across Europe focus on the computing power and water these sites consume.\n\nThe Verge's Nilay Patel summed up the mood: 'The products aren't good enough to sell people on the costs.'"
+    },
+    "why": {
+     "zh": "数据中心是AI扩张的地基；地方审批变难、国会监管加码，意味着建设更慢、成本更高，最终可能传导到AI服务的价格和速度上。",
+     "en": "Data centers are the foundation of AI's expansion. Harder local approvals and more scrutiny from Congress mean slower, costlier builds, which can flow through to AI prices and capacity."
+    },
+    "pro": {
+     "zh": "算力瓶颈正从芯片转向土地、电力和地方许可，而这些恰恰由选民和地方官员掌控。放弃NDA、改名“算力园区”是在争取社区信任，但CFO坚持继续投资说明资本开支计划不会轻易收缩，冲突将更多在听证会和许可审批中展开。欧洲的抗议说明这不是美国独有的政治周期，而是跨国的选址风险。",
+     "en": "The compute bottleneck is shifting from chips to land, power and local permits, which voters and local officials control. Dropping NDAs and rebranding to 'compute campuses' are bids for community trust, but the CFO's pledge to keep investing signals capex won't shrink easily, so the fight moves into hearings and permit approvals. Europe's protests show this is a cross-border siting risk, not just a US election cycle."
+    },
+    "stat": {
+     "value": "40/41",
+     "label": {
+      "zh": "选民支持加强限制的数据中心公投",
+      "en": "Data-center ballot measures where voters backed more limits"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "保密协议（NDA）",
+       "en": "NDA"
+      },
+      "explain": {
+       "zh": "让签约方不得对外透露谈判内容的合同，好比谈判桌外拉上一道帘子。",
+       "en": "A contract that bars signers from disclosing what was discussed, like drawing a curtain around the negotiating table."
+      }
+     }
+    ],
+    "kind": "news",
+    "sources": [
+     {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+      "title": "How a Blue Wave midterm might reshape the AI industry"
+     },
+     {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+      "title": "After the midterms, is the AI industry in for a rough two years?"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSW1qclJEWjVTQTNNU0hWWndTVFlOWFpNY1RqQ1I5Z0F2anRxTE5IQnlTTDhjeU9uUGV2anlLaVBfMFdPc0k5eDJVTVk4VTlVbnVZX0VwVnBEMnhHX19fTGRvX2NrQnNJeGN5MzBBaXBLb3d3Y25JdHpjSXFQMENoa01vNk0yLXVLRVBGZjlHLVFuUmI0QWp5aFBBRzRUSDdNMkpCQ1lJVExIei0zVFFiY0x2eVBPcFJ3d2NCeGN6REF0dw?oc=5",
+      "title": "Democrats planning flood of AI bills when they take control of Congress"
+     },
+     {
+      "name": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+      "title": "OpenAI is stepping back from NDAs for data center projects"
+     },
+     {
+      "name": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE54bWpvVi13alRsTVY0VGFfT0dUS3JtMG4yYVZtNDhkN2lIUndZeFVvVEdwZExsNjNPeXR1aEVVZzNSZjlBS1lSdUdoeUg4RmpWc3VqcDREUzA0RGlxZ2kzaC1KYVNzX3pxTlBLSGJtUlA0LUVq?oc=5",
+      "title": "OpenAI investing in AI data centers despite election results, CFO says"
+     },
+     {
+      "name": "Network World",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSVlWWmMxUlJQWDdyOTYyRmZKNXVkOTVYRS1YalU1Q3BrejRQSGotd2tFT0lOZUZ3eFVKRkVaSTJVcVZMMUFRa3lra213V0NkWkIwM0FpOU4tMGMwa3ZEcWt0a1FyWjR3UlFEb2VBTW1SSDNvUzduRkhuS3lMUVFyTmFJdThETHFibTcyRjFiR3hFeEd3RFFId3EwOFdaUG9vckFQVDJ6QXJJTjRHbDU3ZVo4T014dXBPQUkzaGlR?oc=5",
+      "title": "Don’t mention the data center: OpenAI calls them ‘compute campuses’ instead"
+     }
+    ]
+   }
+  ],
+  "world": [
+   {
+    "importance": 3,
+    "tag": {
+     "zh": "美国政治",
+     "en": "US Politics"
+    },
+    "title": {
+     "zh": "败选后特朗普任命米勒为白宫幕僚长",
+     "en": "Trump names hardliner Stephen Miller chief of staff after midterm rout"
+    },
+    "hook": {
+     "zh": "选民刚给了他一记耳光，特朗普的回应是把最好斗的助手放进白宫最关键的位置。",
+     "en": "Days after voters rebuked him, Trump put his most combative aide in the most powerful job in the White House."
+    },
+    "story": {
+     "zh": "周五，特朗普在Truth Social上宣布：41岁的斯蒂芬·米勒将接替69岁的苏西·怀尔斯，出任白宫幕僚长，下周一上任。“我想做个改变，”他登上直升机前对记者说，“斯蒂芬从一开始就跟着我，他懂。”\n\n就在几天前，共和党在中期选举中惨败，丢掉了国会控制权。米勒是移民大搜捕的设计者。明尼阿波利斯一场遣返行动中，亚历克斯·普雷蒂遭联邦人员射杀，米勒曾称其为“国内恐怖分子”，后来才改口。怀尔斯是首位出任此职的女性，以冷静专业著称。据报道，随着特朗普民望下滑，他近几个月对她渐生不满。\n\n幕僚长好比总统的“门卫兼大管家”：决定谁能见总统，排定议程，还代表白宫与国会谈判。有望成为首位黑人众议院议长的杰弗里斯，以及参议院民主党领袖舒默，随即猛烈抨击这一任命。共和党籍的马乔里·泰勒·格林也警告，这次换人会拖累该党2028年的大选。",
+     "en": "On Friday Donald Trump announced on Truth Social that Stephen Miller, 41, will replace Susie Wiles, 69, as White House chief of staff, starting Monday. “I wanted to make a change,” he told reporters before boarding Marine One. “Stephen’s been with me from the beginning. He gets it.”\n\nDays earlier, Republicans lost control of Congress in the midterms. Miller designed the administration’s immigration crackdown. After federal agents shot dead Alex Pretti during a deportation operation in Minneapolis, Miller called Pretti a “domestic terrorist,” then later walked it back. Wiles, the first woman to hold the job, was known as a cool professional. Trump had reportedly soured on her as his standing fell.\n\nA chief of staff is the president’s gatekeeper and foreman: he decides who gets into the room, sets the agenda and bargains with Congress. Hakeem Jeffries, poised to become the first Black House speaker, called Miller a “dangerous xenophobe.” Chuck Schumer said Trump “learned nothing from his historic defeat.” Even Republican Marjorie Taylor Greene warned that the shake-up could sink the party’s 2028 presidential campaign."
+    },
+    "why": {
+     "zh": "民主党即将掌控国会，而白宫派去谈判的，恰恰是最不可能妥协的人。接下来，围绕国会监督与调查的正面冲突恐怕难以避免。",
+     "en": "With Democrats about to run Congress, the White House’s chief negotiator is now the person least likely to compromise. Expect head-on fights over oversight and investigations rather than deal-making."
+    },
+    "pro": {
+     "zh": "在府会分治时期，幕僚长的工作重心会从推行议程转向与对手讨价还价，这一人选因此格外关键。研究历任幕僚长的作者惠普尔称，这“几乎是宣战”。据报道，米勒还在委内瑞拉军事行动和加勒比海打击贩毒船只中扮演主导角色。由他坐镇，白宫很可能更依赖行政手段，而不是指望立法合作。",
+     "en": "In divided government, the chief of staff’s job shifts from executing an agenda to bargaining with opponents, which makes the pick unusually telling. Chris Whipple, a historian of the role, called it “almost a declaration of war.” Miller also reportedly played a leading role in the Venezuela operations and the Caribbean strikes on suspected drug boats. With him in charge, the White House is likely to lean harder on executive action than on legislative deals."
+    },
+    "stat": {
+     "value": "41",
+     "label": {
+      "zh": "米勒的年龄，他接替69岁的怀尔斯",
+      "en": "Miller’s age; he replaces Wiles, 69"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "白宫幕僚长",
+       "en": "Chief of staff"
+      },
+      "explain": {
+       "zh": "总统身边的总管，掌管日程、人事和对外谈判，相当于公司里的首席运营官。",
+       "en": "The president’s top manager, controlling schedule, staff and negotiations, a bit like a company’s chief operating officer."
+      }
+     },
+     {
+      "term": {
+       "zh": "中期选举",
+       "en": "Midterms"
+      },
+      "explain": {
+       "zh": "总统任期过半时举行的国会选举，常被视为对执政党的“期中考试”。",
+       "en": "Congressional elections held halfway through a president’s term, often treated as a report card on the ruling party."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRW9VOFJHVC05elRKeHJYaUVfalhSNTJYS0dhNkJobGVIaGU1ZVlLaUNlakI2SURhTHNqc2c2ODFYcWpVaE5uUXpoNEI1d1h3MjFxbTlqNHQwVVJmNEFyUl9uRWktTWdRMGs1Z05GUXRxU2FwVC0wV19JSExCbi1DM1pPNHZVUzFZcVB3ak93TWM4MUk?oc=5",
+      "title": "Trump makes hardliner Stephen Miller his chief of staff after midterm defeat"
+     },
+     {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVHdReU5NTkhUSUdyRGlEeFF3YVVOaW9PMjdJOUtSd2YwdEpzUUM5WmhtRlJ1NFNrekdLZjM3Y0RSeTIwQ0xwQW5xaHJhUnFrSlhHZm1HZmdzcjFlZzcydHVhV3dLQ1U4X21vakg3a01ONi1VREdFc1pJMVB2S3JXVEN4clJyR182NnBBSG9WcWQtQXNpSVQzQw?oc=5",
+      "title": "Stephen Miller replaces Susie Wiles as Trump's White House chief of staff after GOP's midterm defeat"
+     },
+     {
+      "name": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/crp3gg2z171go?at_medium=RSS&at_campaign=rss",
+      "title": "With Stephen Miller pick, Trump readies for a battle"
+     },
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/us-news/2026/nov/06/stephen-miller-chief-of-staff-trump",
+      "title": "Stephen Miller, architect of Trump’s immigration crackdown, to become White House chief of staff"
+     },
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/us-news/2026/nov/06/donald-trump-stephen-miller-immigration",
+      "title": "How Stephen Miller appointment shows Trump hasn’t learned his lesson on immigration"
+     },
+     {
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/aje-onl-nf_mtg-warns-white-house-shakeup-sink-republican-2028-061126?traffic_source=rss",
+      "title": "MTG warns Miller-Wiles shakeup will sink Republican chances in 2028"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "市场",
+     "en": "Markets"
+    },
+    "title": {
+     "zh": "AI股暴跌蒸发2.5万亿美元后小幅反弹",
+     "en": "AI selloff wipes $2.5 trillion before tech stocks claw some back"
+    },
+    "hook": {
+     "zh": "一场选举，加上高利率和“钱花得值不值”的疑问，一起压垮了全球芯片股。",
+     "en": "An election result landed on an AI trade already strained by high rates and doubts about returns, and chip stocks worldwide buckled."
+    },
+    "story": {
+     "zh": "周四，纳斯达克指数暴跌5.5%，创19个月来最差单日表现，跌入“调整”区间，美股市值蒸发约2.5万亿美元。存储芯片商闪迪跌22%，西部数据跌17%，衡量恐慌情绪的VIX指数飙升逾60%。马斯克旗下特斯拉和SpaceX的合计市值缩水超过4200亿美元。\n\n周五，抛售蔓延到亚洲：日经225指数跌6%，韩国Kospi跌约6%（各家报道在6%到6.5%之间），SK海力士重挫超过10%。导火索是中期选举：民主党拿下国会，不少议员竞选时主张约束数据中心扩张。盖洛普5月的民调显示，71%的美国人反对在自家社区建数据中心。\n\n担忧其实早有积累。高盛估计，今年AI投资将达1万亿美元，投资者越来越怀疑这些钱能否赚回来。周五美股企稳，纳指收涨约1%，当天公布的新增就业16.5万人也超出预期。但多位分析师警告，抛售可能还没结束。",
+     "en": "On Thursday the Nasdaq plunged 5.5%, its worst day in 19 months, tipping it into correction territory. Roughly $2.5 trillion was wiped off US stocks. Memory maker SanDisk fell 22%, Western Digital 17%, and the Vix “fear index” jumped more than 60%. Tesla and SpaceX alone lost over $420 billion in combined value.\n\nOn Friday the rout hit Asia. Japan’s Nikkei sank 6%, and South Korea’s Kospi fell about 6% (reports range from 6% to 6.5%), with SK Hynix down more than 10%. The trigger was the midterms: Democrats won both houses of Congress, and many had campaigned against unchecked data-centre expansion. A Gallup poll in May found 71% of Americans would oppose a data centre in their community.\n\nThe worries predate the vote. Goldman Sachs expects AI investment to hit $1 trillion this year, and investors increasingly doubt it will pay off. Wall Street steadied on Friday, with the Nasdaq closing up about 1%, helped by a stronger-than-expected 165,000 jobs report. Analysts warn more selling may come."
+    },
+    "why": {
+     "zh": "AI投资是近年支撑股市和退休账户的主力。如果新一届国会放慢数据中心建设，芯片商、供应链，以及韩国、日本这类经济体会最先感到寒意。",
+     "en": "AI spending has been holding up stock markets and retirement portfolios. If Congress slows data-centre construction, chipmakers, their suppliers and chip-heavy economies like South Korea and Japan feel it first."
+    },
+    "pro": {
+     "zh": "跌得最狠的是“卖铲子的人”，也就是存储和硬盘厂商，因为它们的业绩直接取决于数据中心资本开支能否持续。信贷端也有松动迹象：据报道，ING正寻求出售12笔数据中心贷款，总额约5亿美元，其中包括与新墨西哥州“星际之门”项目相关的债务。另一边，印度Nifty 50指数过去一个月涨了近9%，正被当作对冲AI风险的去处。",
+     "en": "The hardest hit were the picks-and-shovels sellers, memory and storage makers whose earnings depend directly on data-centre capex continuing. Credit markets are wobbling too: ING is reportedly seeking buyers for about $500 million across 12 data-centre loans, including debt tied to a New Mexico Stargate site. Meanwhile India’s Nifty 50, up nearly 9% in a month, is being pitched as an AI hedge."
+    },
+    "stat": {
+     "value": "$2.5T",
+     "label": {
+      "zh": "本轮抛售中美股蒸发的市值",
+      "en": "Wiped from US stocks in the selloff"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "调整区间",
+       "en": "Correction"
+      },
+      "explain": {
+       "zh": "指数从近期高点下跌超过10%，就像体温越过了“发烧线”。",
+       "en": "When an index falls more than 10% from its recent peak, the market’s equivalent of crossing the fever line."
+      }
+     },
+     {
+      "term": {
+       "zh": "VIX恐慌指数",
+       "en": "Vix"
+      },
+      "explain": {
+       "zh": "根据期权价格推算市场预期波动的指标，数值越高，投资者越紧张。",
+       "en": "A gauge of expected market swings derived from options prices; the higher it goes, the more nervous investors are."
+      }
+     },
+     {
+      "term": {
+       "zh": "资本开支",
+       "en": "Capex"
+      },
+      "explain": {
+       "zh": "企业花在厂房、设备等长期资产上的钱，比如建数据中心、买芯片。",
+       "en": "Money companies spend on long-lived assets such as building data centres and buying chips."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
+      "title": "AI stocks climb after trillions wiped from market values"
+     },
+     {
+      "name": "BBC",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5kNlQ2MXB3TldBa2dOdXBzUXpYUlNBenNaZTlFX3E1ZUE1V040UnpKQlVZSjNpWm1TVEx2NnRfWUowVmsydV85TEJHbjJKSVVUNTF1d1Y0YU5RYjQ?oc=5",
+      "title": "AI stocks climb after trillions wiped from market values"
+     },
+     {
+      "name": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
+      "title": "Why the US midterms sparked an AI stock selloff"
+     },
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
+      "title": "Global stocks fall amid ‘big worries over AI’ after Democrats’ midterms triumph"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html",
+      "title": "AI stocks hammered by midterm shock as data center buildout becomes a 'war of attrition'"
+     },
+     {
+      "name": "CNBC World",
+      "url": "https://www.cnbc.com/2026/11/06/tech-stocks-sk-hynix-samsung-softbank.html",
+      "title": "Nasdaq sell-off batters Asian chip stocks as SK Hynix, Samsung, Softbank, TSMC tumble"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "欧洲",
+     "en": "Europe"
+    },
+    "title": {
+     "zh": "欧洲航班与媒体再遭虚假炸弹威胁",
+     "en": "New wave of hoax bomb threats hits European flights and newsrooms"
+    },
+    "hook": {
+     "zh": "一封封邮件就让战机升空、电视台停播，而至今没人找到一枚炸弹。",
+     "en": "A handful of emails scrambled fighter jets and took broadcasters off air, yet no one has found a single bomb."
+    },
+    "story": {
+     "zh": "周五，又一批炸弹威胁袭向欧洲上空：至少18个航班受到影响，涉及保加利亚、塞浦路斯、捷克、法国、匈牙利、意大利、葡萄牙、罗马尼亚和英国。匈牙利三次出动战机为客机护航。所有飞机均安全降落，搜查也没有发现任何爆炸物。\n\n这已是本周第三轮。据《卫报》统计，周二和周四的威胁迫使至少35个航班备降或接受搜查（BBC的数字是近30架）。同一天，爱尔兰广播公司RTÉ和《爱尔兰独立报》等媒体紧急疏散，英国天空新闻也收到了威胁。爱尔兰政府称，这“很可能是一场有组织的扰乱行动”。下周，爱尔兰将在都柏林举办两场欧盟重要会议。\n\n幕后黑手仍不清楚。此前威胁中被点名的俄罗斯极端组织“男性国家”否认参与。本周还有针对至少七国超市冷柜系统的网络攻击，意大利总理梅洛尼说，不确定这些事件是否相关，但“受到攻击的都是民用基础设施”。",
+     "en": "On Friday another wave of bomb threats hit European aviation. At least 18 flights to or from Bulgaria, Cyprus, Czechia, France, Hungary, Italy, Portugal, Romania and the UK were affected, and Hungary scrambled fighter jets three times to escort airliners. Every plane landed safely, and searches found no explosives.\n\nIt was the third round this week. The Guardian counts at least 35 flights diverted or searched after threats on Tuesday and Thursday; the BBC puts the earlier figure at nearly 30 aircraft. On Friday, Ireland’s broadcaster RTÉ, the Irish Independent and other outlets evacuated staff, and Sky reported a threat too. Ireland’s government called it a “likely coordinated campaign of disruption.” Dublin hosts two major EU meetings next week.\n\nWho is behind it remains unknown. Male State, a Russian extremist group named in earlier threats, denied involvement. Italy’s Giorgia Meloni said it was unclear whether the hoaxes were connected to this week’s cyber-attacks on supermarket refrigeration systems in at least seven countries, but that “what is under attack are civilian infrastructures.”"
+    },
+    "why": {
+     "zh": "受影响航班只占欧洲当天航班的极小一部分，但每次威胁都会触发备降、搜查和战机护航，旅客的时间和公共资源被白白消耗。",
+     "en": "The affected flights are a sliver of Europe’s traffic, but each threat triggers diversions, searches and fighter escorts, burning travellers’ time and public resources."
+    },
+    "pro": {
+     "zh": "这正是“混合攻击”的算盘：发一封邮件几乎零成本，应对却必须按最坏情况走完整套流程。一架罗马尼亚客机就曾发出7700紧急代码后才降落。调查人员表示，目前没有证据显示是敌对恐怖组织或国家在幕后策划。但爱尔兰总理马丁说得直白：这说明扰乱社会运转“相对简单”。",
+     "en": "This is the arithmetic of hybrid attacks: an email costs almost nothing, while responders must assume the worst and run full protocols. One Romanian airliner squawked the 7700 emergency code before landing. Investigators say there is no evidence yet of a hostile terror group or state orchestrating it. Still, Ireland’s Micheál Martin put it bluntly: it shows how “relatively simple” it is to disrupt society."
+    },
+    "stat": {
+     "value": "0.0674%",
+     "label": {
+      "zh": "周五受影响航班占欧洲当日26709个航班的比例",
+      "en": "Share of Europe’s 26,709 Friday flights affected"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "混合攻击",
+       "en": "Hybrid attack"
+      },
+      "explain": {
+       "zh": "不动刀枪，而用网络攻击、虚假信息、恐吓等手段扰乱对手社会，像往齿轮里撒沙子。",
+       "en": "Disrupting a rival society without open warfare, through cyber-attacks, disinformation or threats, like throwing sand into its gears."
+      }
+     },
+     {
+      "term": {
+       "zh": "7700代码",
+       "en": "Squawk 7700"
+      },
+      "explain": {
+       "zh": "飞机应答机发出的通用紧急信号，相当于向地面拉响警报。",
+       "en": "The universal emergency code a plane’s transponder sends, the aviation version of pulling the alarm."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cq62yy064vjpo?at_medium=RSS&at_campaign=rss",
+      "title": "New wave of bomb threats hit European airlines"
+     },
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/06/further-bomb-threats-disrupt-flights-across-europe",
+      "title": "Further bomb threats disrupt at least another 18 flights across Europe"
+     },
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/world/live/2026/nov/06/high-alert-hoax-bomb-threats-france-air-lingus-belgium-pope-leo-europe-live",
+      "title": "Bomb threats against European flights ‘likely a coordinated campaign of disruption’, Ireland says – as it happened"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdnRXOWRIUkRMTjJUVHA5MERSRnEzbUpJLWdYbjJwUkhyMUlkaVBELWNFWWhyVDl5RTNqQkhUSTdacElqLUhNRk9RSlg2SXpvRkQwTENWZ1MzRFlfYW1OcFBMRHFRQ0RfRDZ1MkVBbHJYTncyWXVOSnh6UTBFMklGLVRiSGNoN21PNURKcUtGSXpWYnkxM19zcDNCbldTeGc4bzJrRmVZNGt4Slp3NmFHcGpLMWNTSFJr?oc=5",
+      "title": "Bomb threats warning 'the clock is ticking' disrupt TV channels across Europe"
+     },
+     {
+      "name": "NYT World",
+      "url": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
+      "title": "What to Know About the Bomb Threats Disrupting Flights in Europe"
+     },
+     {
+      "name": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cm2d66n0lx1yo?at_medium=RSS&at_campaign=rss",
+      "title": "Russian extremist group denies sending hoax bomb threats"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "拉美",
+     "en": "Latin America"
+    },
+    "title": {
+     "zh": "银行崩盘拖垮巴拉圭总统佩尼亚",
+     "en": "Paraguay's Peña impeached and put under house arrest over bank collapse"
+    },
+    "hook": {
+     "zh": "一家银行被叫停，全国六成成年人连面包都买不了，总统几天内就下了台、进了软禁。",
+     "en": "One bank froze, six in ten Paraguayan adults couldn’t buy bread, and within days the president was out of office and under house arrest."
+    },
+    "story": {
+     "zh": "周五，巴拉圭国会完成弹劾，罢免总统圣地亚哥·佩尼亚，几分钟后检方下令将他软禁在家。副总统佩德罗·阿利亚纳随即宣誓就任新总统。街头抗议仍在继续，部分演变为与警方的暴力冲突。\n\n风暴中心是数字银行Ueno。佩尼亚执政短短几年间，它从默默无闻膨胀为全国最大的银行之一。本周它因违规被叫停，290万人的账户随之冻结，约占全国成年人的60%，不少人一夜之间连面包和水都买不起。佩尼亚上任不久，就任命Ueno前CEO卡瓦略·斯帕尔丁执掌央行；三个月后，这位“老东家出身”的监管者批准Ueno转为数字银行。\n\n关于他如何下台，说法不一。《纽约时报》和《卫报》周四都报道他已辞职；但据《卫报》后续报道，议员拒绝接受辞呈，因为卸任总统可出任终身参议员、享有特殊司法管辖。如今，他面临非法敛财、洗钱和以权谋私的调查。",
+     "en": "On Friday Paraguay’s Congress impeached and removed President Santiago Peña, and minutes later prosecutors ordered him under house arrest. Vice-President Pedro Alliana was sworn in as the new leader while protests, some violent, continued in the streets.\n\nAt the centre is Ueno, a digital lender that grew under Peña from obscurity into one of the country’s biggest banks. Its suspension this week for irregularities froze the accounts of 2.9 million people, about 60% of Paraguay’s adults, some of whom suddenly couldn’t pay for bread or water. Soon after taking office, Peña had made Carlos Carvallo Spalding, a former Ueno CEO, head of the central bank. Three months later, Spalding let Ueno become a digital bank.\n\nAccounts of Peña’s exit differ. The New York Times and The Guardian reported on Thursday that he had resigned. But The Guardian later reported that lawmakers refused his resignation, because ex-presidents become senators for life with special legal protection. He now faces investigation for illicit enrichment, money laundering and influence peddling."
+    },
+    "why": {
+     "zh": "当一家银行握着全国六成成年人的钱，它的倒下就不再是一家公司的事，而是整个国家的支付系统停摆。",
+     "en": "When one bank holds the money of 60% of a country’s adults, its failure stops being a corporate problem and becomes a national payments shutdown."
+    },
+    "pro": {
+     "zh": "这是典型的监管俘获：被监管企业的前掌门人去当监管者，裁判和球员成了一家人。佩尼亚的辞职也是一步法律棋，抢在弹劾前卸任，就能以终身参议员身份避开普通法院；国会拒绝辞呈，等于堵死了这条路。新总统阿利亚纳接手的首要难题，是如何尽快让冻结的存款重新流动。",
+     "en": "It is textbook regulatory capture: a regulated firm’s former boss became its regulator, so referee and player were on the same team. Peña’s resignation was also a legal gambit, since quitting before impeachment would have made him a senator for life, beyond the ordinary courts. Congress’s refusal closed that exit. Alliana’s first test is getting frozen deposits flowing again."
+    },
+    "stat": {
+     "value": "60%",
+     "label": {
+      "zh": "账户被冻结的巴拉圭成年人比例（290万人）",
+      "en": "Share of Paraguayan adults with frozen accounts (2.9m)"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "弹劾",
+       "en": "Impeachment"
+      },
+      "explain": {
+       "zh": "议会依法审判并罢免官员的程序，相当于由立法机构亲自“炒掉”总统。",
+       "en": "A legal process by which a legislature tries and removes an official, in effect firing the president."
+      }
+     },
+     {
+      "term": {
+       "zh": "监管俘获",
+       "en": "Regulatory capture"
+      },
+      "explain": {
+       "zh": "监管者反过来为被监管者的利益服务，就像让球队老板兼任裁判。",
+       "en": "When a regulator ends up serving the industry it oversees, like letting a team owner referee the match."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/07/ousted-paraguay-president-under-house-arrest-after-banking-crisis-leaves-60-of-country-unable-to-access-accounts",
+      "title": "Ousted Paraguay president under house arrest after banking crisis leaves 60% of country unable to access accounts"
+     },
+     {
+      "name": "NYT World",
+      "url": "https://www.nytimes.com/2026/11/05/world/americas/paraguay-santiago-pena-resigns.html",
+      "title": "Paraguay’s President, Santiago Peña, Quits Amid Ueno Bank Scandal"
+     },
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/05/paraguay-president-santiago-pena-resigns",
+      "title": "Paraguay’s president quits after millions of people’s savings frozen in bank crisis"
+     },
+     {
+      "name": "NYT World",
+      "url": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
+      "title": "Paraguay’s President Removed and Arrested Over Financial Crisis"
+     },
+     {
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/7/paraguays-santiago-pena-under-arrest-new-president-pedro-alliana-sworn-in?traffic_source=rss",
+      "title": "Paraguay’s Santiago Pena under arrest, new president Pedro Alliana sworn in"
+     },
+     {
+      "name": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTEZGTXdqZzI2U0M5aVZQb2FnNXk0VS1tWFlfci1fd1AyYnRYOUxQSElRUkxnM0RsNl9HZWkwb2pla2FxMXBRWF9zZ2o4amgwcGZrWnZxaHpvd0VBUDlSWk9tU1NfNTdFb0t5WVF4Q0pvZFZZdkRUcmh6ZEJXMmtnb2gzYVEwVXl6dWVQZDB1UVdfd2JDSXoxMWpR?oc=5",
+      "title": "Paraguay Senate votes to impeach President Peña"
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "大国外交",
+     "en": "Diplomacy"
+    },
+    "title": {
+     "zh": "中方证实正商讨习特普三方会晤",
+     "en": "China confirms talks on a historic Xi-Trump-Putin summit"
+    },
+    "hook": {
+     "zh": "三位领导人同桌，听上去风光，但坐在中间的那位可能最为难。",
+     "en": "Putting three leaders at one table sounds grand, but the one in the middle may find it the most awkward."
+    },
+    "story": {
+     "zh": "中国证实，关于习近平、特朗普与普京举行三方会晤的讨论正在进行。若成行，这将是三国领导人一次历史性的同场会面。\n\n目前公开的信息很少，日期、地点和议程都没有披露。《纽约时报》分析认为，这样一场峰会对北京是把双刃剑：与美俄元首并肩，能抬升习近平的国际地位；可一旦谈到乌克兰的未来和核武器限制，中国就得做出令自己不舒服的选择。\n\n打个比方，三人饭局里最难的往往是坐中间的那位：两边都想拉你站队，你说的每句话都会被放大解读。接下来要看会晤能否真正落地，以及北京愿意在乌克兰和核军控问题上表态到什么程度。",
+     "en": "China has confirmed that discussions are underway on a three-way meeting between Xi Jinping, Donald Trump and Vladimir Putin. If it happens, it would be a historic gathering of the three leaders.\n\nVery little is public so far: no date, venue or agenda has been disclosed. The New York Times argues the summit cuts both ways for Beijing. Standing alongside the US and Russian presidents could bolster Xi’s stature. But talks about Ukraine’s future and limits on nuclear weapons would force China into uncomfortable choices.\n\nThink of a dinner for three where the person in the middle has the hardest seat: both neighbours want you on their side, and every word you say gets read as a signal. The things to watch are whether the meeting actually materialises, and how far Beijing is willing to commit on Ukraine and on nuclear arms limits."
+    },
+    "why": {
+     "zh": "如果三方真能坐下来，乌克兰战事和核军控这两大议题可能出现新的谈判框架，这关系到欧洲安全和全球军备走向。",
+     "en": "If the three do meet, Ukraine and nuclear arms control could get a new negotiating format, with consequences for European security and the global arms picture."
+    },
+    "pro": {
+     "zh": "三方形式本身就改变了博弈结构。双边会谈里，中国可以只谈自己的利益；三方同桌时，它在乌克兰问题上的立场和自身核力量都会被摆上台面。抬升地位的收益，要和被迫表态的代价放在一起权衡，这正是北京的难题所在。",
+     "en": "The three-way format itself changes the game. Bilaterally, China can talk only about its own interests; at a shared table, its stance on Ukraine and its own nuclear forces get put on the agenda. The prestige payoff has to be weighed against the cost of being pinned down, and that is Beijing’s dilemma."
+    },
+    "stat": {
+     "value": "",
+     "label": {
+      "zh": "",
+      "en": ""
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "核军控",
+       "en": "Nuclear arms control"
+      },
+      "explain": {
+       "zh": "各国通过谈判限制核武器数量和部署，好比几个邻居约定谁家都别再囤更多炸药。",
+       "en": "Negotiated limits on how many nuclear weapons countries build and deploy, like neighbours agreeing to stop stockpiling explosives."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTXNOWUl3UmNKZ0k2Q0ZwT2g2NTJqZm9ycXc0QW1PZ1NjcGs3ZDFXa05ERlkwNEVQZDViSUxQcWlqUDBTMjZiV1NVZWF5eG0yWlpfdy03YUdlVXhfeVhEbHN5NEtXeEVOeEUtQmk2LVFpQzJJTVp3emxjelhZREE4U1EtaUx1SHpvYm5Db0JEVUk2YzZy?oc=5",
+      "title": "China confirms discussions are underway on a historic Xi-Trump-Putin meeting"
+     },
+     {
+      "name": "NYT World",
+      "url": "https://www.nytimes.com/2026/11/06/world/asia/china-trump-putin-xi-summit.html",
+      "title": "A Trump-Putin-Xi Summit? That Might Be Awkward for One of Them."
+     }
+    ]
+   },
+   {
+    "importance": 2,
+    "tag": {
+     "zh": "非洲",
+     "en": "Africa"
+    },
+    "title": {
+     "zh": "肯尼亚末日邪教头目被判200年",
+     "en": "Kenyan doomsday cult leader sentenced to 200 years for mass starvation"
+    },
+    "hook": {
+     "zh": "他让信徒饿死孩子去“见耶稣”，宣判时却还在微笑。",
+     "en": "He ordered followers to starve their children to “meet Jesus”, and he smiled through his sentencing."
+    },
+    "story": {
+     "zh": "周五，肯尼亚蒙巴萨高等法院判处“好消息国际教会”牧师保罗·麦肯齐200年监禁：饥饿致死谋杀罪100年，直接杀人罪100年。他被认定谋杀190名儿童和1名成人。宣判时，他不时面带微笑，与助理牧师闲聊，后者被判160年。\n\n2023年，警方在基利菲县查卡马牧场的浅坟中挖出400多具遗体。麦肯齐把信徒迁往偏远之地，命令他们绝食至死以“见耶稣”，由看守强制执行，掘墓人负责掩埋。法官卡韦扎说，191名死者中183人死于饥饿，8人遭直接杀害，称这些罪行“冷酷而蓄谋”。共有29人被定罪。\n\n检方曾要求判处死刑。辩方已提起上诉，称这样的刑期“根本无法服完”。麦肯齐还因另外200多名遇难者，面临恐怖主义和过失杀人指控。",
+     "en": "On Friday the High Court in Mombasa, Kenya, sentenced Paul Mackenzie, pastor of the Good News International Church, to 200 years in prison: 100 for murder by starvation and 100 for direct homicide. He was convicted of murdering 190 children and one adult. He often smiled and chatted with his assistant pastor, who got 160 years.\n\nIn 2023, more than 400 bodies were exhumed from shallow graves on the Chakama Ranch in Kilifi County. Mackenzie moved followers to the remote site and ordered them to fast to death to meet Jesus; guards enforced it and gravediggers hid the bodies. Justice Diana Kavedza said 183 of the 191 victims starved and eight were killed directly, calling the crimes “cold and calculated.” Twenty-nine people were convicted.\n\nProsecutors had sought the death penalty. The defence has already appealed, calling the term “unattainable.” Mackenzie still faces terrorism and manslaughter charges over more than 200 other victims. One father, Suleiman Ziro, travelled 120 km to court; he lost six children and his wife to the cult."
+    },
+    "why": {
+     "zh": "这是对近年全球最惨烈邪教悲剧之一的首次重大清算，但还有200多名遇难者的案件有待审理，许多遗体至今无人认领。",
+     "en": "It is the first major reckoning for one of the world’s worst recent cult disasters, but cases for more than 200 other victims are pending and many bodies remain unclaimed."
+    },
+    "pro": {
+     "zh": "法院把刑期拆成两部分，是把“下令饿死”和“直接杀害”认定为两种不同的谋杀方式，扩展了对教唆者刑责的认定。辩方的上诉焦点在于，160至200年的刑期实质上等同终身监禁，是在“绕开宪法”。在全部400多名遇难者中，只有60多具遗体被确认身份，后续审判的取证难度可想而知。",
+     "en": "Splitting the sentence treats ordering starvation and direct killing as distinct forms of murder, extending culpability to the man who gave the orders. The defence’s appeal argues that terms of 160 to 200 years are de facto life sentences that “circle around the constitution.” Only about 60 of the more than 400 bodies have been positively identified, which hints at the evidentiary hurdles in the trials still to come."
+    },
+    "stat": {
+     "value": "400+",
+     "label": {
+      "zh": "2023年从牧场浅坟中挖出的遗体数",
+      "en": "Bodies exhumed from the ranch’s shallow graves in 2023"
+     }
+    },
+    "terms": [
+     {
+      "term": {
+       "zh": "末日邪教",
+       "en": "Doomsday cult"
+      },
+      "explain": {
+       "zh": "宣扬世界末日将至、要求信徒绝对服从的极端团体。",
+       "en": "An extremist group that preaches the world is about to end and demands total obedience from followers."
+      }
+     }
+    ],
+    "sources": [
+     {
+      "name": "NPR World",
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6032593/kenya-cult-leader-paul-mackenzie-sentenced-murder",
+      "title": "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison"
+     },
+     {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/06/kenyan-doomsday-sect-leader-jailed-murders-paul-mackenzie",
+      "title": "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children"
+     },
+     {
+      "name": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cm5yne5984l0o?at_medium=RSS&at_campaign=rss",
+      "title": "Kenyan doomsday cult leader given life sentence for murdering 191 people"
+     }
+    ]
+   }
+  ]
+ },
+ "quick_hits": [
+  {
+   "section": "ai",
+   "title": {
+    "zh": "OpenAI窃听案嫌疑人不认罪",
+    "en": "OpenAI bugging suspect pleads not guilty"
+   },
+   "line": {
+    "zh": "被控在OpenAI会议室安装录音设备的沙特籍前员工阿尔福赞对联邦指控不认罪。",
+    "en": "Former OpenAI engineer Abdulrahman Alfozan, a Saudi national, pleaded not guilty to federal charges of planting a recording device in a company conference room."
+   },
+   "sources": [
+    {
+     "name": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBSbk12NjFsRElYclVkVDFyemhuS2hBRW1qeFJ4a3gzR3RQZzhMWnN1aDZhUnYya1p1UmZRRzMyeUJMN01hd0MxZlpySzc2VnZfNm5MY0l4VmlBTVI1VkRncHVtTFB0dDJlSHEwWUwyQ3dBMGfSAXhBVV95cUxNSGdEMk9fS1UtbXhfakhBWnFVMHh4R1BVNFVFOXdPRDlFakFGMGxFZWJ1eE1RcklKWmVjWUZRc3NZUjRvczI2dnR5QkFsS0xiMUFaNkdZZ1NxWENFRHFLRi1ScDhDNndOSV9JaDdNbEoxWXctX3FOWWE?oc=5",
+     "title": "OpenAI bugging suspect Alfozan pleads not guilty"
+    },
+    {
+     "name": "Courthouse News",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbl9aa0xEMEV2VnNpay1NX3FvRm80UVh4ZkxwUjQyMDdNVTRSNUotTU4xN3BqNk9nN2l6ekhrTWpPTnNpTW9scWtyNFZYdTlhZ0FtelpTNTBnQ3JCbmI0anRUZ2ViWl9DYUd2MFRMeFBHcWdBSmpIMWwxdGdjQ0Y4TnZLRUZsVWJfcE5meTQ5T2hHWjRvbS1MYUN1UVJONVJONzdLLVlSX3RsRkd4bUp2SFJsWk40bjFiVnByNkowYTB0YTNSc0NDMmtR?oc=5",
+     "title": "Former OpenAI engineer accused of bugging company headquarters pleads not guilty to federal charges"
+    }
+   ]
+  },
+  {
+   "section": "ai",
+   "title": {
+    "zh": "微软收缩甲骨文算力租赁",
+    "en": "Microsoft winds down Oracle cloud deal"
+   },
+   "line": {
+    "zh": "据彭博报道，微软正缩减租用甲骨文AI算力的协议，并减少合作的新兴云厂商数量。",
+    "en": "Microsoft is reportedly winding down a deal to rent Oracle AI capacity and trimming its roster of neocloud partners."
+   },
+   "sources": [
+    {
+     "name": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNN0g4UzRRaV9OckNuUjZYeVcybWl4SnhZUHVRR3pXVTFUdVMtWENOSWRKdjhUQThNTWlRWXd3YVJFTUVaM1hOaFI2UWJ6cDlWZjM4Q3NXTWZDVlJFSTdnS3RqNExHcG93anIxTDhpNXJTRGduSEgxcWNaYnNRYTdOdWF4SzBoZzBLV3o1Wi1ZaEVPWkFXZVJSSWhYZWFSdE9BRFlINGtWWjhhM2FLUEdaYjJQOTBLQ0VCLVIyXw?oc=5",
+     "title": "Microsoft is winding down Oracle deal to rent AI cloud capacity, Bloomberg News reports"
+    },
+    {
+     "name": "CNBC World",
+     "url": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html",
+     "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain"
+    }
+   ]
+  },
+  {
+   "section": "ai",
+   "title": {
+    "zh": "Thinking Machines发布Inkling 2 Small",
+    "en": "Thinking Machines releases Inkling 2 Small"
+   },
+   "line": {
+    "zh": "Thinking Machines推出新的小模型Inkling 2 Small，在Hacker News引发关注。",
+    "en": "Thinking Machines published Inkling 2 Small, a new smaller model that drew attention on Hacker News."
+   },
+   "sources": [
+    {
+     "name": "thinkingmachines.ai",
+     "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+     "title": "Inkling 2 Small"
+    }
+   ]
+  },
+  {
+   "section": "ai",
+   "title": {
+    "zh": "OpenAI推出湿实验基准",
+    "en": "OpenAI launches wet-lab science benchmark"
+   },
+   "line": {
+    "zh": "BioBasicsBench包含100项任务，衡量AI智能体解读原始实验数据和处理日常湿实验工作的能力。",
+    "en": "BioBasicsBench's 100 tasks test how well AI agents interpret raw experimental data and handle everyday wet-lab work."
+   },
+   "sources": [
+    {
+     "name": "OpenAI",
+     "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+     "title": "Measuring how AI agents handle everyday wet-lab science"
+    }
+   ]
+  },
+  {
+   "section": "ai",
+   "title": {
+    "zh": "黄仁勋被要求向国会说明间谍报道",
+    "en": "Jensen Huang asked to brief Congress"
+   },
+   "line": {
+    "zh": "据《纽约时报》报道，中国国安部曾招募一名高管刺探英伟达CEO，黄仁勋被要求就此向国会作简报。",
+    "en": "Nvidia's CEO was asked to brief Congress after The New York Times reported that China's spy agency recruited an executive to gather information on him."
+   },
+   "sources": [
+    {
+     "name": "The Verge AI",
+     "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+     "title": "China reportedly recruited AI exec to spy on Jensen Huang"
+    },
+    {
+     "name": "CNBC World",
+     "url": "https://www.cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html",
+     "title": "Nvidia's Huang is asked to brief Congress on reported Chinese spy relationship"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "美国10月新增就业16.5万",
+    "en": "US adds 165,000 jobs in October"
+   },
+   "line": {
+    "zh": "非农就业远超5.9万的预期，失业率降至4.1%。",
+    "en": "Payrolls far beat the 59,000 forecast, and unemployment slipped to 4.1%."
+   },
+   "sources": [
+    {
+     "name": "CNBC World",
+     "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html",
+     "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "坦桑尼亚反对派领袖利苏获刑四年",
+    "en": "Tanzania's Lissu jailed for four years"
+   },
+   "line": {
+    "zh": "利苏叛国罪名不成立，却以煽动罪被判刑，他称该罪名并不在原指控之列。",
+    "en": "Opposition leader Tundu Lissu was acquitted of treason but convicted of incitement, a charge he says he never faced."
+   },
+   "sources": [
+    {
+     "name": "DW",
+     "url": "https://www.dw.com/en/tanzania-opposition-leader-tundu-lissu-jailed-for-four-years/a-79875248?maca=en-rss-en-world-4025-rdf",
+     "title": "Tanzania: Opposition leader Tundu Lissu jailed for four years"
+    },
+    {
+     "name": "AP News",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWHlPR240WVZmczU0dkMtejN5OW9NN250SjMtQlVSOHBXZTdvMWJ2R3VEYTNsVU5JcTF1QzhSSzdRM1Zhc0NEUlV1bkdvLVRmaTdWTlp4NXpDWm5wejhrVkVpcGVmQXg3VXhoeHg5RFVtU0RzaU5iNUVJOG9QazUxRGI4UVhNcjRheE5ETjFIQVVZeGt6TXdQR3lHdElFdmp3QUMwd3NKUFpvd1owb0U4?oc=5",
+     "title": "Tanzania opposition leader Lissu sentenced to 4 years for incitement, acquitted of treason"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "加州州长为548名死囚减刑",
+    "en": "California commutes all death sentences"
+   },
+   "line": {
+    "zh": "纽森为全州548名死囚减刑，检察官誓言将继续寻求死刑。",
+    "en": "Gov. Newsom commuted the sentences of all 548 death-row inmates, though prosecutors vow to keep seeking the death penalty."
+   },
+   "sources": [
+    {
+     "name": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cqrkyyd2j8mvo?at_medium=RSS&at_campaign=rss",
+     "title": "California governor commutes sentences for state's 548 death row inmates"
+    },
+    {
+     "name": "The New York Times",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNNUNZUjhmNTdSNGljUWVMc3FpVFZPT09pRzUtaU9pVVZZbWRvTEhyaF9YaGhHR3F5ZkFQcmx1cmJtbXJ6a3pqcVBTb2RZZlNxbnlYMXU5NmFQNmNoUXg2al85WEE2dE1jMGlVbmRfR3YwOU13VXl0YUFFUWFLOVBqbVFtZ1lpdw?oc=5",
+     "title": "Prosecutors Vow to Keep Pursuing Death Penalty in California"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "美国麻疹病例创35年新高",
+    "en": "US measles cases hit 35-year high"
+   },
+   "line": {
+    "zh": "美国疾控中心报告超过5000例麻疹，威斯康星州一名婴儿因此死亡。",
+    "en": "The CDC reports more than 5,000 measles cases, and Wisconsin has recorded the death of a baby linked to the outbreak."
+   },
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/7/cdc-reports-more-than-5000-measles-cases-highest-number-in-35-years?traffic_source=rss",
+     "title": "CDC reports more than 5,000 measles cases, highest number in 35 years"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdU9Vbm5zSFB3TTg4ekxyOGVGQ1JiX0p1cHBtNzFRcVlNVm8tRzRLQWVINnE5ZWFSNk9xUEJoTGF0NHJ1WTBZRGhvVmM0b05EM0VTMTdIWG96aTFWQ2hrYkxEUzhLOHdmYXF0ZHJkZzZ4cmRfTTY1LWM5UEdIZVk4UXVYaC04bk1VODBXY3pzS0hDUW9mM1JWYkhDMUhqZnZQb3hIRnZVeFVKRTZEbExV?oc=5",
+     "title": "Wisconsin reports measles death of a baby, first death in over 35 years"
+    }
+   ]
+  },
+  {
+   "section": "world",
+   "title": {
+    "zh": "索马里最高法院裁定总统延任违法",
+    "en": "Somalia court rejects president's term extension"
+   },
+   "line": {
+    "zh": "这一裁决加深了权力斗争，令明年的全国大选时间表蒙上阴影。",
+    "en": "The ruling deepens a power struggle and throws next year's planned nationwide elections into doubt."
+   },
+   "sources": [
+    {
+     "name": "AP News",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQOFdheGZ0VTRnbEF1amtDUzFJZjRfM3haT0I5Yk1RMEJSR3FBMlRmVExzTHNjeG1RVFpXVXBKTTExUFcxQ2ZLQVpod2s3YkFGSWNDb0Y2OEJNdkw0SDlUQUsyQnlaNm9DUF80UTRraDc3RG90MGpMSEtCOGllN2tUZEFSTGpUckpTeUdhNE5YR1ZEOWxadHJUZzBPRVhrdDRhZ2NraGhnNThZcm1YbkxIa3lZS0E3dWxSV1Q4Sg?oc=5",
+     "title": "Somalia’s top court rules president’s term extension is unlawful, deepening power struggle"
+    },
+    {
+     "name": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/c977ppnezep6o?at_medium=RSS&at_campaign=rss",
+     "title": "Somalia's top court rejects president's term extension amid political crisis"
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "candidates": 330,
+  "outlets": 107
+ }
+}

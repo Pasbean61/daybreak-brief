@@ -1,6 +1,22 @@
 {
- "updated": "2026-11-06T06:51:08+00:00",
+ "updated": "2026-11-07T06:02:09+00:00",
  "editions": [
+  {
+   "date": "2026-11-06",
+   "headline": {
+    "zh": "中期选举余震：AI股承压，米勒掌白宫",
+    "en": "Midterm aftershocks: AI stocks reel as Miller takes charge"
+   },
+   "lede": {
+    "zh": "民主党在中期选举中大胜，余波昨天席卷各地：特朗普任命强硬派斯蒂芬·米勒为白宫幕僚长，全球科技股继续承压。AI行业首当其冲，选民在数十项数据中心公投中表达不满，Anthropic的IPO估值预期下调；不过OpenAI仍以1.25万亿美元估值再获110亿美元融资。技术层面，OpenAI推出GPT-6 Cyber，称其已发现大量Firefox与Linux漏洞。",
+    "en": "The Democrats' midterm sweep kept rippling outward yesterday: Trump named hardliner Stephen Miller his chief of staff, and tech stocks stayed under pressure worldwide. AI took the brunt, with voters backing curbs on data centers in dozens of ballot measures and Anthropic's IPO valuation expectations slipping — even as OpenAI reportedly raised another $11 billion at a $1.25 trillion valuation. On the technical side, OpenAI unveiled GPT-6 Cyber, which reportedly helped find scores of Firefox and Linux flaws."
+   },
+   "counts": {
+    "ai": 5,
+    "world": 6,
+    "quick": 10
+   }
+  },
   {
    "date": "2026-11-05",
    "headline": {
